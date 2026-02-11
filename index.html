@@ -79,7 +79,7 @@
             style="width: 90px; height: 90px; display: block; margin: 0 auto"
           />
         </div>
-        <h1>Ibrahim Ahtsham</h1>
+        <h1 id="expand-details">Ibrahim Ahtsham</h1>
         <p style="font-size: 1.15em; margin-top: 0; margin-bottom: 8px">
           Full-Stack Developer | React, Node.js, Python, Automation, LLMs
         </p>
@@ -201,6 +201,19 @@
       <section id="skills-section"></section>
       <section id="languages-section"></section>
       <script>
+        // Toggle all <details> elements when the h1 is clicked
+        document.addEventListener("DOMContentLoaded", function () {
+          const expandBtn = document.getElementById("expand-details");
+          if (expandBtn) {
+            expandBtn.style.cursor = "pointer";
+            expandBtn.title = "Click to expand/collapse all sections";
+            expandBtn.addEventListener("click", function () {
+              const details = Array.from(document.querySelectorAll("details"));
+              const allOpen = details.every((d) => d.open);
+              details.forEach((d) => (d.open = !allOpen));
+            });
+          }
+        });
         const sections = [
           { id: "intro-section", file: "sections/intro.html" },
           { id: "experience-section", file: "sections/experience.html" },
