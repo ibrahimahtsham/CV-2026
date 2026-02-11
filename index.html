@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — CV</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/my face updated.jpg"
+        alt="Profile photo"
+        style="
+          width: 140px;
+          height: 200px;
+          border-radius: 50%;
+          object-fit: cover;
+          float: right;
+          display: inline;
+          margin-left: 24px;
+          margin-bottom: 0;
+        "
+      />
+      <h1>Your Name</h1>
+      <p>Short intro tagline.</p>
+      <p>
+        <a href="https://www.linkedin.com/in/your-handle">LinkedIn</a> |
+        <a href="https://github.com/your-handle">GitHub</a> |
+        <a href="mailto:you@email.com">Email</a>
+      </p>
+    </header>
+
+    <section id="intro-section"></section>
+    <section id="experience-section"></section>
+    <section id="projects-section"></section>
+    <section id="education-section"></section>
+    <section id="skills-section"></section>
+    <section id="languages-section"></section>
+    <script>
+      const sections = [
+        { id: "intro-section", file: "sections/intro.html" },
+        { id: "experience-section", file: "sections/experience.html" },
+        { id: "projects-section", file: "sections/projects.html" },
+        { id: "education-section", file: "sections/education.html" },
+        { id: "skills-section", file: "sections/skills.html" },
+        { id: "languages-section", file: "sections/languages.html" },
+      ];
+
+      sections.forEach(({ id, file }) => {
+        fetch(file)
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById(id).innerHTML = html;
+          })
+          .catch((err) => {
+            document.getElementById(id).innerHTML =
+              `<p>Failed to load section: ${file}</p>`;
+          });
+      });
+    </script>
+  </body>
+</html>
