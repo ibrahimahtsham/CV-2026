@@ -1,31 +1,70 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ibrahim Ahtsham CV</title>
+
     <style>
+      :root {
+        --bg: #f5f5f5;
+        --paper-bg: #ffffff;
+        --text: #222222;
+        --link: #3366cc;
+        --shadow: rgba(0, 0, 0, 0.12);
+        --svg-filter: invert(0);
+      }
+
+      body.dark-mode {
+        --bg: #121212;
+        --paper-bg: #1b1b1b;
+        --text: #f5f5f5;
+        --link: #7db3ff;
+        --shadow: rgba(0, 0, 0, 0.4);
+        --svg-filter: invert(1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        transition:
+          background 0.2s ease,
+          color 0.2s ease;
+      }
+
       @media (min-width: 768px) {
-        body {
-          background: #f5f5f5;
-        }
         .a4-wrapper {
           width: 210mm;
           min-height: 297mm;
           margin: 32px auto;
-          background: #fff;
-          box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+          background: var(--paper-bg);
+          box-shadow: 0 0 16px var(--shadow);
           padding: 32px 40px;
           border-radius: 8px;
+          transition:
+            background 0.2s ease,
+            box-shadow 0.2s ease;
         }
       }
+
       @media (max-width: 767px) {
         .a4-wrapper {
           width: 100%;
           min-height: unset;
           margin: 0;
-          background: none;
+          background: var(--paper-bg);
           box-shadow: none;
-          padding: 0;
+          padding: 16px;
           border-radius: 0;
         }
+
         body,
         .a4-wrapper,
         header,
@@ -38,21 +77,55 @@
         span,
         ul,
         li {
-          font-size: 0.92em;
+          font-size: 0.95em;
         }
+
         h1 {
-          font-size: 1.2em;
+          font-size: 1.3em;
         }
       }
+
+      h1,
+      h2,
+      h3,
+      p,
+      span,
+      li,
+      summary {
+        color: var(--text);
+      }
+
       a {
-        color: #36c !important;
+        color: var(--link) !important;
         text-decoration: none !important;
       }
+
+      img[src$=".svg"],
+      svg {
+        filter: var(--svg-filter);
+        transition: filter 0.2s ease;
+      }
+
+      details {
+        margin-bottom: 12px;
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 6px;
+      }
     </style>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ibrahim Ahtsham — CV</title>
   </head>
+
   <body>
     <div class="a4-wrapper">
       <header>
@@ -71,22 +144,37 @@
             style="
               width: 140px;
               height: 200px;
-              border-radius: 50%;
+              border-radius: 16px;
               object-fit: cover;
               display: block;
               margin-bottom: 12px;
             "
           />
+
           <img
             src="images/qr-code.png"
             alt="QR code"
-            style="width: 90px; height: 90px; display: block; margin: 0 auto"
+            style="
+              width: 90px;
+              height: 90px;
+              display: block;
+              margin: 0 auto;
+              cursor: pointer;
+            "
+            onclick="
+              (() => {
+                document.body.classList.toggle('dark-mode');
+              })()
+            "
           />
         </div>
+
         <h1 id="expand-details">Ibrahim Ahtsham</h1>
+
         <p style="font-size: 1.15em; margin-top: 0; margin-bottom: 8px">
-          Full-Stack Developer | React, Node.js, Python, Automation, LLMs
+          Full-Stack Developer | MSP Operations, IT Support & Automation
         </p>
+
         <div style="margin-bottom: 8px">
           <span style="font-size: 1.1em">
             <img
@@ -102,6 +190,7 @@
             Riyadh, Saudi Arabia
           </span>
         </div>
+
         <div style="margin-bottom: 8px">
           <span style="font-size: 1.1em">
             <img
@@ -117,6 +206,7 @@
             (+966) 56 812 6653
           </span>
         </div>
+
         <div style="margin-bottom: 8px">
           <span style="font-size: 1.1em">
             <img
@@ -129,13 +219,16 @@
                 margin-right: 4px;
               "
             />
+
             <a
               href="mailto:ibrahimahtsham2002@gmail.com"
-              style="color: #222 !important; text-decoration: none"
-              >ibrahimahtsham2002@gmail.com</a
+              style="color: var(--text) !important"
             >
+              ibrahimahtsham2002@gmail.com
+            </a>
           </span>
         </div>
+
         <div style="margin-bottom: 8px">
           <span style="font-size: 1.1em">
             <img
@@ -151,24 +244,20 @@
             16th Sep 2002
           </span>
         </div>
+
         <div style="margin-bottom: 8px">
-          <span style="font-size: 1.1em"
-            >Place of Birth: Riyadh, Saudi Arabia</span
-          >
+          <span>Transferable Iqama</span> |
+          <span>Availability: Immediate</span> |
+          <span>Available for relocation: Yes</span>
         </div>
-        <div style="margin-bottom: 8px">
-          <span style="font-size: 1em">Transferable Iqama</span> |
-          <span style="font-size: 1em">Availability: Immediate</span> |
-          <span style="font-size: 1em">Available for relocation: Yes</span>
-        </div>
+
         <div style="margin-bottom: 0">
           <a
             href="https://www.linkedin.com/in/ibrahim-a-190637254"
             style="
               margin-right: 18px;
               vertical-align: middle;
-              text-decoration: none;
-              color: #222 !important;
+              color: var(--text) !important;
             "
           >
             <img
@@ -181,15 +270,13 @@
                 margin-right: 4px;
               "
             />
+
             www.linkedin.com/in/ibrahim-a-190637254
           </a>
+
           <a
             href="https://www.github.com/ibrahimahtsham"
-            style="
-              vertical-align: middle;
-              text-decoration: none;
-              color: #222 !important;
-            "
+            style="vertical-align: middle; color: var(--text) !important"
           >
             <img
               src="images/github-icon.svg"
@@ -201,6 +288,7 @@
                 margin-right: 4px;
               "
             />
+
             www.github.com/ibrahimahtsham
           </a>
         </div>
@@ -213,20 +301,27 @@
       <section id="certifications-section"></section>
       <section id="skills-section"></section>
       <section id="languages-section"></section>
+
       <script>
-        // Toggle all <details> elements when the h1 is clicked
         document.addEventListener("DOMContentLoaded", function () {
           const expandBtn = document.getElementById("expand-details");
+
           if (expandBtn) {
             expandBtn.style.cursor = "pointer";
             expandBtn.title = "Click to expand/collapse all sections";
+
             expandBtn.addEventListener("click", function () {
               const details = Array.from(document.querySelectorAll("details"));
+
               const allOpen = details.every((d) => d.open);
-              details.forEach((d) => (d.open = !allOpen));
+
+              details.forEach((d) => {
+                d.open = !allOpen;
+              });
             });
           }
         });
+
         const sections = [
           { id: "intro-section", file: "sections/intro.html" },
           { id: "experience-section", file: "sections/experience.html" },
@@ -246,7 +341,7 @@
             .then((html) => {
               document.getElementById(id).innerHTML = html;
             })
-            .catch((err) => {
+            .catch(() => {
               document.getElementById(id).innerHTML =
                 `<p>Failed to load section: ${file}</p>`;
             });
