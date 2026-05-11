@@ -82,6 +82,47 @@
     }
   },
   {
+    "id": "proj-freelancer-manager",
+    "title": "Freelancer Client & Project Manager",
+    "type": "React Dashboard",
+    "periodStart": "2024-11",
+    "periodEnd": "2025-08",
+    "periodDisplay": "Nov 2024 \u2013 Aug 2025",
+    "roles": ["Full-Stack", "Business-Dev"],
+    "openByDefault": false,
+    "bullets": [
+      {
+        "text": "Built a React/Vite dashboard for managing Freelancer.com clients, tracking project data, and calculating team compensation.",
+        "roles": ["Full-Stack", "Business-Dev"]
+      },
+      {
+        "text": "Automated client data extraction by chaining project ID to owner ID to client profile lookups via the Freelancer.com API, surfacing contact details typically hidden until a client responds to a bid.",
+        "roles": ["Full-Stack", "Business-Dev"]
+      },
+      {
+        "text": "Built bid analytics features tracking success rates, earnings, and project volume with interactive charts via Recharts.",
+        "roles": ["Full-Stack", "Business-Dev"]
+      },
+      {
+        "text": "Designed an employee shift management system showing which projects arrived during each team member's working hours, with a salary and commission calculator based on awarded project metrics.",
+        "roles": ["Full-Stack", "Business-Dev"]
+      },
+      {
+        "text": "Implemented personalized message template generation for client outreach to speed up initial contact workflows.",
+        "roles": ["Business-Dev"]
+      },
+      {
+        "text": "Deployed to GitHub Pages with a one-command batch script handling dev server startup, dependency installation, and deployment.",
+        "roles": ["Full-Stack"]
+      }
+    ],
+    "tags": {
+      "Full-Stack": ["React", "Vite", "Material UI", "Recharts", "React Router", "Freelancer.com API", "GitHub Pages", "Data Visualization"],
+      "Business-Dev": ["Freelancer.com API", "Bid Analytics", "Client Management", "Automation", "Recharts"],
+      "all": ["React", "Vite", "Material UI", "Recharts", "Freelancer.com API", "Data Visualization", "Automation"]
+    }
+  },
+  {
     "id": "proj-whatsapp",
     "title": "WhatsApp Bulk & Individual Message Sender",
     "type": "Streamlit App",
