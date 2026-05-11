@@ -189,7 +189,7 @@
         "roles": ["Full-Stack"]
       },
       {
-        "text": "Auto-categorization, CSV upload, and export instructions \u2014 zero backend required.",
+        "text": "Auto-categorization, CSV upload, and export instructions with no backend required.",
         "roles": ["Full-Stack"]
       }
     ],
