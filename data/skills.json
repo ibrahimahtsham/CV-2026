@@ -3,7 +3,7 @@
     "all": ["Full-Stack Development", "MSP Operations", "Technical Support", "Microsoft 365 Admin", "Endpoint Security", "Linux & Deployment", "AI Integration", "Automation"],
     "Full-Stack": ["Full-Stack Development", "React & Node.js", "API Development", "Linux & Deployment", "AI Integration", "Database Design", "Automation"],
     "IT": ["MSP Operations", "Microsoft 365 Admin", "Endpoint Security", "Active Directory", "Technical Support", "Ticket Management", "Automation"],
-    "NOC": ["NOC Operations", "Network Monitoring", "CCNA Fundamentals", "Cisco IOS", "SolarWinds", "Grafana", "Incident Response", "Network Automation"],
+    "NOC": ["NOC Operations", "Network Monitoring", "CCNA Fundamentals", "Cisco IOS", "Incident Response", "Network Troubleshooting", "Network Automation"],
     "Customer-Support": ["Customer Service", "Technical Support", "Client Communication", "Multilingual Support", "Documentation", "Email Support"],
     "Business-Dev": ["Business Development", "Client Acquisition", "Proposal Writing", "Upwork & Freelancer", "Odoo CRM", "Prompt Engineering", "Bidding Automation"]
   },
@@ -42,7 +42,7 @@
       "id": "skill-networking",
       "title": "Networking & NOC",
       "roles": ["NOC", "IT", "all"],
-      "tags": ["TCP/IP", "Subnetting", "VLANs", "Routing (OSPF, EIGRP, RIP)", "SolarWinds", "Grafana", "SNMP", "Syslog", "Cisco Packet Tracer", "VPN", "MPLS", "Cisco IOS", "CCNA-Level", "Network Automation (Ansible, SDN)"]
+      "tags": ["TCP/IP", "Subnetting", "VLANs", "Routing (OSPF, EIGRP, RIP)", "SNMP", "Syslog", "Cisco Packet Tracer", "VPN", "MPLS", "Cisco IOS", "CCNA-Level", "Network Automation (Ansible, SDN)"]
     },
     {
       "id": "skill-bizdev",

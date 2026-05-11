@@ -4,7 +4,7 @@
     "title": "Mammoth Job Management System",
     "type": "Full-Stack Web App",
     "periodStart": "2026-04",
-    "periodEnd": null,
+    "periodEnd": "2026-05",
     "periodDisplay": "Apr 2026 – May 2026",
     "roles": [
       "Full-Stack",
@@ -370,6 +370,8 @@
       "Business-Dev"
     ],
     "openByDefault": false,
+    "repoUrl": "https://github.com/ibrahimahtsham/freelancer-client-info-grabber",
+    "repoDisplay": "github.com/ibrahimahtsham/freelancer-client-info-grabber",
     "bullets": [
       {
         "text": "Built a React/Vite dashboard during the Business Development role at PanaceaLogics to manage Freelancer.com clients, track project data, and calculate team compensation.",
