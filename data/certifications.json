@@ -6,7 +6,10 @@
     "date": "Jan 2026",
     "url": "https://www.udemy.com/certificate/UC-8e0e830c-c991-44ad-b721-f9378cbdb062/",
     "score": null,
-    "roles": ["NOC", "IT"]
+    "roles": [
+      "NOC",
+      "IT"
+    ]
   },
   {
     "id": "cert-sw-testing",
@@ -15,7 +18,10 @@
     "date": "May 2023",
     "url": "https://coursera.org/verify/TPTPFW22BRZA",
     "score": "97.84%",
-    "roles": ["Full-Stack", "IT"]
+    "roles": [
+      "Full-Stack",
+      "IT"
+    ]
   },
   {
     "id": "cert-networking-essentials",
@@ -24,16 +30,10 @@
     "date": "Apr 2023",
     "url": null,
     "score": null,
-    "roles": ["NOC", "IT"]
-  },
-  {
-    "id": "cert-linux-ibm",
-    "title": "Hands-on Introduction to Linux Commands & Shell Scripting",
-    "issuer": "IBM / Coursera",
-    "date": "Jun 2022",
-    "url": "https://www.coursera.org/verify/P882VCLNATYS",
-    "score": "94.66%",
-    "roles": ["Full-Stack", "NOC", "IT"]
+    "roles": [
+      "NOC",
+      "IT"
+    ]
   },
   {
     "id": "cert-linux-essentials",
@@ -42,7 +42,11 @@
     "date": "Jul 2022",
     "url": null,
     "score": null,
-    "roles": ["Full-Stack", "NOC", "IT"]
+    "roles": [
+      "Full-Stack",
+      "NOC",
+      "IT"
+    ]
   },
   {
     "id": "cert-linux-unhatched",
@@ -51,7 +55,24 @@
     "date": "Jul 2022",
     "url": null,
     "score": null,
-    "roles": ["Full-Stack", "NOC", "IT"]
+    "roles": [
+      "Full-Stack",
+      "NOC",
+      "IT"
+    ]
+  },
+  {
+    "id": "cert-linux-ibm",
+    "title": "Hands-on Introduction to Linux Commands & Shell Scripting",
+    "issuer": "IBM / Coursera",
+    "date": "Jun 2022",
+    "url": "https://www.coursera.org/verify/P882VCLNATYS",
+    "score": "94.66%",
+    "roles": [
+      "Full-Stack",
+      "NOC",
+      "IT"
+    ]
   },
   {
     "id": "cert-cpp",
@@ -60,7 +81,9 @@
     "date": "Feb 2022",
     "url": null,
     "score": null,
-    "roles": ["Full-Stack"]
+    "roles": [
+      "Full-Stack"
+    ]
   },
   {
     "id": "cert-data-structures",
@@ -69,6 +92,8 @@
     "date": "Dec 2021",
     "url": "https://www.coursera.org/verify/KGMTLDUJ5VNR",
     "score": "87.50%",
-    "roles": ["Full-Stack"]
+    "roles": [
+      "Full-Stack"
+    ]
   }
 ]
