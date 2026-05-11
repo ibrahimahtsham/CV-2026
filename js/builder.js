@@ -1,4 +1,4 @@
-import { el, isVisible, getTags, sectionHeader, tagRow, injectExperience } from './helpers.js';
+import { el, isVisible, getTags, sectionHeader, tagRow, injectExperience, entryDuration } from './helpers.js';
 
 /* ── Shared: expandable card (<details>) ──────────────────────── */
 function entryCard(entry, visibleBullets, tags, summaryText) {
@@ -9,7 +9,9 @@ function entryCard(entry, visibleBullets, tags, summaryText) {
   const inner = el('div', { class: 'details-body-inner' });
   body.appendChild(inner);
 
-  const metaParts = [entry.periodDisplay, entry.location, entry.mode].filter(Boolean);
+  const duration = entryDuration(entry);
+  const periodText = duration ? `${entry.periodDisplay} · ${duration}` : entry.periodDisplay;
+  const metaParts = [periodText, entry.location, entry.mode].filter(Boolean);
   const meta = el('div', { class: 'entry-meta' });
   metaParts.forEach((p, i) => {
     meta.appendChild(document.createTextNode(p));
