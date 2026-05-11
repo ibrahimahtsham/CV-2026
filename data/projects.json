@@ -85,9 +85,9 @@
     "id": "proj-freelancer-manager",
     "title": "Freelancer Client & Project Manager",
     "type": "React Dashboard",
-    "periodStart": "2024-11",
+    "periodStart": "2025-05",
     "periodEnd": "2025-08",
-    "periodDisplay": "Nov 2024 \u2013 Aug 2025",
+    "periodDisplay": "May 2025 \u2013 Aug 2025",
     "roles": ["Full-Stack", "Business-Dev"],
     "openByDefault": false,
     "bullets": [
