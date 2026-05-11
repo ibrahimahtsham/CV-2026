@@ -3,350 +3,47 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>Ibrahim Ahtsham CV</title>
 
-    <style>
-      :root {
-        --bg: #f5f5f5;
-        --paper-bg: #ffffff;
-        --text: #222222;
-        --link: #3366cc;
-        --shadow: rgba(0, 0, 0, 0.12);
-        --svg-filter: invert(0);
-      }
+    <!-- SEO & social preview -->
+    <meta name="description" content="Full-Stack Developer · MSP Operations · IT Support & Automation" />
+    <meta property="og:title" content="Ibrahim Ahtsham CV" />
+    <meta property="og:description" content="Full-Stack Developer · MSP Operations · IT Support & Automation" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ibrahimahtsham.github.io/CV-2026/" />
+    <meta property="og:image" content="https://ibrahimahtsham.github.io/CV-2026/images/my%20face%20updated.jpg" />
 
-      body.dark-mode {
-        --bg: #121212;
-        --paper-bg: #1b1b1b;
-        --text: #f5f5f5;
-        --link: #7db3ff;
-        --shadow: rgba(0, 0, 0, 0.4);
-        --svg-filter: invert(1);
-      }
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/my face updated.jpg" />
 
-      * {
-        box-sizing: border-box;
-      }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        transition:
-          background 0.2s ease,
-          color 0.2s ease;
-      }
-
-      @media (min-width: 768px) {
-        .a4-wrapper {
-          width: 210mm;
-          min-height: 297mm;
-          margin: 32px auto;
-          background: var(--paper-bg);
-          box-shadow: 0 0 16px var(--shadow);
-          padding: 32px 40px;
-          border-radius: 8px;
-          transition:
-            background 0.2s ease,
-            box-shadow 0.2s ease;
-        }
-      }
-
-      @media (max-width: 767px) {
-        .a4-wrapper {
-          width: 100%;
-          min-height: unset;
-          margin: 0;
-          background: var(--paper-bg);
-          box-shadow: none;
-          padding: 16px;
-          border-radius: 0;
-        }
-
-        body,
-        .a4-wrapper,
-        header,
-        section,
-        h1,
-        h2,
-        h3,
-        p,
-        a,
-        span,
-        ul,
-        li {
-          font-size: 0.95em;
-        }
-
-        h1 {
-          font-size: 1.3em;
-        }
-      }
-
-      h1,
-      h2,
-      h3,
-      p,
-      span,
-      li,
-      summary {
-        color: var(--text);
-      }
-
-      a {
-        color: var(--link) !important;
-        text-decoration: none !important;
-      }
-
-      img[src$=".svg"],
-      svg {
-        filter: var(--svg-filter);
-        transition: filter 0.2s ease;
-      }
-
-      details {
-        margin-bottom: 12px;
-      }
-
-      summary {
-        cursor: pointer;
-        font-weight: bold;
-        margin-bottom: 6px;
-      }
-
-      ul {
-        padding-left: 20px;
-      }
-
-      li {
-        margin-bottom: 6px;
-      }
-    </style>
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/print.css" />
   </head>
-
   <body>
+    <button id="dark-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+    <nav id="role-nav" aria-label="CV role filter"></nav>
     <div class="a4-wrapper">
-      <header>
-        <div
-          style="
-            float: right;
-            display: inline;
-            margin-left: 24px;
-            margin-bottom: 0;
-            text-align: center;
-          "
-        >
-          <img
-            src="images/my face updated.jpg"
-            alt="Profile photo"
-            style="
-              width: 140px;
-              height: 200px;
-              border-radius: 16px;
-              object-fit: cover;
-              display: block;
-              margin-bottom: 12px;
-            "
-          />
-
-          <img
-            src="images/qr-code.png"
-            alt="QR code"
-            style="
-              width: 90px;
-              height: 90px;
-              display: block;
-              margin: 0 auto;
-              cursor: pointer;
-            "
-            onclick="
-              (() => {
-                document.body.classList.toggle('dark-mode');
-              })()
-            "
-          />
-        </div>
-
-        <h1 id="expand-details">Ibrahim Ahtsham</h1>
-
-        <p style="font-size: 1.15em; margin-top: 0; margin-bottom: 8px">
-          Full-Stack Developer | MSP Operations, IT Support & Automation
-        </p>
-
-        <div style="margin-bottom: 8px">
-          <span style="font-size: 1.1em">
-            <img
-              src="images/globe-icon.svg"
-              alt="Location icon"
-              style="
-                width: 20px;
-                height: 20px;
-                vertical-align: middle;
-                margin-right: 4px;
-              "
-            />
-            Riyadh, Saudi Arabia
-          </span>
-        </div>
-
-        <div style="margin-bottom: 8px">
-          <span style="font-size: 1.1em">
-            <img
-              src="images/phone-icon.svg"
-              alt="Phone icon"
-              style="
-                width: 20px;
-                height: 20px;
-                vertical-align: middle;
-                margin-right: 4px;
-              "
-            />
-            (+966) 56 812 6653
-          </span>
-        </div>
-
-        <div style="margin-bottom: 8px">
-          <span style="font-size: 1.1em">
-            <img
-              src="images/email-icon.svg"
-              alt="Email icon"
-              style="
-                width: 20px;
-                height: 20px;
-                vertical-align: middle;
-                margin-right: 4px;
-              "
-            />
-
-            <a
-              href="mailto:ibrahimahtsham2002@gmail.com"
-              style="color: var(--text) !important"
-            >
-              ibrahimahtsham2002@gmail.com
-            </a>
-          </span>
-        </div>
-
-        <div style="margin-bottom: 8px">
-          <span style="font-size: 1.1em">
-            <img
-              src="images/dob-icon.svg"
-              alt="Date of Birth icon"
-              style="
-                width: 20px;
-                height: 20px;
-                vertical-align: middle;
-                margin-right: 4px;
-              "
-            />
-            16th Sep 2002
-          </span>
-        </div>
-
-        <div style="margin-bottom: 8px">
-          <span>Transferable Iqama</span> |
-          <span>Availability: Immediate</span> |
-          <span>Available for relocation: Yes</span>
-        </div>
-
-        <div style="margin-bottom: 0">
-          <a
-            href="https://www.linkedin.com/in/ibrahim-a-190637254"
-            style="
-              margin-right: 18px;
-              vertical-align: middle;
-              color: var(--text) !important;
-            "
-          >
-            <img
-              src="images/linkedin-icon.svg"
-              alt="LinkedIn icon"
-              style="
-                width: 20px;
-                height: 20px;
-                vertical-align: middle;
-                margin-right: 4px;
-              "
-            />
-
-            www.linkedin.com/in/ibrahim-a-190637254
-          </a>
-
-          <a
-            href="https://www.github.com/ibrahimahtsham"
-            style="vertical-align: middle; color: var(--text) !important"
-          >
-            <img
-              src="images/github-icon.svg"
-              alt="GitHub icon"
-              style="
-                width: 20px;
-                height: 20px;
-                vertical-align: middle;
-                margin-right: 4px;
-              "
-            />
-
-            www.github.com/ibrahimahtsham
-          </a>
-        </div>
-      </header>
-
-      <section id="intro-section"></section>
-      <section id="experience-section"></section>
-      <section id="projects-section"></section>
-      <section id="education-section"></section>
-      <section id="certifications-section"></section>
-      <section id="skills-section"></section>
-      <section id="languages-section"></section>
-
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const expandBtn = document.getElementById("expand-details");
-
-          if (expandBtn) {
-            expandBtn.style.cursor = "pointer";
-            expandBtn.title = "Click to expand/collapse all sections";
-
-            expandBtn.addEventListener("click", function () {
-              const details = Array.from(document.querySelectorAll("details"));
-
-              const allOpen = details.every((d) => d.open);
-
-              details.forEach((d) => {
-                d.open = !allOpen;
-              });
-            });
-          }
-        });
-
-        const sections = [
-          { id: "intro-section", file: "sections/intro.html" },
-          { id: "experience-section", file: "sections/experience.html" },
-          { id: "projects-section", file: "sections/projects.html" },
-          { id: "education-section", file: "sections/education.html" },
-          {
-            id: "certifications-section",
-            file: "sections/certifications.html",
-          },
-          { id: "skills-section", file: "sections/skills.html" },
-          { id: "languages-section", file: "sections/languages.html" },
-        ];
-
-        sections.forEach(({ id, file }) => {
-          fetch(file)
-            .then((response) => response.text())
-            .then((html) => {
-              document.getElementById(id).innerHTML = html;
-            })
-            .catch(() => {
-              document.getElementById(id).innerHTML =
-                `<p>Failed to load section: ${file}</p>`;
-            });
-        });
-      </script>
+      <header class="cv-header" id="cv-header"></header>
+      <div class="cv-body" id="cv-body"></div>
     </div>
+
+    <!-- Apply dark mode before the module loads to prevent a flash of light mode -->
+    <script>
+      (function () {
+        var saved = localStorage.getItem('cv-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (saved === null && prefersDark)) {
+          document.body.classList.add('dark-mode');
+          document.getElementById('dark-toggle').textContent = '\u2600\ufe0f';
+        }
+      })();
+    </script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

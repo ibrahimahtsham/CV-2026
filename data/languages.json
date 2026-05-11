@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Urdu",
+    "level": "Native",
+    "description": "Perfect fluency in speaking, reading, and writing."
+  },
+  {
+    "name": "English",
+    "level": "Fluent / Professional",
+    "description": "Full professional proficiency \u2014 used daily for work, study, and communication."
+  },
+  {
+    "name": "Arabic",
+    "level": "Basic / Conversational",
+    "description": "Can understand spoken Arabic and hold basic conversations; limited reading/writing. Used in social and travel contexts."
+  }
+]

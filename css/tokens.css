@@ -1,0 +1,46 @@
+/* ================================================================
+   tokens.css — design tokens, dark mode, reset, base body
+   ================================================================ */
+
+:root {
+  --bg: #f0f0f0;
+  --paper-bg: #ffffff;
+  --text: #111111;
+  --text-muted: #555555;
+  --accent: #111111;
+  --accent-light: #ebebeb;
+  --border: #d8d8d8;
+  --shadow: 0 4px 24px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.05);
+  --section-gap: 28px;
+  --radius: 10px;
+  --tag-bg: #f0f0f0;
+  --tag-text: #333333;
+  --score-bg: #e8e8e8;
+  --score-text: #222222;
+}
+
+body.dark-mode {
+  --bg: #111111;
+  --paper-bg: #1c1c1c;
+  --text: #eeeeee;
+  --text-muted: #999999;
+  --accent: #dddddd;
+  --accent-light: #2a2a2a;
+  --border: #333333;
+  --shadow: 0 4px 24px rgba(0,0,0,0.5);
+  --tag-bg: #2a2a2a;
+  --tag-text: #cccccc;
+  --score-bg: #2a2a2a;
+  --score-text: #cccccc;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.65;
+  transition: background 0.25s, color 0.25s;
+}

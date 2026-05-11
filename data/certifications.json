@@ -1,0 +1,66 @@
+[
+  {
+    "id": "cert-ccna",
+    "title": "CCNA 200-301 \u2014 The Complete Guide to Getting Certified",
+    "issuer": "Udemy",
+    "date": "Jan 2026",
+    "url": "https://www.udemy.com/certificate/UC-8e0e830c-c991-44ad-b721-f9378cbdb062/",
+    "score": null
+  },
+  {
+    "id": "cert-sw-testing",
+    "title": "Introduction to Software Testing",
+    "issuer": "Coursera + University of Minnesota",
+    "date": "May 2023",
+    "url": "https://coursera.org/verify/TPTPFW22BRZA",
+    "score": "97.84%"
+  },
+  {
+    "id": "cert-networking-essentials",
+    "title": "Networking Essentials",
+    "issuer": "Cisco",
+    "date": "Apr 2023",
+    "url": null,
+    "score": null
+  },
+  {
+    "id": "cert-linux-ibm",
+    "title": "Hands-on Introduction to Linux Commands & Shell Scripting",
+    "issuer": "IBM / Coursera",
+    "date": "Jun 2022",
+    "url": "https://www.coursera.org/verify/P882VCLNATYS",
+    "score": "94.66%"
+  },
+  {
+    "id": "cert-linux-essentials",
+    "title": "NDG Linux Essentials",
+    "issuer": "Cisco",
+    "date": "Jul 2022",
+    "url": null,
+    "score": null
+  },
+  {
+    "id": "cert-linux-unhatched",
+    "title": "NDG Linux Unhatched",
+    "issuer": "Cisco",
+    "date": "Jul 2022",
+    "url": null,
+    "score": null
+  },
+  {
+    "id": "cert-cpp",
+    "title": "Programming Essentials in C++ (CPA)",
+    "issuer": "Cisco",
+    "date": "Feb 2022",
+    "url": null,
+    "score": null
+  },
+  {
+    "id": "cert-data-structures",
+    "title": "Applying Data Structures to Manipulate Cleansed UN Data",
+    "issuer": "Coursera",
+    "date": "Dec 2021",
+    "url": "https://www.coursera.org/verify/KGMTLDUJ5VNR",
+    "score": "87.50%"
+  }
+]

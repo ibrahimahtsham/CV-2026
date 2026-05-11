@@ -1,0 +1,60 @@
+{
+  "coreBadges": {
+    "all": ["Full-Stack Development", "MSP Operations", "Technical Support", "Microsoft 365 Admin", "Endpoint Security", "Linux & Deployment", "AI Integration", "Automation"],
+    "Full-Stack": ["Full-Stack Development", "React & Node.js", "API Development", "Linux & Deployment", "AI Integration", "Database Design", "Automation"],
+    "IT": ["MSP Operations", "Microsoft 365 Admin", "Endpoint Security", "Active Directory", "Technical Support", "Ticket Management", "Automation"],
+    "NOC": ["NOC Operations", "Network Monitoring", "CCNA Fundamentals", "Cisco IOS", "SolarWinds", "Grafana", "Incident Response", "Network Automation"],
+    "Customer-Support": ["Customer Service", "Technical Support", "Client Communication", "Multilingual Support", "Documentation", "Email Support"],
+    "Business-Dev": ["Business Development", "Client Acquisition", "Proposal Writing", "Upwork & Freelancer", "Odoo CRM", "Prompt Engineering", "Bidding Automation"]
+  },
+  "categories": [
+    {
+      "id": "skill-fullstack",
+      "title": "Full-Stack Development",
+      "roles": ["Full-Stack", "all"],
+      "tags": ["React", "JavaScript (ES6+)", "HTML5", "CSS3", "Node.js", "Express.js", "REST APIs", "Python", "PHP", "Java", "C++", "Vite", "React Router", "Material UI", "Bootstrap", "PostgreSQL", "MySQL", "JWT Auth", "API Integration", "Git", "GitHub", "Postman"]
+    },
+    {
+      "id": "skill-it-ops",
+      "title": "IT Operations & Technical Support",
+      "roles": ["IT", "NOC", "all"],
+      "tags": ["Microsoft 365", "Exchange Online", "SharePoint", "Azure AD", "Windows Active Directory", "Group Policy", "User Onboarding/Offboarding", "Access Management", "Desktop Support", "Autotask", "Remote Support", "Printer & Workstation Support"]
+    },
+    {
+      "id": "skill-security",
+      "title": "Security & MSP Tooling",
+      "roles": ["IT", "all"],
+      "tags": ["Kaseya", "Datto RMM", "Datto EDR", "ThreatLocker", "Duo MFA", "Graphus", "Inky", "Todyl", "Vonahi", "Phishing Investigation", "Login Anomaly Analysis", "Endpoint Security", "MFA Enrollment"]
+    },
+    {
+      "id": "skill-linux",
+      "title": "Linux, Deployment & Automation",
+      "roles": ["Full-Stack", "NOC", "all"],
+      "tags": ["Linux VPS", "SSH", "Firewall Config", "Automated Backups", "Cron Jobs", "Python Scripts", "CSV Processing", "Tampermonkey", "AutoHotKey"]
+    },
+    {
+      "id": "skill-ai",
+      "title": "AI & Modern Tooling",
+      "roles": ["Full-Stack", "all"],
+      "tags": ["Streamlit", "OpenAI API", "Ollama", "Faster Whisper", "LLM / STT / TTS", "AI-Assisted Dev", "Claude Code", "Modular Service Architecture"]
+    },
+    {
+      "id": "skill-networking",
+      "title": "Networking & NOC",
+      "roles": ["NOC", "IT", "all"],
+      "tags": ["TCP/IP", "Subnetting", "VLANs", "Routing (OSPF, EIGRP, RIP)", "SolarWinds", "Grafana", "SNMP", "Syslog", "Cisco Packet Tracer", "VPN", "MPLS", "Cisco IOS", "CCNA-Level", "Network Automation (Ansible, SDN)"]
+    },
+    {
+      "id": "skill-bizdev",
+      "title": "Business Development & Sales",
+      "roles": ["Business-Dev", "Customer-Support", "all"],
+      "tags": ["Upwork", "Freelancer", "Odoo", "Client Acquisition", "Proposal Writing", "Prompt Engineering", "Excel Reporting", "MySQL", "Chrome Extensions", "Bidding Automation", "NDA/IP Agreements"]
+    },
+    {
+      "id": "skill-tools",
+      "title": "Tools & Productivity",
+      "roles": ["all"],
+      "tags": ["Slack", "Crisp", "Trello", "Microsoft Excel", "Adobe Illustrator", "DaVinci Resolve"]
+    }
+  ]
+}

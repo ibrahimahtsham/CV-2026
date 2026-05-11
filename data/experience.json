@@ -1,0 +1,249 @@
+[
+  {
+    "id": "exp-fast-reliable",
+    "title": "IT Technician",
+    "org": "Fast & Reliable IT Services",
+    "periodStart": "2026-03",
+    "periodEnd": null,
+    "periodDisplay": "Mar 2026 \u2013 Present",
+    "location": "Corpus Christi, TX",
+    "mode": "Remote",
+    "roles": ["IT", "NOC", "Full-Stack"],
+    "openByDefault": true,
+    "bullets": [
+      {
+        "text": "Managed and resolved support tickets across Microsoft 365, Windows, networking, printers, endpoint security, and workstation issues within an MSP environment.",
+        "roles": ["IT", "NOC", "Full-Stack"]
+      },
+      {
+        "text": "Provided remote technical support through calls, email, and Autotask while prioritizing urgent client issues and maintaining clear communication throughout the resolution process.",
+        "roles": ["IT", "NOC", "Full-Stack"]
+      },
+      {
+        "text": "Assisted with Microsoft 365 administration including Exchange, SharePoint, user onboarding/offboarding, account permissions, MFA setup, mailbox management, and account lockdown procedures.",
+        "roles": ["IT"]
+      },
+      {
+        "text": "Worked with Windows Active Directory and domain environments to manage users, reset passwords, configure group policies, and maintain access controls.",
+        "roles": ["IT", "NOC"]
+      },
+      {
+        "text": "Investigated endpoint and security alerts using Datto EDR, Graphus, ThreatLocker, Duo, Inky, and related Kaseya ecosystem platforms.",
+        "roles": ["IT"]
+      },
+      {
+        "text": "Assisted with phishing investigations, login anomaly reviews, vulnerability assessment workflows using Vonahi, and general security operations support.",
+        "roles": ["IT"]
+      },
+      {
+        "text": "Contributed to internal software projects including a custom construction job management platform and CCTV investigation tooling for automated footage analysis and incident review workflows.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Managed Linux-based deployment workflows using SSH, firewall configuration, automated backups, and secure remote access practices.",
+        "roles": ["Full-Stack", "NOC"]
+      },
+      {
+        "text": "Built internal reporting utilities to investigate abnormal OneDrive synchronization and SharePoint recycle-bin activity.",
+        "roles": ["Full-Stack", "IT"]
+      }
+    ],
+    "tags": {
+      "IT": ["MSP Operations", "Microsoft 365", "Exchange Online", "SharePoint", "Active Directory", "Group Policy", "Datto EDR", "Autotask", "Kaseya", "ThreatLocker", "Duo MFA", "Vonahi"],
+      "NOC": ["MSP Operations", "Active Directory", "Autotask", "Kaseya", "Linux", "SSH", "Firewall"],
+      "Full-Stack": ["Linux", "SSH", "React", "Node.js", "PostgreSQL", "Automation", "Autotask"],
+      "all": ["MSP Operations", "Microsoft 365", "Exchange Online", "SharePoint", "Active Directory", "Group Policy", "Datto EDR", "Autotask", "Kaseya", "ThreatLocker", "Duo MFA", "Linux", "React", "Node.js", "PostgreSQL"]
+    }
+  },
+  {
+    "id": "exp-panacealogics-ai",
+    "title": "AI Intern",
+    "org": "PanaceaLogics",
+    "periodStart": "2025-09",
+    "periodEnd": "2025-10",
+    "periodDisplay": "Sep 2025 \u2013 Oct 2025 \u00b7 2 mos",
+    "location": "Rawalpindi, Pakistan",
+    "mode": "On-site",
+    "roles": ["Full-Stack"],
+    "openByDefault": false,
+    "bullets": [
+      {
+        "text": "Built AI Interviewer platforms (cloud + offline) using Streamlit: online version leverages OpenAI (LLM, STT, TTS); local variant integrates Ollama and Faster Whisper.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Designed pluggable provider architecture with environment-driven configuration enabling seamless swapping of LLM/speech backends without refactors.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Implemented modular service layer (llm_service.py, stt_service.py, tts_service.py) fully decoupled from UI tabs for isolated testing and future expansion.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Added streaming token output pipelines and lazy resource initialization to reduce latency and memory footprint in local mode.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Authored cross-platform one-command startup scripts (Windows & Linux/macOS) automating virtualenv creation, dependency install, and app launch.",
+        "roles": ["Full-Stack"]
+      }
+    ],
+    "tags": ["Python", "Streamlit", "OpenAI API", "Ollama", "Faster Whisper", "LLM Integration", "STT/TTS Pipelines", "Modular Architecture"]
+  },
+  {
+    "id": "exp-panacealogics-bd",
+    "title": "Business Development Specialist",
+    "org": "PanaceaLogics",
+    "periodStart": "2024-09",
+    "periodEnd": "2025-08",
+    "periodDisplay": "Sep 2024 \u2013 Aug 2025 \u00b7 12 mos",
+    "location": "Rawalpindi, Pakistan",
+    "mode": "On-site",
+    "roles": ["Business-Dev", "Customer-Support"],
+    "openByDefault": false,
+    "bullets": [
+      {
+        "text": "Joined as Business Development Trainee (Sep\u2013Oct 2024), promoted to Specialist within 2 months based on performance in client acquisition and bidding workflow optimisation.",
+        "roles": ["Business-Dev"]
+      },
+      {
+        "text": "Gained expertise in freelancing platforms (Upwork, Freelancer): bidding strategies, client acquisition, and profile optimization.",
+        "roles": ["Business-Dev"]
+      },
+      {
+        "text": "Managed clients using Odoo \u2014 scheduling calls, conducting meetings, gathering project requirements, and handling follow-ups.",
+        "roles": ["Business-Dev", "Customer-Support"]
+      },
+      {
+        "text": "Developed and optimized the bidding workflow with automation to improve efficiency and client conversion rate.",
+        "roles": ["Business-Dev"]
+      },
+      {
+        "text": "Created detailed Excel reports for tracking bids, ongoing projects, and client interactions.",
+        "roles": ["Business-Dev"]
+      },
+      {
+        "text": "Assisted in developing Chrome extensions to streamline bidding and project management workflows.",
+        "roles": ["Business-Dev"]
+      },
+      {
+        "text": "Explored MySQL Workbench for handling and managing databases.",
+        "roles": ["Business-Dev"]
+      },
+      {
+        "text": "Learned prompt engineering to train AI chat models for writing proposals and detecting technical vs. non-technical job descriptions.",
+        "roles": ["Business-Dev"]
+      },
+      {
+        "text": "Identified common bidding criteria including location, budget, skills, client verification, and hiring trends.",
+        "roles": ["Business-Dev"]
+      },
+      {
+        "text": "Understood best practices for client communication, identifying scams, and navigating NDA/IP agreements on freelancing platforms.",
+        "roles": ["Business-Dev", "Customer-Support"]
+      },
+      {
+        "text": "Researched platform-specific strategies including connect replenishment, profile boosting, and filtering methods on Upwork and Freelancer.",
+        "roles": ["Business-Dev"]
+      }
+    ],
+    "tags": {
+      "Business-Dev": ["Business Development", "Upwork", "Freelancer", "Odoo", "Prompt Engineering", "MySQL", "Excel", "Chrome Extensions", "Client Acquisition"],
+      "Customer-Support": ["Client Communication", "Odoo", "NDA/IP Agreements", "Requirements Gathering", "Follow-ups"],
+      "all": ["Business Development", "Upwork", "Freelancer", "Odoo", "SQL", "Prompt Engineering", "MySQL", "Excel", "Chrome Extensions"]
+    }
+  },
+  {
+    "id": "exp-cartkit",
+    "title": "Customer Service Representative",
+    "org": "CartKit",
+    "periodStart": "2024-04",
+    "periodEnd": "2024-09",
+    "periodDisplay": "Apr 2024 \u2013 Sep 2024 \u00b7 6 mos",
+    "location": "Islamabad, Pakistan",
+    "mode": "Remote",
+    "roles": ["Customer-Support"],
+    "openByDefault": false,
+    "bullets": [
+      {
+        "text": "Handled 30\u201350 customer requests per day via Crisp, assisting users in creating custom popups and banners for online stores.",
+        "roles": ["Customer-Support"]
+      },
+      {
+        "text": "Integrated popups and banners with automated email campaigns for promotions.",
+        "roles": ["Customer-Support"]
+      },
+      {
+        "text": "Generated annotated screenshots and screen recordings to guide users through setup processes step by step.",
+        "roles": ["Customer-Support"]
+      },
+      {
+        "text": "Assisted clients who did not speak English as their primary language, ensuring seamless communication.",
+        "roles": ["Customer-Support"]
+      },
+      {
+        "text": "Used Slack to communicate with the development team for feature requests and updates.",
+        "roles": ["Customer-Support"]
+      }
+    ],
+    "tags": ["Customer Service", "Crisp", "Email Marketing", "Slack", "Technical Documentation", "Multilingual Support"]
+  },
+  {
+    "id": "exp-stackexpert",
+    "title": "WordPress Developer",
+    "org": "StackExpert",
+    "periodStart": "2024-07",
+    "periodEnd": "2024-08",
+    "periodDisplay": "Jul 2024 \u2013 Aug 2024 \u00b7 2 mos",
+    "location": "Islamabad, Pakistan",
+    "mode": "On-site",
+    "roles": ["Full-Stack"],
+    "openByDefault": false,
+    "bullets": [
+      {
+        "text": "Developed and customized WordPress themes and plugins (including WooCommerce) to meet client requirements.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Built and designed websites using Elementor, optimizing for performance, security, and SEO.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Troubleshot WordPress-related issues, ensuring a seamless user experience across client sites.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Explored Laravel fundamentals, gaining foundational knowledge of backend development in PHP.",
+        "roles": ["Full-Stack"]
+      }
+    ],
+    "tags": ["WordPress", "WooCommerce", "Elementor", "PHP", "Laravel", "SEO", "Web Development"]
+  },
+  {
+    "id": "exp-rtechnologies",
+    "title": "Junior Android Developer",
+    "org": "R Technologies",
+    "periodStart": "2024-06",
+    "periodEnd": "2024-07",
+    "periodDisplay": "Jun 2024 \u2013 Jul 2024 \u00b7 2 mos",
+    "location": "Islamabad, Pakistan",
+    "mode": "Remote",
+    "roles": ["Full-Stack"],
+    "openByDefault": false,
+    "bullets": [
+      {
+        "text": "Developed and delivered Android applications in Java/Kotlin, ensuring smooth performance and intuitive UX.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Collaborated with design and product teams on app interfaces; conducted code reviews and followed best practices.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Tracked development sprints and daily tasks using Trello.",
+        "roles": ["Full-Stack"]
+      }
+    ],
+    "tags": ["Java", "Kotlin", "Android Studio", "Mobile Development", "Trello"]
+  }
+]

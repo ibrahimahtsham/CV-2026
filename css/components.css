@@ -1,0 +1,167 @@
+/* ================================================================
+   components.css — nav, cards, tags, skills, languages, links
+   ================================================================ */
+
+/* ── Role nav ──────────────────────────────────────────────────── */
+#role-nav {
+  background: var(--paper-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 44px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: background 0.25s, border 0.25s;
+}
+#role-nav .nav-label {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-right: 4px;
+}
+.role-btn {
+  background: none;
+  border: 1.5px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 20px;
+  padding: 3px 13px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+  text-decoration: none;
+}
+.role-btn:hover { border-color: var(--accent); color: var(--text); }
+.role-btn.active { background: var(--text); border-color: var(--text); color: var(--paper-bg); }
+
+/* ── Section headers ───────────────────────────────────────────── */
+.cv-section { margin-top: var(--section-gap); }
+.section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.section-header h2 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.section-line { flex: 1; height: 1.5px; background: var(--border); border-radius: 2px; }
+
+/* ── Control buttons ───────────────────────────────────────────── */
+#expand-btn,
+#print-btn {
+  background: none;
+  border: 1.5px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+#expand-btn:hover,
+#print-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ── Intro text ────────────────────────────────────────────────── */
+.intro-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 10px; }
+.intro-text:last-child { margin-bottom: 0; }
+
+/* ── Expandable cards ──────────────────────────────────────────── */
+details {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+details[open] { border-color: var(--accent); }
+
+summary {
+  cursor: pointer;
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  user-select: none;
+  background: var(--paper-bg);
+  transition: background 0.15s;
+}
+summary::-webkit-details-marker { display: none; }
+summary::after { content: '\25B8'; color: var(--text-muted); font-size: 0.8rem; transition: transform 0.2s; flex-shrink: 0; }
+details[open] summary::after { transform: rotate(90deg); }
+summary:hover { background: var(--accent-light); }
+
+/* Animated expand/collapse via CSS grid trick */
+.details-body { display: grid !important; grid-template-rows: 0fr; overflow: hidden; transition: grid-template-rows 0.28s ease; }
+details[open] > .details-body { grid-template-rows: 1fr; }
+.details-body-inner { overflow: hidden; padding: 4px 16px 16px; border-top: 1px solid var(--border); }
+
+/* ── Entry meta row ────────────────────────────────────────────── */
+.entry-meta { font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.entry-meta .dot { color: var(--border); }
+
+/* ── Lists ─────────────────────────────────────────────────────── */
+ul { padding-left: 18px; margin-top: 8px; }
+li { margin-bottom: 5px; font-size: 0.88rem; color: var(--text); line-height: 1.6; }
+
+/* ── Tag rows ──────────────────────────────────────────────────── */
+.skills-label { font-size: 0.72rem; font-weight: 700; color: var(--text-muted); margin-top: 12px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+.tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { background: var(--tag-bg); color: var(--tag-text); border-radius: 20px; padding: 3px 11px; font-size: 0.76rem; font-weight: 600; white-space: nowrap; }
+
+/* ── Core badges ───────────────────────────────────────────────── */
+.core-competencies { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.core-badge { background: var(--accent); color: #fff; border-radius: 20px; padding: 5px 14px; font-size: 0.8rem; font-weight: 600; }
+body.dark-mode .core-badge { background: #eeeeee; color: #111111; }
+
+/* ── Score badge & cert helpers ────────────────────────────────── */
+.score-badge { display: inline-block; background: var(--score-bg); color: var(--score-text); font-size: 0.76rem; font-weight: 700; border-radius: 12px; padding: 2px 9px; margin-left: 6px; }
+.cert-score { font-size: 0.85rem; margin-top: 6px; }
+.cert-link  { margin-top: 6px; font-size: 0.82rem; }
+.edu-link   { margin-top: 8px; font-size: 0.82rem; }
+
+/* ── Language entries ──────────────────────────────────────────── */
+.lang-entries { display: flex; flex-direction: column; gap: 12px; }
+.lang-entry { display: flex; align-items: center; justify-content: space-between; }
+.lang-name { font-weight: 600; font-size: 0.9rem; }
+.lang-level { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; background: var(--tag-bg); padding: 2px 10px; border-radius: 12px; }
+.lang-desc { font-size: 0.82rem; color: var(--text-muted); margin-top: 2px; }
+
+/* ── Repo link & highlights ────────────────────────────────────── */
+.repo-link { font-size: 0.82rem; margin-top: 10px; }
+.highlight-list { padding-left: 18px; margin-top: 6px; }
+.highlight-list li { font-size: 0.88rem; color: var(--text); }
+
+/* ── Links ─────────────────────────────────────────────────────── */
+a { text-decoration: none; font-weight: 500; }
+a:hover { text-decoration: underline; }
+.cv-body a,
+.cv-header a { color: var(--accent); }
+
+/* ── Unknown role notice ───────────────────────────────────────── */
+.role-unknown-notice {
+  background: var(--accent-light);
+  color: var(--text-muted);
+  border: 1.5px solid var(--border);
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  margin-top: 16px;
+}

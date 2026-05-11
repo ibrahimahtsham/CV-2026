@@ -1,0 +1,46 @@
+/* ================================================================
+   print.css — Ctrl+P: clean, professional, ATS-friendly A4 output
+   ================================================================ */
+
+@media print {
+  @page { size: A4 portrait; margin: 16mm 14mm; }
+
+  #dark-toggle, #expand-btn, #print-btn, #role-nav { display: none !important; }
+
+  body { font-family: Arial, Helvetica, sans-serif !important; font-size: 10.5pt !important; line-height: 1.45 !important; color: #000 !important; background: #fff !important; }
+
+  .a4-wrapper { box-shadow: none !important; border-radius: 0 !important; margin: 0 !important; max-width: 100% !important; overflow: visible !important; }
+  .cv-header { background: #fff !important; border-bottom: 1.5pt solid #000 !important; padding: 0 0 10pt 0 !important; grid-template-columns: 1fr auto !important; }
+  .cv-body { padding: 0 !important; }
+  .top-controls { display: none !important; }
+
+  * { color: #000 !important; background: transparent !important; border-color: #ccc !important; box-shadow: none !important; text-shadow: none !important; transition: none !important; }
+
+  a { color: #000 !important; text-decoration: underline !important; }
+  a[href]::after { content: " (" attr(href) ")"; font-size: 7.5pt; color: #444 !important; font-style: italic; }
+  a[href^="mailto"]::after, a[href^="tel"]::after, a[href="#"]::after { content: none; }
+
+  .tag, .meta-badge, .core-badge, .lang-level { background: transparent !important; border: 0.5pt solid #999 !important; color: #000 !important; border-radius: 3pt !important; padding: 1pt 5pt !important; font-size: 7.5pt !important; }
+  .score-badge { background: transparent !important; border: 0.5pt solid #666 !important; color: #000 !important; border-radius: 3pt !important; padding: 1pt 5pt !important; font-size: 7.5pt !important; }
+
+  .section-header h2 { color: #000 !important; font-size: 8.5pt !important; letter-spacing: 0.8pt; }
+  .section-line { background: #000 !important; height: 0.75pt !important; }
+
+  details { border: 0.5pt solid #ccc !important; margin-bottom: 5pt !important; border-radius: 0 !important; page-break-inside: avoid; break-inside: avoid; }
+  details > *:not(summary) { display: block !important; }
+  summary { background: transparent !important; font-size: 9.5pt !important; font-weight: bold !important; padding: 4pt 4pt !important; border-bottom: 0.5pt solid #ddd !important; }
+  summary::after { display: none !important; }
+
+  .details-body { display: block !important; grid-template-rows: unset !important; overflow: visible !important; }
+  .details-body-inner { overflow: visible !important; padding: 2pt 4pt 6pt !important; }
+
+  .profile-photo { width: 75pt !important; height: 100pt !important; border: 0.5pt solid #ccc !important; border-radius: 4pt !important; }
+  .qr-code { width: 50pt !important; height: 50pt !important; border: 0.5pt solid #ccc !important; border-radius: 2pt !important; opacity: 1 !important; }
+
+  .cv-section { page-break-before: auto; break-before: auto; }
+  .lang-entries { gap: 6pt !important; }
+  .header-left h1 { font-size: 18pt !important; color: #000 !important; }
+  .header-left .subtitle { font-size: 10pt !important; color: #333 !important; }
+  .contact-item { font-size: 9pt !important; color: #333 !important; }
+  img { filter: none !important; }
+}

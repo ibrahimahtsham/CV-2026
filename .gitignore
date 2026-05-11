@@ -1,0 +1,14 @@
+# Claude Code
+.claude/
+
+# Node (if you ever add dev tooling)
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
