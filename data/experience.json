@@ -9,7 +9,7 @@
     "location": "Corpus Christi, TX",
     "mode": "Remote",
     "roles": ["IT", "NOC", "Full-Stack"],
-    "openByDefault": true,
+    "openByDefault": false,
     "bullets": [
       {
         "text": "Managed and resolved support tickets across Microsoft 365, Windows, networking, printers, endpoint security, and workstation issues within an MSP environment.",

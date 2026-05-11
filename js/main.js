@@ -133,6 +133,30 @@ function init() {
 
 window.addEventListener('popstate', init);
 
+// Animated <details> toggle — intercept clicks so close also transitions
+// The CSS grid trick only animates open; without this, close snaps instantly.
+document.addEventListener('click', e => {
+  const summary = e.target.closest('summary');
+  if (!summary) return;
+  e.preventDefault();
+  const details = summary.closest('details');
+  if (!details) return;
+  const body = details.querySelector('.details-body');
+  if (!body) { details.open = !details.open; return; }
+
+  if (details.open) {
+    // Animate to closed: override grid row, wait for transition, then remove open
+    body.style.gridTemplateRows = '0fr';
+    body.addEventListener('transitionend', () => {
+      details.open = false;
+      body.style.gridTemplateRows = '';
+    }, { once: true });
+  } else {
+    // CSS handles open animation: set open, selector kicks in, 0fr→1fr transitions
+    details.open = true;
+  }
+});
+
 // Force all <details> open for Ctrl+P — registered once at module level
 const _printWasOpen = new WeakMap();
 window.addEventListener('beforeprint', () => {
