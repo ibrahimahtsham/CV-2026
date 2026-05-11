@@ -127,6 +127,10 @@
         "roles": ["Business-Dev"]
       },
       {
+        "text": "Built an internal React dashboard to automate client data extraction from Freelancer.com, track bid success rates, and calculate team commissions based on awarded projects.",
+        "roles": ["Business-Dev", "Full-Stack"]
+      },
+      {
         "text": "Explored MySQL Workbench for handling and managing databases.",
         "roles": ["Business-Dev"]
       },
