@@ -162,10 +162,12 @@ export function buildEducation(items) {
 }
 
 /* ── Certifications ───────────────────────────────────────────── */
-export function buildCertifications(certs) {
+export function buildCertifications(certs, role) {
+  const filtered = certs.filter(c => isVisible(c, role));
+  if (!filtered.length) return null;
   const sec = el('div', { class: 'cv-section' });
   sec.appendChild(sectionHeader('Certifications'));
-  certs.forEach(cert => {
+  filtered.forEach(cert => {
     const card = el('details', {});
     card.appendChild(el('summary', {}, `${cert.title}\u00a0\u00b7\u00a0${cert.issuer}`));
     const body = el('div', { class: 'details-body' });

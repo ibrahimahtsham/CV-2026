@@ -5,7 +5,8 @@
     "issuer": "Udemy",
     "date": "Jan 2026",
     "url": "https://www.udemy.com/certificate/UC-8e0e830c-c991-44ad-b721-f9378cbdb062/",
-    "score": null
+    "score": null,
+    "roles": ["NOC", "IT"]
   },
   {
     "id": "cert-sw-testing",
@@ -13,7 +14,8 @@
     "issuer": "Coursera + University of Minnesota",
     "date": "May 2023",
     "url": "https://coursera.org/verify/TPTPFW22BRZA",
-    "score": "97.84%"
+    "score": "97.84%",
+    "roles": ["Full-Stack", "IT"]
   },
   {
     "id": "cert-networking-essentials",
@@ -21,7 +23,8 @@
     "issuer": "Cisco",
     "date": "Apr 2023",
     "url": null,
-    "score": null
+    "score": null,
+    "roles": ["NOC", "IT"]
   },
   {
     "id": "cert-linux-ibm",
@@ -29,7 +32,8 @@
     "issuer": "IBM / Coursera",
     "date": "Jun 2022",
     "url": "https://www.coursera.org/verify/P882VCLNATYS",
-    "score": "94.66%"
+    "score": "94.66%",
+    "roles": ["Full-Stack", "NOC", "IT"]
   },
   {
     "id": "cert-linux-essentials",
@@ -37,7 +41,8 @@
     "issuer": "Cisco",
     "date": "Jul 2022",
     "url": null,
-    "score": null
+    "score": null,
+    "roles": ["Full-Stack", "NOC", "IT"]
   },
   {
     "id": "cert-linux-unhatched",
@@ -45,7 +50,8 @@
     "issuer": "Cisco",
     "date": "Jul 2022",
     "url": null,
-    "score": null
+    "score": null,
+    "roles": ["Full-Stack", "NOC", "IT"]
   },
   {
     "id": "cert-cpp",
@@ -53,7 +59,8 @@
     "issuer": "Cisco",
     "date": "Feb 2022",
     "url": null,
-    "score": null
+    "score": null,
+    "roles": ["Full-Stack"]
   },
   {
     "id": "cert-data-structures",
@@ -61,6 +68,7 @@
     "issuer": "Coursera",
     "date": "Dec 2021",
     "url": "https://www.coursera.org/verify/KGMTLDUJ5VNR",
-    "score": "87.50%"
+    "score": "87.50%",
+    "roles": ["Full-Stack"]
   }
 ]

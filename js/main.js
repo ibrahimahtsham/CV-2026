@@ -97,7 +97,7 @@ function render(data, role) {
     buildExperience(data.experience, activeRole),
     buildProjects(data.projects, activeRole),
     buildEducation(data.education),
-    buildCertifications(data.certifications),
+    buildCertifications(data.certifications, activeRole),
     buildSkills(data.skills, activeRole),
     buildLanguages(data.languages),
   ].forEach(sec => { if (sec) body.appendChild(sec); });

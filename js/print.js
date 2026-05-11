@@ -104,13 +104,16 @@ a { color: #000; }
   });
 
   /* ── Certifications ──────────────────────────────────────────── */
+  const filteredCerts = data.certifications.filter(c => isVisible(c, role));
+  if (filteredCerts.length) {
   line('<h2>Certifications</h2>');
-  data.certifications.forEach(cert => {
+  filteredCerts.forEach(cert => {
     let s = `<div class="entry"><strong>${esc(cert.title)}</strong>, ${esc(cert.issuer)}, ${esc(cert.date)}`;
     if (cert.score) s += ` &middot; Score: ${esc(cert.score)}`;
     if (cert.url) s += ` (<a href="${esc(cert.url)}">verify</a>)`;
     line(s + '</div>');
   });
+  }
 
   /* ── Skills ──────────────────────────────────────────────────── */
   line('<h2>Skills</h2>');
