@@ -62,8 +62,6 @@ CV-2026/
 2. Click **Fork** (top right)
 3. Name it `CV-2026` (or whatever you like)
 
-`[screenshot: Fork button on GitHub]`
-
 ### Step 2 — Replace your photo and QR code
 
 1. Drop your photo into `images/` and update the `"photo"` field in `data/meta.json`
@@ -118,18 +116,10 @@ The AI will produce filled JSON files you can paste directly.
 
 1. Go to your repository on GitHub
 2. Click **Settings** → **Pages** (left sidebar)
-
-`[screenshot: Settings → Pages]`
-
 3. Under **Source**, select **Deploy from a branch**
 4. Choose **main** branch, **/ (root)** folder
 5. Click **Save**
-
-`[screenshot: Pages source settings]`
-
 6. Wait ~60 seconds, then visit `https://YOUR-USERNAME.github.io/CV-2026/`
-
-`[screenshot: Live site]`
 
 ### Step 5 — Share role-specific links
 
