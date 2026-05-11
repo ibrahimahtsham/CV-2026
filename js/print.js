@@ -111,6 +111,9 @@ a { color: #000; }
     let s = `<div class="entry"><strong>${esc(cert.title)}</strong>, ${esc(cert.issuer)}, ${esc(cert.date)}`;
     if (cert.score) s += ` &middot; Score: ${esc(cert.score)}`;
     if (cert.url) s += ` (<a href="${esc(cert.url)}">verify</a>)`;
+    if (cert.highlights && cert.highlights.length) {
+      s += '<ul>' + cert.highlights.map(h => `<li>${esc(h)}</li>`).join('') + '</ul>';
+    }
     line(s + '</div>');
   });
   }

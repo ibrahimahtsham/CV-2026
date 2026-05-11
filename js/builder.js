@@ -173,6 +173,11 @@ export function buildCertifications(certs, role) {
     const body = el('div', { class: 'details-body' });
     const inner = el('div', { class: 'details-body-inner' });
     inner.appendChild(el('div', { class: 'entry-meta' }, cert.date));
+    if (cert.highlights && cert.highlights.length) {
+      const ul = el('ul', { class: 'highlight-list' });
+      cert.highlights.forEach(h => ul.appendChild(el('li', {}, h)));
+      inner.appendChild(ul);
+    }
     if (cert.score) {
       const p = el('p', { class: 'cert-score' }, 'Score: ');
       p.appendChild(el('span', { class: 'score-badge' }, cert.score));
