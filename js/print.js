@@ -104,7 +104,7 @@ a { color: #000; }
   /* ── Certifications ──────────────────────────────────────────── */
   line('<h2>Certifications</h2>');
   data.certifications.forEach(cert => {
-    let s = `<div class="entry"><strong>${esc(cert.title)}</strong> &mdash; ${esc(cert.issuer)}, ${esc(cert.date)}`;
+    let s = `<div class="entry"><strong>${esc(cert.title)}</strong>, ${esc(cert.issuer)}, ${esc(cert.date)}`;
     if (cert.score) s += ` &middot; Score: ${esc(cert.score)}`;
     if (cert.url) s += ` (<a href="${esc(cert.url)}">verify</a>)`;
     line(s + '</div>');
@@ -120,7 +120,7 @@ a { color: #000; }
   /* ── Languages ───────────────────────────────────────────────── */
   line('<h2>Languages</h2>');
   data.languages.forEach(lang => {
-    line(`<div class="lang-row"><strong>${esc(lang.name)}</strong> &mdash; ${esc(lang.level)}</div>`);
+    line(`<div class="lang-row"><strong>${esc(lang.name)}</strong>: ${esc(lang.level)}</div>`);
     if (lang.description) line(`<div class="lang-desc">${esc(lang.description)}</div>`);
   });
 
