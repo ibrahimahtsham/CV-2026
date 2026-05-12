@@ -21,7 +21,7 @@ All your CV content lives in the **`data/`** folder — one JSON file per sectio
 
 **To add a new role:** edit `data/roles.json` — add the role to `availableRoles`, write its intro, then tag relevant entries and bullets across the other data files. No new files to create.
 
-**To print / save PDF:** click the **Print / Save PDF** button — opens a clean, ATS-friendly flat HTML document with no colours, no CSS tricks, standard A4 margins. Paste the PDF directly into job applications.
+**To print / save PDF:** click the **Print / Save PDF** button — opens a clean, ATS-friendly flat HTML document with no colours, no CSS tricks, standard A4 margins.
 
 ---
 
@@ -70,47 +70,195 @@ CV-2026/
 
 ### Step 3 — Fill in the data files using AI
 
-The easiest way is to use an AI assistant to convert your existing CV into the JSON format.
-
-**Copy this prompt into ChatGPT or Claude:**
+Copy the entire prompt below and paste it into ChatGPT or Claude. The schemas for all 8 files are already embedded — all you need to add is your own CV text at the bottom.
 
 ---
 
+<details>
+<summary><strong>Click to expand the AI prompt (copy everything inside)</strong></summary>
+
 ```
-I have a CV template that stores content across multiple JSON files in a data/ folder.
-I'll share each file's structure and my existing CV below. Please fill in each file
-based on my CV, keeping the exact same JSON structure.
+I need to fill in 8 JSON data files for a role-based CV template. The schemas for
+all 8 files are below. Fill each one based on my CV at the bottom of this message.
 
-Here are the data file contents I need you to fill in:
+RULES:
+- Keep all JSON keys exactly as shown — do not rename or remove any key
+- Use {experience} in introParagraphs wherever you want the auto-calculated
+  total years of experience to appear (it renders as e.g. "2+ years")
+- periodEnd: null means "Present" — use null for current roles, "YYYY-MM" for ended ones
+- roles arrays control which CV view shows that item — use the same role names
+  you defined in availableRoles (e.g. "Full-Stack", "IT", "NOC")
+- Tag each bullet with every role it is relevant to
+- "all" is a special role key meaning "show in every view including master"
+- For tags: use the object form {"RoleName": [...], "all": [...]} when tags
+  differ by role; use a flat array ["tag1", "tag2"] when one role or all the same
+- Set openByDefault: true for your most impressive 1-2 entries only
+- url / score / repoUrl can be null if not applicable
+- highlights arrays are optional — use them for notable achievements or cert topics
+- metaBadges are small highlight chips shown in the header (visa status, availability, etc.)
+- periodDisplay is the human-readable date string, e.g. "Jun 2024 – Present"
 
-[PASTE THE CONTENTS OF data/meta.json]
-[PASTE THE CONTENTS OF data/roles.json]
-[PASTE THE CONTENTS OF data/experience.json]
-[PASTE THE CONTENTS OF data/projects.json]
-[PASTE THE CONTENTS OF data/education.json]
-[PASTE THE CONTENTS OF data/certifications.json]
-[PASTE THE CONTENTS OF data/skills.json]
-[PASTE THE CONTENTS OF data/languages.json]
+OUTPUT: return each file as a separate fenced JSON code block labelled with the filename.
 
-Here is my existing CV:
+=== data/meta.json ===
+{
+  "name": "",
+  "location": "",
+  "phone": "",
+  "email": "",
+  "dob": "",
+  "linkedin": "",
+  "linkedinDisplay": "",
+  "github": "",
+  "githubDisplay": "",
+  "photo": "images/photo.jpg",
+  "qr": "images/qr-code.png",
+  "metaBadges": []
+}
 
+=== data/roles.json ===
+{
+  "availableRoles": [],
+  "roles": {
+    "all": {
+      "subtitle": "",
+      "introParagraphs": []
+    }
+  }
+}
+
+Note: add one key per role in "roles" matching each entry in availableRoles, e.g.:
+  "Full-Stack": { "subtitle": "...", "introParagraphs": ["..."] }
+
+=== data/experience.json ===
+[
+  {
+    "id": "exp-COMPANY-SLUG",
+    "title": "",
+    "org": "",
+    "periodStart": "YYYY-MM",
+    "periodEnd": "YYYY-MM",
+    "periodDisplay": "",
+    "location": "",
+    "mode": "",
+    "roles": [],
+    "openByDefault": false,
+    "bullets": [
+      { "text": "", "roles": [] }
+    ],
+    "tags": {
+      "RoleName": [],
+      "all": []
+    }
+  }
+]
+
+Note: repeat the entry object for each job. periodEnd: null = current job.
+mode is typically "Remote", "On-site", or "Hybrid".
+
+=== data/projects.json ===
+[
+  {
+    "id": "proj-SLUG",
+    "title": "",
+    "type": "",
+    "periodStart": "YYYY-MM",
+    "periodEnd": "YYYY-MM",
+    "periodDisplay": "",
+    "roles": [],
+    "openByDefault": false,
+    "repoUrl": null,
+    "repoDisplay": null,
+    "bullets": [
+      { "text": "", "roles": [] }
+    ],
+    "tags": {
+      "RoleName": [],
+      "all": []
+    }
+  }
+]
+
+Note: type is a short label like "Full-Stack Web App", "React Dashboard", "CLI Tool", etc.
+repoUrl and repoDisplay are optional — set both to null if private or no repo.
+
+=== data/education.json ===
+[
+  {
+    "id": "edu-SLUG",
+    "degree": "",
+    "institution": "",
+    "period": "",
+    "location": "",
+    "url": "",
+    "urlDisplay": "",
+    "highlights": []
+  }
+]
+
+Note: highlights are optional strings like "GPA: 3.8 / 4.0" or award names.
+Repeat the entry object for each qualification, ordered most recent first.
+
+=== data/certifications.json ===
+[
+  {
+    "id": "cert-SLUG",
+    "title": "",
+    "issuer": "",
+    "date": "Mon YYYY",
+    "url": null,
+    "score": null,
+    "roles": [],
+    "highlights": []
+  }
+]
+
+Note: url is the certificate verification link — null if unavailable.
+score is a string like "94.66%" or null. highlights are short topic bullet strings.
+Repeat for each cert, ordered most recent first.
+
+=== data/skills.json ===
+{
+  "coreBadges": {
+    "all": [],
+    "RoleName": []
+  },
+  "categories": [
+    {
+      "id": "skill-SLUG",
+      "title": "",
+      "roles": [],
+      "tags": []
+    }
+  ]
+}
+
+Note: coreBadges keys must include "all" plus one key per role. These are the
+highlight chips shown at the top of the skills section for each view.
+categories.roles controls which views show that skill block — include "all" to
+show it in the master view. tags are individual skill pills inside the block.
+
+=== data/languages.json ===
+[
+  {
+    "name": "",
+    "level": "",
+    "description": ""
+  }
+]
+
+Note: level is a short string like "Native", "Fluent / Professional",
+"Intermediate", "Basic / Conversational". description is one sentence.
+
+=== MY CV ===
 [PASTE YOUR CV TEXT HERE — copy-paste from Word, LinkedIn, or PDF]
-
-Instructions:
-- Keep all JSON keys exactly as-is
-- Fill in my personal details in meta.json
-- Write role-specific intro paragraphs in roles.json (use {experience} where you want
-  the auto-calculated duration to appear)
-- Add all my experience to experience.json with bullet-level role tags
-- Tag each bullet with the roles it's relevant to (e.g. ["Full-Stack", "IT"])
-- Add projects, education, certifications, skills, and languages to their files
-- Tag certifications with the roles where they're relevant
-- Make availableRoles in roles.json match the types of jobs I'm applying for
 ```
+
+</details>
 
 ---
 
-The AI will produce filled JSON files you can paste directly.
+The AI will return each file as a separate code block. Paste the contents into the corresponding file in your `data/` folder.
 
 ### Step 4 — Enable GitHub Pages
 
@@ -145,61 +293,209 @@ Recipients only see their role's content — the role nav is hidden when a `?rol
 
 ## JSON structure reference
 
-### `data/roles.json`
-```json
+Full field-by-field reference for all 8 data files.
+
+### `data/meta.json`
+
+```jsonc
 {
-  "availableRoles": ["Full-Stack", "IT", "NOC"],
+  "name": "Your Full Name",
+  "location": "City, Country",
+  "phone": "(+XX) XX XXX XXXX",
+  "email": "you@example.com",
+  "dob": "Born DD Mon YYYY",          // shown as a small header detail
+  "linkedin": "https://...",           // full URL (used as href)
+  "linkedinDisplay": "linkedin.com/…", // short version shown as link text
+  "github": "https://...",
+  "githubDisplay": "github.com/…",
+  "photo": "images/photo.jpg",         // path relative to repo root
+  "qr": "images/qr-code.png",          // QR pointing to your GitHub Pages URL
+  "metaBadges": ["Visa Status", "Immediate Availability"]  // header chips
+}
+```
+
+---
+
+### `data/roles.json`
+
+```jsonc
+{
+  "availableRoles": ["Full-Stack", "IT", "NOC"],   // drives the role nav bar
+
   "roles": {
-    "Full-Stack": {
-      "subtitle": "Your subtitle for this role",
+    "all": {                              // shown on the master (no ?role=) view
+      "subtitle": "Title · Skill · Skill",
       "introParagraphs": [
-        "First paragraph. Use {experience} where you want the auto-calculated duration.",
-        "Second paragraph."
+        "First paragraph. {experience} is replaced with auto-calculated duration.",
+        "Second paragraph.",
+        "Third paragraph."
+      ]
+    },
+    "Full-Stack": {                       // one key per entry in availableRoles
+      "subtitle": "Full-Stack Developer · React · Node.js",
+      "introParagraphs": [
+        "Paragraph shown only when ?role=Full-Stack."
       ]
     }
+    // … repeat for every role in availableRoles
   }
 }
 ```
 
-### Experience / Project entry (`data/experience.json` or `data/projects.json`)
-```json
-{
-  "id": "unique-id",
-  "title": "Job Title",
-  "org": "Company Name",
-  "periodStart": "2024-06",
-  "periodEnd": null,
-  "periodDisplay": "Jun 2024 – Present",
-  "location": "City, Country",
-  "mode": "Remote",
-  "roles": ["Full-Stack", "IT"],
-  "openByDefault": false,
-  "bullets": [
-    { "text": "What you did.", "roles": ["Full-Stack"] },
-    { "text": "Another thing.", "roles": ["Full-Stack", "IT"] }
-  ],
-  "tags": {
-    "Full-Stack": ["React", "Node.js"],
-    "IT": ["Linux", "SSH"],
-    "all": ["React", "Node.js", "Linux", "SSH"]
+---
+
+### `data/experience.json`
+
+Array of work experience entries, most recent first.
+
+```jsonc
+[
+  {
+    "id": "exp-company-slug",           // unique string, kebab-case
+    "title": "Job Title",
+    "org": "Company Name",
+    "periodStart": "2024-06",           // YYYY-MM
+    "periodEnd": null,                  // null = Present; "YYYY-MM" for ended roles
+    "periodDisplay": "Jun 2024 – Present",  // human-readable, shown on the card
+    "location": "City, State/Country",
+    "mode": "Remote",                   // "Remote" | "On-site" | "Hybrid"
+    "roles": ["Full-Stack", "IT"],      // which role views show this entry
+    "openByDefault": false,             // true = card expanded on load
+    "bullets": [
+      {
+        "text": "What you did and the impact.",
+        "roles": ["Full-Stack"]         // which roles show this bullet
+      },
+      {
+        "text": "Another achievement.",
+        "roles": ["Full-Stack", "IT"]   // bullet shown in both views
+      }
+    ],
+    "tags": {
+      "Full-Stack": ["React", "Node.js"],   // pills shown under Full-Stack view
+      "IT": ["Active Directory", "M365"],   // pills shown under IT view
+      "all": ["React", "Node.js", "Active Directory", "M365"]  // master view
+    }
+    // Shorthand: use a flat array ["tag1", "tag2"] when tags are the
+    // same across all roles (common for single-role entries)
   }
+]
+```
+
+---
+
+### `data/projects.json`
+
+Same shape as `experience.json` entries, with two extra fields:
+
+```jsonc
+[
+  {
+    "id": "proj-slug",
+    "title": "Project Name",
+    "type": "Full-Stack Web App",       // short category label shown on the card
+    "periodStart": "2025-09",
+    "periodEnd": "2025-10",
+    "periodDisplay": "Sep 2025 – Oct 2025",
+    "roles": ["Full-Stack"],
+    "openByDefault": false,
+    "repoUrl": "https://github.com/you/repo",   // null if private / no repo
+    "repoDisplay": "github.com/you/repo",        // null if no repo
+    "bullets": [
+      { "text": "What the project does.", "roles": ["Full-Stack"] }
+    ],
+    "tags": ["React", "Vite", "Node.js"]  // flat array fine for single-role projects
+  }
+]
+```
+
+---
+
+### `data/education.json`
+
+Array of qualifications, most recent first.
+
+```jsonc
+[
+  {
+    "id": "edu-university-slug",
+    "degree": "BSc Computer Science",
+    "institution": "University Name",
+    "period": "Sep 2020 – Sep 2024",    // free-form display string
+    "location": "City, Country",
+    "url": "https://university.edu/",
+    "urlDisplay": "university.edu",
+    "highlights": [                     // optional — notable grades or awards
+      "GPA: 3.8 / 4.0",
+      "Best Final Year Project"
+    ]
+  }
+]
+```
+
+---
+
+### `data/certifications.json`
+
+Array of certifications, most recent first.
+
+```jsonc
+[
+  {
+    "id": "cert-slug",
+    "title": "Full Certificate Name",
+    "issuer": "Issuing Organisation",
+    "date": "Jan 2026",                 // "Mon YYYY" display string
+    "url": "https://verify.example.com/…",  // null if no public verify URL
+    "score": "94.66%",                  // null if not applicable
+    "roles": ["NOC", "IT"],             // which role views show this cert
+    "highlights": [                     // optional — key topics covered
+      "Topic or skill area 1",
+      "Topic or skill area 2"
+    ]
+  }
+]
+```
+
+---
+
+### `data/skills.json`
+
+```jsonc
+{
+  "coreBadges": {
+    // Highlight chips shown at the top of the Skills section per view.
+    // Must include "all" plus one key for every role in availableRoles.
+    "all":         ["Full-Stack Development", "MSP Operations", "…"],
+    "Full-Stack":  ["React & Node.js", "API Development", "…"],
+    "IT":          ["Microsoft 365 Admin", "Endpoint Security", "…"]
+    // … one key per role
+  },
+  "categories": [
+    {
+      "id": "skill-slug",
+      "title": "Category Heading",
+      "roles": ["Full-Stack", "all"],   // which views show this block
+      "tags": ["React", "Node.js", "PostgreSQL"]  // individual skill pills
+    }
+    // … one object per skill category block
+  ]
 }
 ```
 
-**`periodEnd: null`** means "present" — used for the auto-calculated experience duration.  
-**`periodDisplay`** is just the human-readable date range. Duration (e.g. "6 mo") is calculated automatically from `periodStart`/`periodEnd`.
+---
 
-### Certification entry (`data/certifications.json`)
-```json
-{
-  "id": "cert-ccna",
-  "title": "CCNA 200-301",
-  "issuer": "Udemy",
-  "date": "Jan 2026",
-  "url": "https://...",
-  "score": null,
-  "roles": ["NOC", "IT"]
-}
+### `data/languages.json`
+
+```jsonc
+[
+  {
+    "name": "English",
+    "level": "Fluent / Professional",   // "Native" | "Fluent / Professional" |
+                                        // "Intermediate" | "Basic / Conversational"
+    "description": "One sentence about usage context."
+  }
+]
 ```
 
 ---
