@@ -51,6 +51,12 @@
         ]
       },
       {
+        "text": "Led end-to-end phishing incident response for a managed client: identified 5 malicious emails sent through Amazon SES using a spoofed domain (aws.crowdaa.com) that bypassed spam filters, analyzed email headers to pinpoint an SPF alignment failure confirming the emails were fraudulent, verified delivery via Microsoft Exchange Admin Center message trace, and contained the threat by blocking the domain in SpamHero and issuing targeted user warnings.",
+        "roles": [
+          "IT"
+        ]
+      },
+      {
         "text": "Assisted with phishing investigations, login anomaly reviews, vulnerability assessment workflows using Vonahi, and general security operations support.",
         "roles": [
           "IT"
@@ -90,7 +96,10 @@
         "Kaseya",
         "ThreatLocker",
         "Duo MFA",
-        "Vonahi"
+        "Vonahi",
+        "SpamHero",
+        "Microsoft Defender",
+        "DMARC/DKIM/SPF"
       ],
       "NOC": [
         "MSP Operations",
@@ -122,6 +131,9 @@
         "Kaseya",
         "ThreatLocker",
         "Duo MFA",
+        "SpamHero",
+        "Microsoft Defender",
+        "DMARC/DKIM/SPF",
         "Linux",
         "React",
         "Node.js",
