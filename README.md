@@ -21,7 +21,62 @@ All your CV content lives in the **`data/`** folder — one JSON file per sectio
 
 **To add a new role:** edit `data/roles.json` — add the role to `availableRoles`, write its intro, then tag relevant entries and bullets across the other data files. No new files to create.
 
-**To print / save PDF:** click the **Print / Save PDF** button — opens a clean, ATS-friendly flat HTML document with no colours, no CSS tricks, standard A4 margins.
+**To print / save PDF:** see the [Print / PDF export](#print--pdf-export) section below.
+
+---
+
+## Print / PDF export
+
+### The button
+
+Click **Print / Save PDF** in the top controls. It opens a new browser window containing a self-contained, pre-styled HTML document and immediately fires the browser print dialog. Choose **Save as PDF** to produce the file.
+
+**The output is always scoped to the currently selected role.** If you're on `?role=IT`, the PDF contains only IT-relevant content. If you're on the master view (no `?role=`), it contains everything.
+
+### Workflow for job applications
+
+1. Navigate to the role that matches the job — e.g. `https://ibrahimahtsham.github.io/CV-2026/?role=IT`
+2. Click **Print / Save PDF**
+3. In the browser print dialog, choose **Save as PDF**
+4. Attach the PDF to your application or email
+
+For digital applications, you can skip the PDF entirely and just share the role URL — recipients see only the relevant content and the role nav is hidden from them.
+
+### What the PDF looks like
+
+- A4 portrait, 16 mm × 15 mm margins
+- Arial font, 10.5 pt body — no colours, black text on white
+- All sections fully expanded (no collapsed cards)
+- Tags and badges rendered as thin-bordered chips (ATS-safe — no background colours)
+- Links shown as `text (URL)` — phone and email are not expanded
+- Photo and QR code included at 75 pt × 100 pt and 50 pt × 50 pt respectively
+
+### Ctrl+P (browser native)
+
+Pressing **Ctrl+P** directly on the main CV page also works. Before the print dialog opens, the page forces all `<details>` sections fully open; once the dialog closes it restores whatever was expanded before. The resulting print reflects whichever role is active in the URL.
+
+### Marking gap entries
+
+If you have a non-work entry in `experience.json` (a career break, relocation, or transition period) that you want to show in the CV for context but **not** count toward the `{experience}` duration, set `"isGap": true` on that entry:
+
+```jsonc
+{
+  "id": "exp-relocation",
+  "title": "Career Transition",
+  "org": "Relocation: Pakistan → Saudi Arabia",
+  "periodStart": "2025-11",
+  "periodEnd": "2026-02",
+  "periodDisplay": "Nov 2025 – Feb 2026",
+  "isGap": true,          // ← excluded from {experience} calculation
+  "roles": ["IT", "Full-Stack"],
+  "bullets": [
+    { "text": "Relocated to Riyadh to pursue career opportunities.", "roles": ["IT", "Full-Stack"] }
+  ],
+  "tags": {}
+}
+```
+
+The entry still appears in the CV under whichever roles you tag it with — it just does not shift the earliest start date used to compute `{experience}`.
 
 ---
 
@@ -143,6 +198,7 @@ Note: add one key per role in "roles" matching each entry in availableRoles, e.g
     "mode": "",
     "roles": [],
     "openByDefault": false,
+    "isGap": false,
     "bullets": [
       { "text": "", "roles": [] }
     ],
@@ -155,6 +211,7 @@ Note: add one key per role in "roles" matching each entry in availableRoles, e.g
 
 Note: repeat the entry object for each job. periodEnd: null = current job.
 mode is typically "Remote", "On-site", or "Hybrid".
+Set isGap: true for career breaks or relocation entries — they show in the CV but are excluded from the {experience} duration calculation.
 
 === data/projects.json ===
 [
@@ -303,7 +360,7 @@ Full field-by-field reference for all 8 data files.
   "location": "City, Country",
   "phone": "(+XX) XX XXX XXXX",
   "email": "you@example.com",
-  "dob": "Born DD Mon YYYY",          // shown as a small header detail
+  "dob": "Born DD Mon YYYY",          // optional — omit the key to hide date of birth
   "linkedin": "https://...",           // full URL (used as href)
   "linkedinDisplay": "linkedin.com/…", // short version shown as link text
   "github": "https://...",
@@ -361,6 +418,7 @@ Array of work experience entries, most recent first.
     "mode": "Remote",                   // "Remote" | "On-site" | "Hybrid"
     "roles": ["Full-Stack", "IT"],      // which role views show this entry
     "openByDefault": false,             // true = card expanded on load
+    "isGap": false,                     // optional — true = shown but excluded from {experience} calc
     "bullets": [
       {
         "text": "What you did and the impact.",

@@ -18,13 +18,13 @@
       "id": "skill-it-ops",
       "title": "IT Operations & Technical Support",
       "roles": ["IT", "NOC", "all"],
-      "tags": ["Microsoft 365", "Exchange Online", "SharePoint", "Azure AD", "Windows Active Directory", "Group Policy", "User Onboarding/Offboarding", "Access Management", "Desktop Support", "Autotask", "Remote Support", "Printer & Workstation Support"]
+      "tags": ["Microsoft 365", "Exchange Online", "SharePoint", "Azure AD", "Entra Admin Center", "Windows Active Directory", "Group Policy", "Azure AD Hybrid Join", "User Onboarding/Offboarding", "Access Management", "Desktop Support", "Autotask", "Remote Support", "Printer & Workstation Support"]
     },
     {
       "id": "skill-security",
       "title": "Security & MSP Tooling",
       "roles": ["IT", "all"],
-      "tags": ["Kaseya", "Datto RMM", "Datto EDR", "ThreatLocker", "Duo MFA", "Graphus", "Inky", "Todyl", "Vonahi", "SpamHero", "Microsoft Defender", "Phishing Investigation", "Email Authentication (DMARC/DKIM/SPF)", "Login Anomaly Analysis", "Endpoint Security", "MFA Enrollment"]
+      "tags": ["Kaseya", "Datto RMM", "Datto EDR", "SaaS Alerts", "ThreatLocker", "Duo MFA", "Graphus", "Inky", "Todyl", "Vonahi", "SpamHero", "Microsoft Defender", "Phishing Investigation", "Email Authentication (DMARC/DKIM/SPF)", "Login Anomaly Analysis", "Penetration Testing", "Endpoint Security", "MFA Enrollment"]
     },
     {
       "id": "skill-linux",

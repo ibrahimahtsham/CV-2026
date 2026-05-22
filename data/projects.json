@@ -13,7 +13,7 @@
     "openByDefault": false,
     "bullets": [
       {
-        "text": "Independently developed and deployed a custom construction job management platform to replace the company’s existing JobTread workflow.",
+        "text": "Independently developed and deployed a custom construction job management platform for a managed client (Mammoth) to replace their existing JobTread subscription — built and delivered as part of MSP work at Fast & Reliable IT Services.",
         "roles": [
           "Full-Stack",
           "IT"
@@ -120,7 +120,7 @@
         ]
       },
       {
-        "text": "Worked with Azure Video Indexing and computer vision tooling to automate scene classification, behavioral flagging, and searchable video analysis.",
+        "text": "Researched and prototyped Azure Video Indexing and computer vision tooling for automating scene classification, behavioral flagging, and searchable video analysis across large footage datasets.",
         "roles": [
           "Full-Stack",
           "IT"

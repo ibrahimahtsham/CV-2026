@@ -33,7 +33,7 @@ function parseYearMonth(str) {
 }
 
 export function calcExperience(entries, role) {
-  const relevant = entries.filter(e => isVisible(e, role));
+  const relevant = entries.filter(e => isVisible(e, role) && !e.isGap);
   if (!relevant.length) return null;
   const starts = relevant.map(e => parseYearMonth(e.periodStart)).filter(Boolean);
   if (!starts.length) return null;

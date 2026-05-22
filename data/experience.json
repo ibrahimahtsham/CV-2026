@@ -16,7 +16,7 @@
     "openByDefault": false,
     "bullets": [
       {
-        "text": "Managed and resolved support tickets across Microsoft 365, Windows, networking, printers, endpoint security, and workstation issues within an MSP environment.",
+        "text": "Resolved 235+ support tickets across 10+ managed clients (ICE, JM Davidson, Trout Trucking, White Star, Govind Development, City of Driscoll, and others) within 3 months, covering Microsoft 365, Windows, networking, endpoint security, and workstation issues in a high-volume MSP environment.",
         "roles": [
           "IT",
           "NOC",
@@ -32,22 +32,36 @@
         ]
       },
       {
-        "text": "Assisted with Microsoft 365 administration including Exchange, SharePoint, user onboarding/offboarding, account permissions, MFA setup, mailbox management, and account lockdown procedures.",
+        "text": "Administered Microsoft 365 across multiple clients: provisioned accounts with Business Basic/Standard/Premium licensing, enforced MFA via Entra admin center, managed shared mailbox delegation, exported filtered user lists for license audits, and administered SpamHero quarantine including approving senders, releasing quarantined emails, and configuring user quarantine accounts with daily digest reports.",
         "roles": [
           "IT"
         ]
       },
       {
-        "text": "Worked with Windows Active Directory and domain environments to manage users, reset passwords, configure group policies, and maintain access controls.",
+        "text": "Managed Windows Active Directory across multiple domain environments: created user accounts in scoped OUs, authored batch logon scripts with network drive mappings deployed via SYSVOL, domain-joined laptops with Azure AD hybrid join using ProfWiz for profile migration and dsregcmd for verification, and administered group memberships and password policies.",
         "roles": [
           "IT",
           "NOC"
         ]
       },
       {
-        "text": "Investigated endpoint and security alerts using Datto EDR, Graphus, ThreatLocker, Duo, Inky, and related Kaseya ecosystem platforms.",
+        "text": "Delivered full-lifecycle user onboarding for 8+ users across 6+ clients — including M365 provisioning, SpamHero registration, MFA/Duo setup, AD account creation with OU assignment, logon scripts with drive mappings, security stack deployment (Todyl, ThreatLocker, Duo), printer configuration, and end-user application setup — including simultaneous dual-intern onboarding with door access card provisioning.",
         "roles": [
           "IT"
+        ]
+      },
+      {
+        "text": "Investigated endpoint and security alerts using Datto EDR, SaaS Alerts, ThreatLocker, Duo, Graphus, Inky, and related Kaseya ecosystem platforms, including bulk file download anomalies, successful logins from unexpected geographic locations (Saudi Arabia, Japan, Philippines, Venezuela), and persistence detection events.",
+        "roles": [
+          "IT",
+          "NOC"
+        ]
+      },
+      {
+        "text": "Diagnosed and resolved complex endpoint and connectivity issues: an Excel workbook freeze caused by a table range accidentally expanded to all 16,384 columns; a Fuel Master FTP connectivity failure fixed by switching from passive to active mode and updating Windows Firewall rules; and a ThreatLocker + Incode COBOL configuration path conflict affecting City of Driscoll machines.",
+        "roles": [
+          "IT",
+          "NOC"
         ]
       },
       {
@@ -57,26 +71,32 @@
         ]
       },
       {
-        "text": "Assisted with phishing investigations, login anomaly reviews, vulnerability assessment workflows using Vonahi, and general security operations support.",
+        "text": "Executed an internal network penetration test for a managed client using Vonahi vPenTest with no prior handoff: self-onboarded to the platform, connected to the on-site Linux agent via Splashtop, mapped a 60+ device network (192.168.1.0/24), diagnosed a stuck assessment caused by a DNS resolution failure and an uninitialized Docker container, and delivered a report surfacing 7 Critical findings.",
         "roles": [
           "IT"
         ]
       },
       {
-        "text": "Contributed to internal software projects including a custom construction job management platform and CCTV investigation tooling for automated footage analysis and incident review workflows.",
+        "text": "Managed software licensing across multiple vendors: reassigned an Autodesk AEC Collection license from a departed employee saving $2,870/year, coordinated Bluebeam Complete seat purchases through a reseller, and administered Adobe Acrobat Pro, MS Project Plan 3, and Foxit PDF Editor licenses across client environments.",
+        "roles": [
+          "IT"
+        ]
+      },
+      {
+        "text": "Contributed to internal development projects including a custom construction job management platform (React, Node.js, PostgreSQL), CCTV investigation tooling for automated footage analysis, and a Python/Flask time-tracking integration app inherited from a departed employee — located the codebase via Datto RMM database queries and stood up a local dev environment in Hyper-V to work around ThreatLocker restrictions.",
         "roles": [
           "Full-Stack"
         ]
       },
       {
-        "text": "Managed Linux-based deployment workflows using SSH, firewall configuration, automated backups, and secure remote access practices.",
+        "text": "Evaluated and recommended networking hardware for client infrastructure needs, including comparing managed PoE switch options (Ubiquiti USW-Lite-8-PoE, LINOVISION, MokerLink) for outdoor camera installations, and investigated live network topology using ARP tables and netstat during on-site assessments.",
         "roles": [
-          "Full-Stack",
+          "IT",
           "NOC"
         ]
       },
       {
-        "text": "Built internal reporting utilities to investigate abnormal OneDrive synchronization and SharePoint recycle-bin activity.",
+        "text": "Built internal reporting utilities to surface bulk file deletions, unexpected OneDrive sync events, and SharePoint recycle-bin anomalies flagged via SaaS Alerts — used directly in client security investigations.",
         "roles": [
           "Full-Stack",
           "IT"
@@ -92,6 +112,7 @@
         "Active Directory",
         "Group Policy",
         "Datto EDR",
+        "SaaS Alerts",
         "Autotask",
         "Kaseya",
         "ThreatLocker",
@@ -99,7 +120,10 @@
         "Vonahi",
         "SpamHero",
         "Microsoft Defender",
-        "DMARC/DKIM/SPF"
+        "DMARC/DKIM/SPF",
+        "Penetration Testing",
+        "Entra Admin Center",
+        "Azure AD Hybrid Join"
       ],
       "NOC": [
         "MSP Operations",
@@ -127,6 +151,7 @@
         "Active Directory",
         "Group Policy",
         "Datto EDR",
+        "SaaS Alerts",
         "Autotask",
         "Kaseya",
         "ThreatLocker",
@@ -134,12 +159,35 @@
         "SpamHero",
         "Microsoft Defender",
         "DMARC/DKIM/SPF",
+        "Penetration Testing",
+        "Entra Admin Center",
+        "Azure AD Hybrid Join",
         "Linux",
         "React",
         "Node.js",
         "PostgreSQL"
       ]
     }
+  },
+  {
+    "id": "exp-relocation",
+    "title": "Career Transition",
+    "org": "Relocation: Pakistan → Saudi Arabia",
+    "periodStart": "2025-11",
+    "periodEnd": "2026-02",
+    "periodDisplay": "Nov 2025 – Feb 2026",
+    "location": "Riyadh, Saudi Arabia",
+    "mode": "—",
+    "roles": ["IT", "NOC", "Full-Stack", "Customer-Support", "Business-Dev"],
+    "openByDefault": false,
+    "isGap": true,
+    "bullets": [
+      {
+        "text": "Relocated internationally from Islamabad, Pakistan to Riyadh, Saudi Arabia to pursue career opportunities; continued self-study in networking and IT infrastructure during the transition period.",
+        "roles": ["IT", "NOC", "Full-Stack", "Customer-Support", "Business-Dev"]
+      }
+    ],
+    "tags": {}
   },
   {
     "id": "exp-panacealogics-ai",
@@ -326,7 +374,7 @@
     "org": "StackExpert",
     "periodStart": "2024-07",
     "periodEnd": "2024-08",
-    "periodDisplay": "Jul 2024 – Aug 2024",
+    "periodDisplay": "Jul 2024 – Aug 2024 (BSc final year)",
     "location": "Islamabad, Pakistan",
     "mode": "On-site",
     "roles": [
@@ -375,7 +423,7 @@
     "org": "R Technologies",
     "periodStart": "2024-06",
     "periodEnd": "2024-07",
-    "periodDisplay": "Jun 2024 – Jul 2024",
+    "periodDisplay": "Jun 2024 – Jul 2024 (BSc final year)",
     "location": "Islamabad, Pakistan",
     "mode": "Remote",
     "roles": [
@@ -416,7 +464,7 @@
     "org": "CartKit",
     "periodStart": "2024-04",
     "periodEnd": "2024-09",
-    "periodDisplay": "Apr 2024 – Sep 2024",
+    "periodDisplay": "Apr 2024 – Sep 2024 (BSc final year)",
     "location": "Islamabad, Pakistan",
     "mode": "Remote",
     "roles": [
