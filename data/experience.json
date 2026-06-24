@@ -19,7 +19,7 @@
         "roles": ["Customer-Support"]
       },
       {
-        "text": "Led phishing incident response: traced Amazon SES spoofing via SPF alignment failure, verified delivery via Exchange Admin Center, and blocked the threat in SpamHero.",
+        "text": "Led incident response for two security events: a phishing campaign (traced Amazon SES spoofing via SPF alignment failure, blocked via SpamHero) and a live account compromise (session revocation, password reset); documented response procedures in IT Glue for team reuse.",
         "roles": ["IT"]
       },
       {
@@ -31,7 +31,7 @@
         "roles": ["IT", "NOC"]
       },
       {
-        "text": "Delivered full-lifecycle user onboarding for 8+ users across 6+ clients: M365 provisioning, AD/OU setup, MFA/Duo, security stack (ThreatLocker, Todyl), logon scripts, and application setup.",
+        "text": "Delivered full-lifecycle onboarding and offboarding for 8+ users across 6+ clients: onboarding covered M365 provisioning, AD/OU setup, MFA/Duo, and security stack; offboarding covered session revocation, MFA removal, distribution group cleanup, and Entra auth wipe.",
         "roles": ["IT"]
       },
       {
@@ -39,7 +39,7 @@
         "roles": ["IT", "NOC"]
       },
       {
-        "text": "Built internal tooling including a FuelMaster IFTA report converter and SharePoint/OneDrive anomaly utilities used directly in live client investigations.",
+        "text": "Built internal tooling including a FuelMaster IFTA report converter, a camera and access point installation quote calculator, and SharePoint/OneDrive anomaly utilities used directly in live client investigations.",
         "roles": ["IT", "Full-Stack"]
       },
       {
