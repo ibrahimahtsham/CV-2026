@@ -5,189 +5,90 @@
     "org": "Fast & Reliable IT Services",
     "periodStart": "2026-03",
     "periodEnd": null,
-    "periodDisplay": "Mar 2026 – Present",
     "location": "Corpus Christi, TX",
     "mode": "Remote",
-    "roles": [
-      "IT",
-      "NOC",
-      "Full-Stack"
-    ],
-    "openByDefault": false,
+    "roles": ["IT", "NOC", "Full-Stack", "Customer-Support"],
+
     "bullets": [
       {
-        "text": "Resolved 235+ support tickets across 10+ managed clients (ICE, JM Davidson, Trout Trucking, White Star, Govind Development, City of Driscoll, and others) within 3 months, covering Microsoft 365, Windows, networking, endpoint security, and workstation issues in a high-volume MSP environment.",
-        "roles": [
-          "IT",
-          "NOC",
-          "Full-Stack"
-        ]
+        "text": "Resolved 436+ support tickets across 10+ managed clients in a high-volume MSP environment covering Microsoft 365, Windows, networking, and endpoint security.",
+        "roles": ["IT", "NOC", "Customer-Support"]
       },
       {
-        "text": "Provided remote technical support through calls, email, and Autotask while prioritizing urgent client issues and maintaining clear communication throughout the resolution process.",
-        "roles": [
-          "IT",
-          "NOC",
-          "Full-Stack"
-        ]
+        "text": "Handled inbound and outbound client calls and email support via Autotask, managing real-time troubleshooting requests and maintaining clear communication throughout each resolution.",
+        "roles": ["Customer-Support"]
       },
       {
-        "text": "Administered Microsoft 365 across multiple clients: provisioned accounts with Business Basic/Standard/Premium licensing, enforced MFA via Entra admin center, managed shared mailbox delegation, exported filtered user lists for license audits, and administered SpamHero quarantine including approving senders, releasing quarantined emails, and configuring user quarantine accounts with daily digest reports.",
-        "roles": [
-          "IT"
-        ]
+        "text": "Led phishing incident response: traced Amazon SES spoofing via SPF alignment failure, verified delivery via Exchange Admin Center, and blocked the threat in SpamHero.",
+        "roles": ["IT"]
       },
       {
-        "text": "Managed Windows Active Directory across multiple domain environments: created user accounts in scoped OUs, authored batch logon scripts with network drive mappings deployed via SYSVOL, domain-joined laptops with Azure AD hybrid join using ProfWiz for profile migration and dsregcmd for verification, and administered group memberships and password policies.",
-        "roles": [
-          "IT",
-          "NOC"
-        ]
+        "text": "Executed a network penetration test on a 60+ device network (Vonahi vPenTest) with no prior handoff, surfacing 7 Critical findings.",
+        "roles": ["IT", "NOC"]
       },
       {
-        "text": "Delivered full-lifecycle user onboarding for 8+ users across 6+ clients — including M365 provisioning, SpamHero registration, MFA/Duo setup, AD account creation with OU assignment, logon scripts with drive mappings, security stack deployment (Todyl, ThreatLocker, Duo), printer configuration, and end-user application setup — including simultaneous dual-intern onboarding with door access card provisioning.",
-        "roles": [
-          "IT"
-        ]
+        "text": "Administered Microsoft 365, Active Directory, and the full Kaseya ecosystem (Datto RMM/EDR, ThreatLocker, SaaS Alerts, Graphus, Inky, SpamHero, Duo) across 10+ client environments.",
+        "roles": ["IT", "NOC"]
       },
       {
-        "text": "Investigated endpoint and security alerts using Datto EDR, SaaS Alerts, ThreatLocker, Duo, Graphus, Inky, and related Kaseya ecosystem platforms, including bulk file download anomalies, successful logins from unexpected geographic locations (Saudi Arabia, Japan, Philippines, Venezuela), and persistence detection events.",
-        "roles": [
-          "IT",
-          "NOC"
-        ]
+        "text": "Delivered full-lifecycle user onboarding for 8+ users across 6+ clients: M365 provisioning, AD/OU setup, MFA/Duo, security stack (ThreatLocker, Todyl), logon scripts, and application setup.",
+        "roles": ["IT"]
       },
       {
-        "text": "Diagnosed and resolved complex endpoint and connectivity issues: an Excel workbook freeze caused by a table range accidentally expanded to all 16,384 columns; a Fuel Master FTP connectivity failure fixed by switching from passive to active mode and updating Windows Firewall rules; and a ThreatLocker + Incode COBOL configuration path conflict affecting City of Driscoll machines.",
-        "roles": [
-          "IT",
-          "NOC"
-        ]
+        "text": "Investigated security alerts including geographic login anomalies, bulk file downloads, and persistence events using Datto EDR, SaaS Alerts, and ThreatLocker.",
+        "roles": ["IT", "NOC"]
       },
       {
-        "text": "Led end-to-end phishing incident response for a managed client: identified 5 malicious emails sent through Amazon SES using a spoofed domain (aws.crowdaa.com) that bypassed spam filters, analyzed email headers to pinpoint an SPF alignment failure confirming the emails were fraudulent, verified delivery via Microsoft Exchange Admin Center message trace, and contained the threat by blocking the domain in SpamHero and issuing targeted user warnings.",
-        "roles": [
-          "IT"
-        ]
+        "text": "Built internal tooling including a FuelMaster IFTA report converter and SharePoint/OneDrive anomaly utilities used directly in live client investigations.",
+        "roles": ["IT", "Full-Stack"]
       },
       {
-        "text": "Executed an internal network penetration test for a managed client using Vonahi vPenTest with no prior handoff: self-onboarded to the platform, connected to the on-site Linux agent via Splashtop, mapped a 60+ device network (192.168.1.0/24), diagnosed a stuck assessment caused by a DNS resolution failure and an uninitialized Docker container, and delivered a report surfacing 7 Critical findings.",
-        "roles": [
-          "IT"
-        ]
+        "text": "Saved $2,870/year by reassigning a dormant Autodesk AEC Collection license.",
+        "roles": ["IT"]
       },
       {
-        "text": "Managed software licensing across multiple vendors: reassigned an Autodesk AEC Collection license from a departed employee saving $2,870/year, coordinated Bluebeam Complete seat purchases through a reseller, and administered Adobe Acrobat Pro, MS Project Plan 3, and Foxit PDF Editor licenses across client environments.",
-        "roles": [
-          "IT"
-        ]
-      },
-      {
-        "text": "Contributed to internal development projects including a custom construction job management platform (React, Node.js, PostgreSQL), CCTV investigation tooling for automated footage analysis, and a Python/Flask time-tracking integration app inherited from a departed employee — located the codebase via Datto RMM database queries and stood up a local dev environment in Hyper-V to work around ThreatLocker restrictions.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Evaluated and recommended networking hardware for client infrastructure needs, including comparing managed PoE switch options (Ubiquiti USW-Lite-8-PoE, LINOVISION, MokerLink) for outdoor camera installations, and investigated live network topology using ARP tables and netstat during on-site assessments.",
-        "roles": [
-          "IT",
-          "NOC"
-        ]
-      },
-      {
-        "text": "Built internal reporting utilities to surface bulk file deletions, unexpected OneDrive sync events, and SharePoint recycle-bin anomalies flagged via SaaS Alerts — used directly in client security investigations.",
-        "roles": [
-          "Full-Stack",
-          "IT"
-        ]
+        "text": "Contributed to internal dev projects: construction job management platform (React, Node.js, PostgreSQL), CCTV investigation tooling, and a Python/Flask time-tracking app - stood up a Hyper-V dev environment to work around ThreatLocker restrictions.",
+        "roles": ["Full-Stack"]
       }
     ],
     "tags": {
       "IT": [
-        "MSP Operations",
-        "Microsoft 365",
-        "Exchange Online",
-        "SharePoint",
-        "Active Directory",
-        "Group Policy",
-        "Datto EDR",
-        "SaaS Alerts",
-        "Autotask",
-        "Kaseya",
-        "ThreatLocker",
-        "Duo MFA",
-        "Vonahi",
-        "SpamHero",
-        "Microsoft Defender",
-        "DMARC/DKIM/SPF",
-        "Penetration Testing",
-        "Entra Admin Center",
-        "Azure AD Hybrid Join"
+        "MSP Operations", "Microsoft 365", "Exchange Online", "SharePoint",
+        "Active Directory", "Group Policy", "Datto EDR", "SaaS Alerts",
+        "Autotask", "Kaseya", "ThreatLocker", "Duo MFA", "Vonahi",
+        "SpamHero", "Microsoft Defender", "DMARC/DKIM/SPF",
+        "Penetration Testing", "Entra Admin Center", "Azure AD Hybrid Join"
       ],
-      "NOC": [
-        "MSP Operations",
-        "Active Directory",
-        "Autotask",
-        "Kaseya",
-        "Linux",
-        "SSH",
-        "Firewall"
-      ],
-      "Full-Stack": [
-        "Linux",
-        "SSH",
-        "React",
-        "Node.js",
-        "PostgreSQL",
-        "Automation",
-        "Autotask"
-      ],
+      "NOC": ["MSP Operations", "Active Directory", "Autotask", "Kaseya", "Linux", "SSH", "Firewall"],
+      "Full-Stack": ["Linux", "SSH", "React", "Node.js", "PostgreSQL", "Automation", "Autotask"],
+      "Customer-Support": ["Autotask", "Microsoft 365", "Remote Support", "Client Communication", "Email Support"],
       "all": [
-        "MSP Operations",
-        "Microsoft 365",
-        "Exchange Online",
-        "SharePoint",
-        "Active Directory",
-        "Group Policy",
-        "Datto EDR",
-        "SaaS Alerts",
-        "Autotask",
-        "Kaseya",
-        "ThreatLocker",
-        "Duo MFA",
-        "SpamHero",
-        "Microsoft Defender",
-        "DMARC/DKIM/SPF",
-        "Penetration Testing",
-        "Entra Admin Center",
-        "Azure AD Hybrid Join",
-        "Linux",
-        "React",
-        "Node.js",
-        "PostgreSQL"
+        "MSP Operations", "Microsoft 365", "Exchange Online", "SharePoint",
+        "Active Directory", "Group Policy", "Datto EDR", "SaaS Alerts",
+        "Autotask", "Kaseya", "ThreatLocker", "Duo MFA", "SpamHero",
+        "Microsoft Defender", "DMARC/DKIM/SPF", "Penetration Testing",
+        "Entra Admin Center", "Azure AD Hybrid Join", "Linux", "React", "Node.js", "PostgreSQL"
       ]
     }
   },
   {
     "id": "exp-relocation",
     "title": "Career Transition",
-    "org": "Relocation: Pakistan → Saudi Arabia",
+    "org": "Relocation: Pakistan to Saudi Arabia",
     "periodStart": "2025-11",
     "periodEnd": "2026-02",
-    "periodDisplay": "Nov 2025 – Feb 2026",
     "location": "Riyadh, Saudi Arabia",
-    "mode": "—",
-    "roles": ["IT", "NOC", "Full-Stack", "Customer-Support", "Business-Dev"],
-    "openByDefault": false,
+    "mode": null,
+    "roles": [],
+
     "isGap": true,
     "bullets": [
       {
-        "text": "Relocated internationally from Islamabad, Pakistan to Riyadh, Saudi Arabia to pursue career opportunities; continued self-study in networking and IT infrastructure during the transition period.",
-        "roles": ["IT", "NOC", "Full-Stack", "Customer-Support", "Business-Dev"]
+        "text": "Relocated from Islamabad, Pakistan to Riyadh, Saudi Arabia; continued self-study in networking during the transition.",
+        "roles": []
       }
     ],
-    "tags": {}
+    "tags": []
   },
   {
     "id": "exp-panacealogics-ai",
@@ -195,54 +96,23 @@
     "org": "PanaceaLogics",
     "periodStart": "2025-09",
     "periodEnd": "2025-10",
-    "periodDisplay": "Sep 2025 – Oct 2025",
     "location": "Rawalpindi, Pakistan",
     "mode": "On-site",
-    "roles": [
-      "Full-Stack"
-    ],
-    "openByDefault": false,
+    "roles": ["Full-Stack"],
+
     "bullets": [
       {
-        "text": "Built AI Interviewer platforms (cloud + offline) using Streamlit: online version leverages OpenAI (LLM, STT, TTS); local variant integrates Ollama and Faster Whisper.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Built cloud and offline AI Interviewer platforms using Streamlit: cloud version uses OpenAI (LLM, STT, TTS); offline variant uses Ollama and Faster Whisper.",
+        "roles": ["Full-Stack"]
       },
       {
-        "text": "Designed pluggable provider architecture with environment-driven configuration enabling seamless swapping of LLM/speech backends without refactors.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Implemented modular service layer (llm_service.py, stt_service.py, tts_service.py) fully decoupled from UI tabs for isolated testing and future expansion.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Added streaming token output pipelines and lazy resource initialization to reduce latency and memory footprint in local mode.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Authored cross-platform one-command startup scripts (Windows & Linux/macOS) automating virtualenv creation, dependency install, and app launch.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Designed a modular service layer (llm_service, stt_service, tts_service) with pluggable provider architecture and cross-platform one-command startup scripts.",
+        "roles": ["Full-Stack"]
       }
     ],
     "tags": [
-      "Python",
-      "Streamlit",
-      "OpenAI API",
-      "Ollama",
-      "Faster Whisper",
-      "LLM Integration",
-      "STT/TTS Pipelines",
-      "Modular Architecture"
+      "Python", "Streamlit", "OpenAI API", "Ollama",
+      "Faster Whisper", "LLM Integration", "STT/TTS Pipelines", "Modular Architecture"
     ]
   },
   {
@@ -251,120 +121,41 @@
     "org": "PanaceaLogics",
     "periodStart": "2024-09",
     "periodEnd": "2025-08",
-    "periodDisplay": "Sep 2024 – Aug 2025",
     "location": "Rawalpindi, Pakistan",
     "mode": "On-site",
-    "roles": [
-      "Business-Dev",
-      "Customer-Support"
-    ],
-    "openByDefault": false,
+    "roles": ["Business-Dev", "Customer-Support"],
+
     "bullets": [
       {
-        "text": "Joined as Business Development Trainee (Sep–Oct 2024), promoted to Specialist within 2 months based on performance in client acquisition and bidding workflow optimisation.",
-        "roles": [
-          "Business-Dev"
-        ]
+        "text": "Promoted from Trainee to Specialist within 2 months based on performance in client acquisition and bidding workflow optimization on Upwork and Freelancer.",
+        "roles": ["Business-Dev"]
       },
       {
-        "text": "Gained expertise in freelancing platforms (Upwork, Freelancer): bidding strategies, client acquisition, and profile optimization.",
-        "roles": [
-          "Business-Dev"
-        ]
+        "text": "Managed client pipeline in Odoo: scheduled calls, conducted requirements meetings, and handled project follow-ups.",
+        "roles": ["Business-Dev", "Customer-Support"]
       },
       {
-        "text": "Managed clients using Odoo: scheduling calls, conducting meetings, gathering project requirements, and handling follow-ups.",
-        "roles": [
-          "Business-Dev",
-          "Customer-Support"
-        ]
+        "text": "Built a React dashboard automating Freelancer.com client data extraction, tracking bid success rates, and calculating team commissions.",
+        "roles": ["Business-Dev"]
       },
       {
-        "text": "Developed and optimized the bidding workflow with automation to improve efficiency and client conversion rate.",
-        "roles": [
-          "Business-Dev"
-        ]
+        "text": "Applied prompt engineering to train AI models for automated proposal writing and technical job description classification.",
+        "roles": ["Business-Dev"]
       },
       {
-        "text": "Created detailed Excel reports for tracking bids, ongoing projects, and client interactions.",
-        "roles": [
-          "Business-Dev"
-        ]
-      },
-      {
-        "text": "Assisted in developing Chrome extensions to streamline bidding and project management workflows.",
-        "roles": [
-          "Business-Dev"
-        ]
-      },
-      {
-        "text": "Built an internal React dashboard to automate client data extraction from Freelancer.com, track bid success rates, and calculate team commissions based on awarded projects.",
-        "roles": [
-          "Business-Dev",
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Explored MySQL Workbench for handling and managing databases.",
-        "roles": [
-          "Business-Dev"
-        ]
-      },
-      {
-        "text": "Learned prompt engineering to train AI chat models for writing proposals and detecting technical vs. non-technical job descriptions.",
-        "roles": [
-          "Business-Dev"
-        ]
-      },
-      {
-        "text": "Identified common bidding criteria including location, budget, skills, client verification, and hiring trends.",
-        "roles": [
-          "Business-Dev"
-        ]
-      },
-      {
-        "text": "Understood best practices for client communication, identifying scams, and navigating NDA/IP agreements on freelancing platforms.",
-        "roles": [
-          "Business-Dev",
-          "Customer-Support"
-        ]
-      },
-      {
-        "text": "Researched platform-specific strategies including connect replenishment, profile boosting, and filtering methods on Upwork and Freelancer.",
-        "roles": [
-          "Business-Dev"
-        ]
+        "text": "Developed bidding automation tools including Chrome extensions and WhatsApp bulk outreach, reducing manual effort in the BD pipeline.",
+        "roles": ["Business-Dev"]
       }
     ],
     "tags": {
       "Business-Dev": [
-        "Business Development",
-        "Upwork",
-        "Freelancer",
-        "Odoo",
-        "Prompt Engineering",
-        "MySQL",
-        "Excel",
-        "Chrome Extensions",
-        "Client Acquisition"
+        "Business Development", "Upwork", "Freelancer", "Odoo",
+        "Prompt Engineering", "MySQL", "Excel", "Chrome Extensions", "Client Acquisition"
       ],
-      "Customer-Support": [
-        "Client Communication",
-        "Odoo",
-        "NDA/IP Agreements",
-        "Requirements Gathering",
-        "Follow-ups"
-      ],
+      "Customer-Support": ["Client Communication", "Odoo", "NDA/IP Agreements", "Requirements Gathering", "Follow-ups"],
       "all": [
-        "Business Development",
-        "Upwork",
-        "Freelancer",
-        "Odoo",
-        "SQL",
-        "Prompt Engineering",
-        "MySQL",
-        "Excel",
-        "Chrome Extensions"
+        "Business Development", "Upwork", "Freelancer", "Odoo",
+        "SQL", "Prompt Engineering", "MySQL", "Excel", "Chrome Extensions"
       ]
     }
   },
@@ -374,48 +165,22 @@
     "org": "StackExpert",
     "periodStart": "2024-07",
     "periodEnd": "2024-08",
-    "periodDisplay": "Jul 2024 – Aug 2024 (BSc final year)",
+    "periodNote": "BSc final year",
     "location": "Islamabad, Pakistan",
     "mode": "On-site",
-    "roles": [
-      "Full-Stack"
-    ],
-    "openByDefault": false,
+    "roles": ["Full-Stack"],
+
     "bullets": [
       {
-        "text": "Developed and customized WordPress themes and plugins (including WooCommerce) to meet client requirements.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Developed and customized WordPress themes and plugins (WooCommerce) using Elementor, optimizing for performance, security, and SEO.",
+        "roles": ["Full-Stack"]
       },
       {
-        "text": "Built and designed websites using Elementor, optimizing for performance, security, and SEO.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Troubleshot WordPress-related issues, ensuring a seamless user experience across client sites.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Explored Laravel fundamentals, gaining foundational knowledge of backend development in PHP.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Worked with PHP and Laravel on the backend alongside client-facing WordPress delivery.",
+        "roles": ["Full-Stack"]
       }
     ],
-    "tags": [
-      "WordPress",
-      "WooCommerce",
-      "Elementor",
-      "PHP",
-      "Laravel",
-      "SEO",
-      "Web Development"
-    ]
+    "tags": ["WordPress", "WooCommerce", "Elementor", "PHP", "Laravel", "SEO", "Web Development"]
   },
   {
     "id": "exp-rtechnologies",
@@ -423,40 +188,22 @@
     "org": "R Technologies",
     "periodStart": "2024-06",
     "periodEnd": "2024-07",
-    "periodDisplay": "Jun 2024 – Jul 2024 (BSc final year)",
+    "periodNote": "BSc final year",
     "location": "Islamabad, Pakistan",
     "mode": "Remote",
-    "roles": [
-      "Full-Stack"
-    ],
-    "openByDefault": false,
+    "roles": ["Full-Stack"],
+
     "bullets": [
       {
-        "text": "Developed and delivered Android applications in Java/Kotlin, ensuring smooth performance and intuitive UX.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Developed and delivered Android applications in Java/Kotlin with design and product teams, following sprint workflows in Trello.",
+        "roles": ["Full-Stack"]
       },
       {
-        "text": "Collaborated with design and product teams on app interfaces; conducted code reviews and followed best practices.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Tracked development sprints and daily tasks using Trello.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Conducted code reviews and ensured smooth UX across delivered app features.",
+        "roles": ["Full-Stack"]
       }
     ],
-    "tags": [
-      "Java",
-      "Kotlin",
-      "Android Studio",
-      "Mobile Development",
-      "Trello"
-    ]
+    "tags": ["Java", "Kotlin", "Android Studio", "Mobile Development", "Trello"]
   },
   {
     "id": "exp-cartkit",
@@ -464,52 +211,25 @@
     "org": "CartKit",
     "periodStart": "2024-04",
     "periodEnd": "2024-09",
-    "periodDisplay": "Apr 2024 – Sep 2024 (BSc final year)",
+    "periodNote": "BSc final year",
     "location": "Islamabad, Pakistan",
     "mode": "Remote",
-    "roles": [
-      "Customer-Support"
-    ],
-    "openByDefault": false,
+    "roles": ["Customer-Support"],
+
     "bullets": [
       {
-        "text": "Handled 30–50 customer requests per day via Crisp, assisting users in creating custom popups and banners for online stores.",
-        "roles": [
-          "Customer-Support"
-        ]
+        "text": "Handled 30-50 customer requests per day via Crisp, assisting users with popup/banner setup and automated email campaign integration.",
+        "roles": ["Customer-Support"]
       },
       {
-        "text": "Integrated popups and banners with automated email campaigns for promotions.",
-        "roles": [
-          "Customer-Support"
-        ]
+        "text": "Produced annotated screenshots and screen recordings as step-by-step guides; supported non-English-speaking clients.",
+        "roles": ["Customer-Support"]
       },
       {
-        "text": "Generated annotated screenshots and screen recordings to guide users through setup processes step by step.",
-        "roles": [
-          "Customer-Support"
-        ]
-      },
-      {
-        "text": "Assisted clients who did not speak English as their primary language, ensuring seamless communication.",
-        "roles": [
-          "Customer-Support"
-        ]
-      },
-      {
-        "text": "Used Slack to communicate with the development team for feature requests and updates.",
-        "roles": [
-          "Customer-Support"
-        ]
+        "text": "Coordinated with the development team via Slack for feature requests and product feedback.",
+        "roles": ["Customer-Support"]
       }
     ],
-    "tags": [
-      "Customer Service",
-      "Crisp",
-      "Email Marketing",
-      "Slack",
-      "Technical Documentation",
-      "Multilingual Support"
-    ]
+    "tags": ["Customer Service", "Crisp", "Email Marketing", "Slack", "Technical Documentation", "Multilingual Support"]
   }
 ]

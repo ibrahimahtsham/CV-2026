@@ -1,4 +1,4 @@
-import { isVisible, getTags, calcExperience, injectExperience, entryDuration } from './helpers.js';
+import { isVisible, getTags, calcExperience, injectExperience, entryDuration, formatPeriod } from './helpers.js';
 
 function esc(s) {
   return String(s == null ? '' : s)
@@ -74,7 +74,7 @@ a { color: #000; }
     const tags = getTags(entry, r);
     const h = [`<div class="entry"><div class="entry-title">${esc(entry.title)} &middot; ${esc(entry.org || entry.type)}</div>`];
     const duration = entryDuration(entry);
-    const periodText = duration ? `${entry.periodDisplay} · ${duration}` : entry.periodDisplay;
+    const periodText = duration ? `${formatPeriod(entry)} · ${duration}` : formatPeriod(entry);
     const metaParts = [periodText, entry.location, entry.mode].filter(Boolean);
     if (metaParts.length) h.push(`<div class="entry-meta">${metaParts.map(esc).join(' &middot; ')}</div>`);
     if (bullets.length) { h.push('<ul>'); bullets.forEach(b => h.push(`<li>${esc(typeof b === 'string' ? b : b.text)}</li>`)); h.push('</ul>'); }

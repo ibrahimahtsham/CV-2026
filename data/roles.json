@@ -9,51 +9,51 @@
 
   "roles": {
     "all": {
-      "subtitle": "Full-Stack Developer \u00b7 MSP Operations \u00b7 IT Support & Automation",
+      "subtitle": "Full-Stack Developer · MSP Operations · IT Support & Automation",
       "introParagraphs": [
-        "IT Technician and Full-Stack Developer with {experience} of experience across MSP operations and software engineering. At Fast & Reliable IT Services, led an end-to-end phishing incident response for a managed client, executed an internal network penetration test surfacing 7 Critical findings, and resolved 235+ support tickets across 10+ managed clients — all within the first 3 months.",
+        "IT Technician and Full-Stack Developer with {experience} of experience across MSP operations and software engineering. At Fast & Reliable IT Services, led an end-to-end phishing incident response for a managed client, executed an internal network penetration test surfacing 7 Critical findings, and resolved 436+ support tickets across 10+ managed clients.",
         "Independently developed and deployed a custom construction job management platform (React, Node.js, PostgreSQL), handling the full development lifecycle: client communication, requirements gathering, frontend/backend implementation, Linux server management, and third-party integrations.",
-        "Comfortable across technical support and software engineering environments, with experience in automation, cloud administration, Active Directory, endpoint security platforms, and AI-assisted development workflows. Known for adapting quickly, communicating clearly with clients, and taking ownership of problems through to resolution."
+        "Comfortable across technical support and software engineering environments, with experience in automation, cloud administration, Active Directory, endpoint security platforms, and AI-assisted development workflows."
       ]
     },
     "Full-Stack": {
-      "subtitle": "Full-Stack Developer \u00b7 React \u00b7 Node.js \u00b7 PostgreSQL \u00b7 AI Integration",
+      "subtitle": "Full-Stack Developer · React · Node.js · PostgreSQL · AI Integration",
       "introParagraphs": [
-        "Full-Stack Developer with {experience} of experience building production applications end-to-end, from client requirements through frontend/backend implementation, Linux server deployment, and third-party integrations. Independently developed and deployed a custom construction job management platform (React, Node.js/Express, PostgreSQL) from scratch, replacing a managed client\u2019s paid SaaS subscription.",
+        "Full-Stack Developer with {experience} of experience building production applications end-to-end, from client requirements through frontend/backend implementation, Linux server deployment, and third-party integrations. Independently developed and deployed a custom construction job management platform (React, Node.js/Express, PostgreSQL) from scratch, replacing a managed client's paid SaaS subscription.",
         "Experienced with React, Node.js/Express, PostgreSQL, REST APIs, JWT authentication, QuickBooks API integration, PDF generation workflows, and AI-assisted development. Built and shipped AI interviewer platforms (LLM + STT + TTS) using OpenAI and Ollama, with pluggable service architectures and cross-platform startup tooling.",
         "Background in MSP operations provides strong operational context, with hands-on experience managing Linux VPS deployments, SSH access, firewall configuration, automated backups, and production troubleshooting alongside the development work."
       ]
     },
     "IT": {
-      "subtitle": "IT Support Specialist \u00b7 MSP Operations \u00b7 Microsoft 365 \u00b7 Endpoint Security",
+      "subtitle": "IT Support Specialist · MSP Operations · Microsoft 365 · Endpoint Security",
       "introParagraphs": [
-        "IT Support Technician with hands-on MSP experience across Microsoft 365 administration, Active Directory, and endpoint security — supporting 10+ managed clients. Within the first 3 months at Fast & Reliable IT Services, led a full phishing incident response (identified Amazon SES spoofing via SPF alignment analysis, traced delivery through Exchange, contained the threat) and executed a network penetration test from scratch using Vonahi vPenTest, surfacing 7 Critical findings across a 60+ device network.",
-        "Proficient in the Kaseya ecosystem (Datto RMM, Datto EDR, SaaS Alerts, ThreatLocker, Duo, Graphus, Inky, Autotask), phishing/security investigations, penetration testing support (Vonahi vPenTest), Exchange Online, SharePoint, user onboarding/offboarding, MFA, and access management. Comfortable handling high-volume ticket queues across multiple client environments.",
-        "Software development background enables automation of internal workflows, including custom reporting utilities for investigating abnormal OneDrive synchronization and SharePoint recycle-bin activity, and other internal tooling used in production MSP workflows."
+        "IT Support Technician with {experience} of hands-on MSP experience supporting 10+ managed clients across Microsoft 365, Active Directory, and endpoint security. Within that time, led a phishing incident response (traced Amazon SES spoofing via SPF alignment failure, contained via SpamHero), executed a network penetration test surfacing 7 Critical findings on a 60+ device network, and closed 436+ support tickets.",
+        "Proficient in the Kaseya ecosystem (Datto RMM, Datto EDR, SaaS Alerts, ThreatLocker, Duo, Graphus, Inky, Autotask), Exchange Online, SharePoint, user onboarding and offboarding, MFA, and access management across multiple client environments.",
+        "Software development background enables automation of internal workflows, including reporting utilities for investigating abnormal OneDrive synchronization and SharePoint recycle-bin activity, used directly in production MSP operations."
       ]
     },
     "NOC": {
-      "subtitle": "NOC Engineer \u00b7 Network Monitoring \u00b7 CCNA \u00b7 Infrastructure Support",
+      "subtitle": "NOC Engineer · Network Monitoring · CCNA · Infrastructure Support",
       "introParagraphs": [
-        "NOC Technician with hands-on experience in network operations and IT infrastructure, combining practical MSP support work with deep Cisco CCNA-level networking knowledge. Currently supporting managed client environments with network monitoring, connectivity troubleshooting, and incident response at Fast & Reliable IT Services.",
-        "Strong foundation in Cisco CCNA concepts including OSI Model, TCP/IP Stack, IPv4/IPv6, subnetting, VLANs, routing (OSPF, EIGRP, RIP), NAT, ACLs, WAN, wireless, and security. Completed extensive Cisco Packet Tracer labs covering router/switch configuration, troubleshooting, VLANs, routing protocols, DHCP, HSRP, STP, and EtherChannel.",
-        "Familiar with network monitoring concepts including SNMP, Syslog, and monitoring platform workflows through CCNA study. Knowledgeable in LAN/WAN configuration (VPN, MPLS), firewall and security concepts (ACLs, port security, DHCP snooping, IDS/IPS), device management (Cisco IOS, SSH, AAA), QoS, and network automation concepts (APIs, Ansible, SDN)."
+        "NOC Technician with {experience} of hands-on network operations and infrastructure support experience in a managed services environment, combining practical MSP work with Cisco CCNA-level networking fundamentals. Currently supporting managed client environments with network monitoring, connectivity troubleshooting, and incident response at Fast & Reliable IT Services.",
+        "Foundation in Cisco CCNA concepts including OSI Model, TCP/IP Stack, IPv4/IPv6, subnetting, VLANs, routing (OSPF, EIGRP, RIP), NAT, ACLs, WAN, wireless, and security. Experienced with network infrastructure assessment, firewall rules, Active Directory, and the Kaseya toolchain.",
+        "Familiar with network monitoring concepts including SNMP, Syslog, VPN, MPLS, and monitoring platform workflows. Knowledgeable in LAN/WAN configuration, firewall and security concepts (ACLs, port security, DHCP snooping, IDS/IPS), Cisco IOS device management, and network automation concepts (APIs, Ansible, SDN)."
       ]
     },
     "Customer-Support": {
-      "subtitle": "Customer Support Specialist \u00b7 Technical & Product Support \u00b7 Client Communication",
+      "subtitle": "Customer Support Specialist · Technical & Product Support · Client Communication",
       "introParagraphs": [
-        "Customer Support Specialist with {experience} of experience delivering technical and product support across fast-paced environments \u2014 handling 30\u201350 client requests per day at CartKit, and 235+ MSP support tickets across 10+ managed client organizations at Fast & Reliable IT Services.",
-        "Experienced with supporting users through annotated screenshots, screen recordings, and step-by-step guides. Comfortable communicating with non-English-speaking clients, and proficient with Crisp, Slack, and email-based support workflows. Skilled at translating technical solutions into clear, accessible instructions.",
+        "Customer Support Specialist with {experience} of experience delivering technical and product support across fast-paced environments, handling 30-50 client requests per day at CartKit and 436+ MSP support tickets across 10+ managed client organizations at Fast & Reliable IT Services.",
+        "Experienced with supporting users through annotated screenshots, screen recordings, and step-by-step guides. Comfortable communicating with non-English-speaking clients, and proficient with Crisp, Slack, and email-based support workflows.",
         "Client-facing background extends to business development and account management at PanaceaLogics, conducting client meetings, gathering project requirements, managing client relationships via Odoo, and handling follow-ups across Upwork and Freelancer projects."
       ]
     },
     "Business-Dev": {
-      "subtitle": "Business Development Specialist \u00b7 Client Acquisition \u00b7 Upwork \u00b7 Proposal Writing",
+      "subtitle": "Business Development Specialist · Client Acquisition · Upwork · Proposal Writing",
       "introParagraphs": [
         "Business Development Specialist with {experience} of experience in client acquisition, proposal writing, and account management on Upwork and Freelancer. Developed and optimized bidding workflows with automation, improving platform efficiency and client conversion rates at PanaceaLogics.",
         "Experienced in using Odoo for client management: scheduling calls, conducting requirements meetings, and handling project follow-ups. Applied prompt engineering to train AI models for automated proposal writing and job description classification, streamlining the BD pipeline.",
-        "Comfortable identifying high-value opportunities using platform-specific strategies (connect optimization, profile boosting, hiring trend analysis) and navigating NDA/IP agreements. Built supporting tools including WhatsApp bulk messaging automation and Excel-based tracking systems for bids and ongoing projects."
+        "Experienced in identifying high-value opportunities using platform-specific strategies (connect optimization, profile boosting, hiring trend analysis) and navigating NDA/IP agreements. Built supporting tools including WhatsApp bulk messaging automation and Excel-based tracking systems for bids and ongoing projects."
       ]
     }
   }

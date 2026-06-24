@@ -53,7 +53,7 @@ export function calcExperience(entries, role) {
   const rem = months % 12;
   if (yrs === 0) return `${months} month${months > 1 ? 's' : ''}`;
   if (rem === 0) return `${yrs} year${yrs > 1 ? 's' : ''}`;
-  return `${yrs} year${yrs > 1 ? 's' : ''} ${rem} month${rem > 1 ? 's' : ''}`;
+  return `${yrs}+ year${yrs > 1 ? 's' : ''}`;
 }
 
 export function entryDuration(entry) {
@@ -69,7 +69,7 @@ export function entryDuration(entry) {
   const rem = months % 12;
   if (yrs === 0) return `${months} mo`;
   if (rem === 0) return `${yrs} yr`;
-  return `${yrs} yr ${rem} mo`;
+  return `${yrs}+ yr`;
 }
 
 export function injectExperience(text, expStr) {
@@ -89,4 +89,21 @@ export function tagRow(tags) {
   const row = el('div', { class: 'tag-row' });
   tags.forEach(t => row.appendChild(el('span', { class: 'tag' }, t)));
   return row;
+}
+
+/* ── Period display (auto-generated from periodStart / periodEnd) ── */
+const _MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+function _fmtYM(str) {
+  const [y, m] = str.split('-').map(Number);
+  return `${_MONTHS[m - 1]} ${y}`;
+}
+
+export function formatPeriod(entry) {
+  const start = entry.periodStart ? _fmtYM(entry.periodStart) : '';
+  const end = (entry.periodEnd === null || entry.periodEnd === undefined)
+    ? 'Present'
+    : _fmtYM(entry.periodEnd);
+  const base = start ? `${start} - ${end}` : end;
+  return entry.periodNote ? `${base} (${entry.periodNote})` : base;
 }

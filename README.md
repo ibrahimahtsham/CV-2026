@@ -63,16 +63,16 @@ If you have a non-work entry in `experience.json` (a career break, relocation, o
 {
   "id": "exp-relocation",
   "title": "Career Transition",
-  "org": "Relocation: Pakistan → Saudi Arabia",
+  "org": "Relocation: Pakistan to Saudi Arabia",
   "periodStart": "2025-11",
   "periodEnd": "2026-02",
-  "periodDisplay": "Nov 2025 – Feb 2026",
   "isGap": true,          // ← excluded from {experience} calculation
   "roles": ["IT", "Full-Stack"],
+  "mode": null,
   "bullets": [
     { "text": "Relocated to Riyadh to pursue career opportunities.", "roles": ["IT", "Full-Stack"] }
   ],
-  "tags": {}
+  "tags": []
 }
 ```
 
@@ -147,11 +147,10 @@ RULES:
 - "all" is a special role key meaning "show in every view including master"
 - For tags: use the object form {"RoleName": [...], "all": [...]} when tags
   differ by role; use a flat array ["tag1", "tag2"] when one role or all the same
-- Set openByDefault: true for your most impressive 1-2 entries only
 - url / score / repoUrl can be null if not applicable
 - highlights arrays are optional — use them for notable achievements or cert topics
 - metaBadges are small highlight chips shown in the header (visa status, availability, etc.)
-- periodDisplay is the human-readable date string, e.g. "Jun 2024 – Present"
+- periodStart/periodEnd drive the displayed date string automatically — do not add periodDisplay fields
 
 OUTPUT: return each file as a separate fenced JSON code block labelled with the filename.
 
@@ -193,11 +192,9 @@ Note: add one key per role in "roles" matching each entry in availableRoles, e.g
     "org": "",
     "periodStart": "YYYY-MM",
     "periodEnd": "YYYY-MM",
-    "periodDisplay": "",
     "location": "",
     "mode": "",
     "roles": [],
-    "openByDefault": false,
     "isGap": false,
     "bullets": [
       { "text": "", "roles": [] }
@@ -221,9 +218,7 @@ Set isGap: true for career breaks or relocation entries — they show in the CV 
     "type": "",
     "periodStart": "YYYY-MM",
     "periodEnd": "YYYY-MM",
-    "periodDisplay": "",
     "roles": [],
-    "openByDefault": false,
     "repoUrl": null,
     "repoDisplay": null,
     "bullets": [
@@ -413,11 +408,9 @@ Array of work experience entries, most recent first.
     "org": "Company Name",
     "periodStart": "2024-06",           // YYYY-MM
     "periodEnd": null,                  // null = Present; "YYYY-MM" for ended roles
-    "periodDisplay": "Jun 2024 – Present",  // human-readable, shown on the card
     "location": "City, State/Country",
     "mode": "Remote",                   // "Remote" | "On-site" | "Hybrid"
     "roles": ["Full-Stack", "IT"],      // which role views show this entry
-    "openByDefault": false,             // true = card expanded on load
     "isGap": false,                     // optional — true = shown but excluded from {experience} calc
     "bullets": [
       {
@@ -454,9 +447,7 @@ Same shape as `experience.json` entries, with two extra fields:
     "type": "Full-Stack Web App",       // short category label shown on the card
     "periodStart": "2025-09",
     "periodEnd": "2025-10",
-    "periodDisplay": "Sep 2025 – Oct 2025",
     "roles": ["Full-Stack"],
-    "openByDefault": false,
     "repoUrl": "https://github.com/you/repo",   // null if private / no repo
     "repoDisplay": "github.com/you/repo",        // null if no repo
     "bullets": [
@@ -560,14 +551,10 @@ Array of certifications, most recent first.
 
 ## Local development
 
-You need a local server because ES6 modules and `fetch()` don't work on `file://` URLs.
+ES6 modules and `fetch()` require a local server — `file://` URLs won't work.
 
-The repo includes a simple Node.js server:
-```bash
-node server.js
-```
+The simplest option is the **Live Server** extension for VS Code: right-click `index.html` → *Open with Live Server*. Or use any static server:
 
-Or use any other static server:
 ```bash
 npx serve .
 # or

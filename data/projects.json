@@ -5,97 +5,39 @@
     "type": "Full-Stack Web App",
     "periodStart": "2026-04",
     "periodEnd": "2026-05",
-    "periodDisplay": "Apr 2026 – May 2026",
-    "roles": [
-      "Full-Stack",
-      "IT"
-    ],
-    "openByDefault": false,
+    "roles": ["Full-Stack", "IT"],
+
     "bullets": [
       {
-        "text": "Independently developed and deployed a custom construction job management platform for a managed client (Mammoth) to replace their existing JobTread subscription — built and delivered as part of MSP work at Fast & Reliable IT Services.",
-        "roles": [
-          "Full-Stack",
-          "IT"
-        ]
+        "text": "Built and deployed a full construction job management platform (React, Node.js/Express, PostgreSQL) for a managed client to replace their JobTread subscription, delivered end-to-end as part of MSP work.",
+        "roles": ["Full-Stack", "IT"]
       },
       {
-        "text": "Handled full project lifecycle: client meetings, requirements gathering, frontend/backend development, deployment, and ongoing feature iteration.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Managed full project lifecycle: client requirements meetings, frontend/backend development, Linux VPS deployment, and ongoing feature iteration.",
+        "roles": ["Full-Stack"]
       },
       {
-        "text": "Built with React, Node.js/Express, and PostgreSQL; includes role-based authentication, encrypted entry code storage, and customer access controls.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Built budgeting, KPI dashboards, drag-and-drop budget groups, e-signature workflows, and a customer document portal with PDF generation for invoices, proposals, contracts, and change orders.",
+        "roles": ["Full-Stack"]
       },
       {
-        "text": "Developed budgeting/financial features: nested budget groups, drag-and-drop organization, margin calculations, KPI dashboards, and expense tracking.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Integrated QuickBooks API for invoice sync; migrated all operational data (customers, jobs, documents, expenses) from the legacy system into PostgreSQL.",
+        "roles": ["Full-Stack", "IT"]
       },
       {
-        "text": "Created a customer document portal with PDF generation, e-signature workflows, signed access links, and approval tracking for invoices, proposals, contracts, and change orders.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Integrated QuickBooks APIs for invoice synchronization; experimented with AI-assisted pricing workflows based on item descriptions.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Migrated operational data from the legacy system (customers, jobs, documents, expenses, budget records) into PostgreSQL.",
-        "roles": [
-          "Full-Stack",
-          "IT"
-        ]
-      },
-      {
-        "text": "Managed deployment on a Linux VPS: SSH, firewall, automated PostgreSQL backups, environment management, and production troubleshooting.",
-        "roles": [
-          "Full-Stack",
-          "IT"
-        ]
+        "text": "Deployed on Linux VPS with SSH, firewall configuration, automated PostgreSQL backups, and production troubleshooting.",
+        "roles": ["Full-Stack", "IT"]
       }
     ],
     "tags": {
       "Full-Stack": [
-        "React",
-        "Node.js",
-        "Express.js",
-        "PostgreSQL",
-        "JWT Auth",
-        "REST APIs",
-        "QuickBooks API",
-        "PDF Generation",
-        "Linux VPS",
-        "SSH"
+        "React", "Node.js", "Express.js", "PostgreSQL", "JWT Auth",
+        "REST APIs", "QuickBooks API", "PDF Generation", "Linux VPS", "SSH"
       ],
-      "IT": [
-        "Linux VPS",
-        "SSH",
-        "PostgreSQL",
-        "Automated Backups",
-        "Database Migration"
-      ],
+      "IT": ["Linux VPS", "SSH", "PostgreSQL", "Automated Backups", "Database Migration"],
       "all": [
-        "React",
-        "Node.js",
-        "Express.js",
-        "PostgreSQL",
-        "JWT Auth",
-        "REST APIs",
-        "QuickBooks API",
-        "PDF Generation",
-        "Linux VPS",
-        "SSH",
-        "Database Migration"
+        "React", "Node.js", "Express.js", "PostgreSQL", "JWT Auth",
+        "REST APIs", "QuickBooks API", "PDF Generation", "Linux VPS", "SSH", "Database Migration"
       ]
     }
   },
@@ -105,130 +47,18 @@
     "type": "Computer Vision Pipeline",
     "periodStart": "2026-03",
     "periodEnd": "2026-04",
-    "periodDisplay": "Mar 2026 – Apr 2026",
-    "roles": [
-      "Full-Stack",
-      "IT"
-    ],
-    "openByDefault": false,
+    "roles": ["Full-Stack", "IT"],
+
     "bullets": [
       {
-        "text": "Contributed to an internal CCTV investigation workflow for reviewing and analyzing large volumes of surveillance footage.",
-        "roles": [
-          "Full-Stack",
-          "IT"
-        ]
-      },
-      {
-        "text": "Researched and prototyped Azure Video Indexing and computer vision tooling for automating scene classification, behavioral flagging, and searchable video analysis across large footage datasets.",
-        "roles": [
-          "Full-Stack",
-          "IT"
-        ]
-      },
-      {
-        "text": "Streamlined footage review by improving filtering, organization, and investigator review workflows for high-volume video datasets.",
-        "roles": [
-          "IT"
-        ]
-      },
-      {
-        "text": "Processed and organized video metadata for reporting and investigative analysis.",
-        "roles": [
-          "IT"
-        ]
+        "text": "Built Azure Video Indexing-based tooling for automated scene classification and searchable analysis across large surveillance footage datasets.",
+        "roles": ["Full-Stack", "IT"]
       }
     ],
     "tags": {
-      "Full-Stack": [
-        "Azure Video Indexing",
-        "Computer Vision",
-        "Python",
-        "Automation"
-      ],
-      "IT": [
-        "Azure Video Indexing",
-        "Computer Vision",
-        "Python",
-        "Video Processing",
-        "Automation",
-        "Data Processing"
-      ],
-      "all": [
-        "Azure Video Indexing",
-        "Computer Vision",
-        "Python",
-        "Video Processing",
-        "Automation",
-        "Data Processing"
-      ]
-    }
-  },
-  {
-    "id": "proj-whatsapp",
-    "title": "WhatsApp Bulk & Individual Message Sender",
-    "type": "Streamlit App",
-    "periodStart": "2025-10",
-    "periodEnd": "2025-10",
-    "periodDisplay": "Oct 2025",
-    "roles": [
-      "Full-Stack",
-      "Business-Dev"
-    ],
-    "openByDefault": false,
-    "bullets": [
-      {
-        "text": "Built a Streamlit app for sending WhatsApp messages to individual contacts and bulk recipients via CSV upload, designed for internship shortlisting and outreach automation.",
-        "roles": [
-          "Full-Stack",
-          "Business-Dev"
-        ]
-      },
-      {
-        "text": "Implemented per-minute scheduling, progress tracking, and status updates to avoid rate limits.",
-        "roles": [
-          "Full-Stack",
-          "Business-Dev"
-        ]
-      },
-      {
-        "text": "Added customizable message templates with {name} placeholders for personalized bulk outreach.",
-        "roles": [
-          "Full-Stack",
-          "Business-Dev"
-        ]
-      },
-      {
-        "text": "Built CSV management tools for resetting message status, previewing messages, and viewing planned schedules.",
-        "roles": [
-          "Full-Stack",
-          "Business-Dev"
-        ]
-      }
-    ],
-    "tags": {
-      "Full-Stack": [
-        "Python",
-        "Streamlit",
-        "pywhatkit",
-        "CSV Automation",
-        "Browser Automation"
-      ],
-      "Business-Dev": [
-        "Python",
-        "Streamlit",
-        "Outreach Automation",
-        "CSV Automation",
-        "Template Systems"
-      ],
-      "all": [
-        "Python",
-        "Streamlit",
-        "pywhatkit",
-        "CSV Automation",
-        "Browser Automation",
-        "Template Systems"
-      ]
+      "Full-Stack": ["Azure Video Indexing", "Computer Vision", "Python", "Automation"],
+      "IT": ["Azure Video Indexing", "Computer Vision", "Python", "Video Processing", "Automation"],
+      "all": ["Azure Video Indexing", "Computer Vision", "Python", "Video Processing", "Automation"]
     }
   },
   {
@@ -237,49 +67,21 @@
     "type": "Streamlit App",
     "periodStart": "2025-09",
     "periodEnd": "2025-10",
-    "periodDisplay": "Sep 2025 – Oct 2025",
-    "roles": [
-      "Full-Stack"
-    ],
-    "openByDefault": false,
+    "roles": ["Full-Stack"],
+
     "repoUrl": "https://github.com/ibrahimahtsham/ai-interviewer-online",
     "repoDisplay": "github.com/ibrahimahtsham/ai-interviewer-online",
     "bullets": [
       {
-        "text": "Hardware-agnostic AI interviewer (LLM + STT + TTS) using Streamlit and OpenAI; enables low-spec deployment by delegating heavy workloads to cloud providers.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Cloud AI interviewer (LLM + STT + TTS) built with Streamlit and OpenAI; delegates compute to cloud for low-spec deployment.",
+        "roles": ["Full-Stack"]
       },
       {
-        "text": "Modular service layer (llm_service.py, stt_service.py, tts_service.py) decoupled from UI for testability and provider swapping.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Pluggable provider architecture via environment variables for rapid switching of LLM/speech backends.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "One-command startup scripts (run.sh, run.bat) that create a virtualenv, install dependencies, and launch Streamlit.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Modular service layer (llm_service, stt_service, tts_service) with pluggable provider architecture and one-command cross-platform startup scripts.",
+        "roles": ["Full-Stack"]
       }
     ],
-    "tags": [
-      "Python",
-      "Streamlit",
-      "OpenAI API",
-      "LLM",
-      "STT",
-      "TTS",
-      "Modular Architecture",
-      "Cross-Platform"
-    ]
+    "tags": ["Python", "Streamlit", "OpenAI API", "LLM", "STT", "TTS", "Modular Architecture", "Cross-Platform"]
   },
   {
     "id": "proj-ai-interviewer-offline",
@@ -287,76 +89,21 @@
     "type": "Streamlit App",
     "periodStart": "2025-09",
     "periodEnd": "2025-09",
-    "periodDisplay": "Sep 2025",
-    "roles": [
-      "Full-Stack"
-    ],
-    "openByDefault": false,
+    "roles": ["Full-Stack"],
+
     "repoUrl": "https://github.com/ibrahimahtsham/ai-interviewer-offline",
     "repoDisplay": "github.com/ibrahimahtsham/ai-interviewer-offline",
     "bullets": [
       {
-        "text": "Privacy-focused offline variant using Ollama for on-device LLM inference and Faster Whisper for local STT, ensuring full data control.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Privacy-focused offline variant using Ollama (on-device LLM) and Faster Whisper (local STT) for full data control.",
+        "roles": ["Full-Stack"]
       },
       {
-        "text": "Reused shared UI/tab pattern; swapped cloud clients with local adapters while preserving service signatures for drop-in compatibility.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Model warm-load and lazy initialization to reduce startup latency and memory usage.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Drop-in compatible with the online variant; lazy resource initialization reduces startup latency and memory footprint.",
+        "roles": ["Full-Stack"]
       }
     ],
-    "tags": [
-      "Python",
-      "Streamlit",
-      "Ollama",
-      "Faster Whisper",
-      "Offline AI",
-      "Performance Optimization"
-    ]
-  },
-  {
-    "id": "proj-meezan",
-    "title": "Meezan Statement Parser & Expense Tracker",
-    "type": "Web App",
-    "periodStart": "2025-06",
-    "periodEnd": "2025-06",
-    "periodDisplay": "Jun 2025",
-    "roles": [
-      "Full-Stack"
-    ],
-    "openByDefault": false,
-    "repoUrl": "https://github.com/ibrahimahtsham/meezan-statement-parser-and-expense-tracker",
-    "repoDisplay": "github.com/ibrahimahtsham/meezan-statement-parser-and-expense-tracker",
-    "bullets": [
-      {
-        "text": "Client-side web app to parse Meezan Bank CSVs, categorize expenses, and visualize spending trends with interactive charts.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "Auto-categorization, CSV upload, and export instructions with no backend required.",
-        "roles": [
-          "Full-Stack"
-        ]
-      }
-    ],
-    "tags": [
-      "React",
-      "Vite",
-      "Recharts",
-      "Chart.js",
-      "CSV Processing"
-    ]
+    "tags": ["Python", "Streamlit", "Ollama", "Faster Whisper", "Offline AI", "Performance Optimization"]
   },
   {
     "id": "proj-freelancer-manager",
@@ -364,84 +111,70 @@
     "type": "React Dashboard",
     "periodStart": "2025-05",
     "periodEnd": "2025-08",
-    "periodDisplay": "May 2025 – Aug 2025",
-    "roles": [
-      "Full-Stack",
-      "Business-Dev"
-    ],
-    "openByDefault": false,
+    "roles": ["Full-Stack", "Business-Dev"],
+
     "repoUrl": "https://github.com/ibrahimahtsham/freelancer-client-info-grabber",
     "repoDisplay": "github.com/ibrahimahtsham/freelancer-client-info-grabber",
     "bullets": [
       {
-        "text": "Built a React/Vite dashboard during the Business Development role at PanaceaLogics to manage Freelancer.com clients, track project data, and calculate team compensation.",
-        "roles": [
-          "Full-Stack",
-          "Business-Dev"
-        ]
+        "text": "Built a React/Vite dashboard at PanaceaLogics to automate Freelancer.com client data extraction, track bid success rates, and calculate team commissions.",
+        "roles": ["Full-Stack", "Business-Dev"]
       },
       {
-        "text": "Automated client data extraction by chaining project ID to owner ID to client profile lookups via the Freelancer.com API, surfacing contact details typically hidden until a client responds to a bid.",
-        "roles": [
-          "Full-Stack",
-          "Business-Dev"
-        ]
+        "text": "Chained project ID to owner ID to client profile API lookups to surface contact details normally hidden until a client responds to a bid.",
+        "roles": ["Full-Stack", "Business-Dev"]
       },
       {
-        "text": "Built bid analytics features tracking success rates, earnings, and project volume with interactive charts via Recharts.",
-        "roles": [
-          "Full-Stack",
-          "Business-Dev"
-        ]
-      },
-      {
-        "text": "Designed an employee shift management system showing which projects arrived during each team member's working hours, with a salary and commission calculator based on awarded project metrics.",
-        "roles": [
-          "Full-Stack",
-          "Business-Dev"
-        ]
-      },
-      {
-        "text": "Implemented personalized message template generation for client outreach to speed up initial contact workflows.",
-        "roles": [
-          "Business-Dev"
-        ]
-      },
-      {
-        "text": "Deployed to GitHub Pages with a one-command batch script handling dev server startup, dependency installation, and deployment.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Deployed to GitHub Pages with shift-aware commission tracking and personalized outreach template generation.",
+        "roles": ["Full-Stack", "Business-Dev"]
       }
     ],
     "tags": {
-      "Full-Stack": [
-        "React",
-        "Vite",
-        "Material UI",
-        "Recharts",
-        "React Router",
-        "Freelancer.com API",
-        "GitHub Pages",
-        "Data Visualization"
-      ],
-      "Business-Dev": [
-        "Freelancer.com API",
-        "Bid Analytics",
-        "Client Management",
-        "Automation",
-        "Recharts"
-      ],
-      "all": [
-        "React",
-        "Vite",
-        "Material UI",
-        "Recharts",
-        "Freelancer.com API",
-        "Data Visualization",
-        "Automation"
-      ]
+      "Full-Stack": ["React", "Vite", "Material UI", "Recharts", "React Router", "Freelancer.com API", "GitHub Pages", "Data Visualization"],
+      "Business-Dev": ["Freelancer.com API", "Bid Analytics", "Client Management", "Automation", "Recharts"],
+      "all": ["React", "Vite", "Material UI", "Recharts", "Freelancer.com API", "Data Visualization", "Automation"]
     }
+  },
+  {
+    "id": "proj-whatsapp",
+    "title": "WhatsApp Bulk Message Sender",
+    "type": "Streamlit App",
+    "periodStart": "2025-10",
+    "periodEnd": "2025-10",
+    "roles": ["Business-Dev"],
+
+    "bullets": [
+      {
+        "text": "Built a Streamlit app for bulk WhatsApp outreach via CSV upload with per-minute scheduling, rate-limit handling, and personalized {name} templates.",
+        "roles": ["Business-Dev"]
+      },
+      {
+        "text": "Used internally for internship candidate shortlisting and business outreach automation.",
+        "roles": ["Business-Dev"]
+      }
+    ],
+    "tags": {
+      "Business-Dev": ["Python", "Streamlit", "Outreach Automation", "CSV Automation", "Template Systems"],
+      "all": ["Python", "Streamlit", "pywhatkit", "CSV Automation", "Template Systems"]
+    }
+  },
+  {
+    "id": "proj-meezan",
+    "title": "Meezan Statement Parser & Expense Tracker",
+    "type": "Web App",
+    "periodStart": "2025-06",
+    "periodEnd": "2025-06",
+    "roles": [],
+
+    "repoUrl": "https://github.com/ibrahimahtsham/meezan-statement-parser-and-expense-tracker",
+    "repoDisplay": "github.com/ibrahimahtsham/meezan-statement-parser-and-expense-tracker",
+    "bullets": [
+      {
+        "text": "Client-side web app to parse Meezan Bank CSVs, categorize expenses, and visualize spending trends with interactive charts.",
+        "roles": ["Full-Stack"]
+      }
+    ],
+    "tags": ["React", "Vite", "Recharts", "Chart.js", "CSV Processing"]
   },
   {
     "id": "proj-ascii-viewer",
@@ -449,32 +182,16 @@
     "type": "React Web App",
     "periodStart": "2025-05",
     "periodEnd": "2025-05",
-    "periodDisplay": "May 2025",
-    "roles": [
-      "Full-Stack"
-    ],
-    "openByDefault": false,
+    "roles": [],
+
     "repoUrl": "https://github.com/ibrahimahtsham/ascii-file-structure-viewer-web",
     "repoDisplay": "github.com/ibrahimahtsham/ascii-file-structure-viewer-web",
     "bullets": [
       {
-        "text": "Visualizes project file structures with ASCII art and provides comprehensive code statistics and analysis.",
-        "roles": [
-          "Full-Stack"
-        ]
-      },
-      {
-        "text": "GitHub repo integration, interactive tree controls, and smart filtering.",
-        "roles": [
-          "Full-Stack"
-        ]
+        "text": "Visualizes project file structures with ASCII art, code statistics, GitHub repo integration, and interactive tree controls.",
+        "roles": ["Full-Stack"]
       }
     ],
-    "tags": [
-      "React 18",
-      "Vite",
-      "Material-UI",
-      "GitHub API"
-    ]
+    "tags": ["React 18", "Vite", "Material-UI", "GitHub API"]
   }
 ]

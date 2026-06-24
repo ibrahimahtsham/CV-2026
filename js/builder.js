@@ -1,8 +1,8 @@
-import { el, isVisible, getTags, sectionHeader, tagRow, injectExperience, entryDuration } from './helpers.js';
+import { el, isVisible, getTags, sectionHeader, tagRow, injectExperience, entryDuration, formatPeriod } from './helpers.js';
 
 /* ── Shared: expandable card (<details>) ──────────────────────── */
 function entryCard(entry, visibleBullets, tags, summaryText) {
-  const card = el('details', entry.openByDefault ? { open: true } : {});
+  const card = el('details', {});
   card.appendChild(el('summary', {}, summaryText));
 
   const body = el('div', { class: 'details-body' });
@@ -10,7 +10,7 @@ function entryCard(entry, visibleBullets, tags, summaryText) {
   body.appendChild(inner);
 
   const duration = entryDuration(entry);
-  const periodText = duration ? `${entry.periodDisplay} · ${duration}` : entry.periodDisplay;
+  const periodText = duration ? `${formatPeriod(entry)} · ${duration}` : formatPeriod(entry);
   const metaParts = [periodText, entry.location, entry.mode].filter(Boolean);
   const meta = el('div', { class: 'entry-meta' });
   metaParts.forEach((p, i) => {
@@ -67,7 +67,7 @@ export function buildHeader(meta, roleData) {
   grid.appendChild(contactRow('images/globe-icon.svg', '', meta.location));
   grid.appendChild(contactRow('images/phone-icon.svg', '', meta.phone));
   grid.appendChild(contactRow('images/email-icon.svg', '', meta.email, 'mailto:' + meta.email));
-  grid.appendChild(contactRow('images/dob-icon.svg', '', meta.dob));
+  if (meta.dob) grid.appendChild(contactRow('images/dob-icon.svg', '', meta.dob));
   left.appendChild(grid);
 
   const badges = el('div', { class: 'meta-badges' });
@@ -87,7 +87,7 @@ export function buildHeader(meta, roleData) {
 
   const right = el('div', { class: 'header-right' });
   right.appendChild(el('img', { src: meta.photo, alt: 'Profile photo', class: 'profile-photo' }));
-  right.appendChild(el('img', { src: meta.qr, alt: 'QR code', class: 'qr-code', title: 'QR code — links to this CV' }));
+  right.appendChild(el('img', { src: meta.qr, alt: 'QR code', class: 'qr-code', title: 'QR code - links to this CV' }));
 
   hdr.appendChild(left);
   hdr.appendChild(right);
