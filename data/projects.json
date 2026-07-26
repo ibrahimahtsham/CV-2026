@@ -31,13 +31,36 @@
     ],
     "tags": {
       "Full-Stack": [
-        "React", "Node.js", "Express.js", "PostgreSQL", "JWT Auth",
-        "REST APIs", "QuickBooks API", "PDF Generation", "Linux VPS", "SSH"
+        "React",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "JWT Auth",
+        "REST APIs",
+        "QuickBooks API",
+        "PDF Generation",
+        "Linux VPS",
+        "SSH"
       ],
-      "IT": ["Linux VPS", "SSH", "PostgreSQL", "Automated Backups", "Database Migration"],
+      "IT": [
+        "Linux VPS",
+        "SSH",
+        "PostgreSQL",
+        "Automated Backups",
+        "Database Migration"
+      ],
       "all": [
-        "React", "Node.js", "Express.js", "PostgreSQL", "JWT Auth",
-        "REST APIs", "QuickBooks API", "PDF Generation", "Linux VPS", "SSH", "Database Migration"
+        "React",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "JWT Auth",
+        "REST APIs",
+        "QuickBooks API",
+        "PDF Generation",
+        "Linux VPS",
+        "SSH",
+        "Database Migration"
       ]
     }
   },
@@ -56,9 +79,26 @@
       }
     ],
     "tags": {
-      "Full-Stack": ["Azure Video Indexing", "Computer Vision", "Python", "Automation"],
-      "IT": ["Azure Video Indexing", "Computer Vision", "Python", "Video Processing", "Automation"],
-      "all": ["Azure Video Indexing", "Computer Vision", "Python", "Video Processing", "Automation"]
+      "Full-Stack": [
+        "Azure Video Indexing",
+        "Computer Vision",
+        "Python",
+        "Automation"
+      ],
+      "IT": [
+        "Azure Video Indexing",
+        "Computer Vision",
+        "Python",
+        "Video Processing",
+        "Automation"
+      ],
+      "all": [
+        "Azure Video Indexing",
+        "Computer Vision",
+        "Python",
+        "Video Processing",
+        "Automation"
+      ]
     }
   },
   {
@@ -81,7 +121,16 @@
         "roles": ["Full-Stack"]
       }
     ],
-    "tags": ["Python", "Streamlit", "OpenAI API", "LLM", "STT", "TTS", "Modular Architecture", "Cross-Platform"]
+    "tags": [
+      "Python",
+      "Streamlit",
+      "OpenAI API",
+      "LLM",
+      "STT",
+      "TTS",
+      "Modular Architecture",
+      "Cross-Platform"
+    ]
   },
   {
     "id": "proj-ai-interviewer-offline",
@@ -103,7 +152,14 @@
         "roles": ["Full-Stack"]
       }
     ],
-    "tags": ["Python", "Streamlit", "Ollama", "Faster Whisper", "Offline AI", "Performance Optimization"]
+    "tags": [
+      "Python",
+      "Streamlit",
+      "Ollama",
+      "Faster Whisper",
+      "Offline AI",
+      "Performance Optimization"
+    ]
   },
   {
     "id": "proj-freelancer-manager",
@@ -130,9 +186,32 @@
       }
     ],
     "tags": {
-      "Full-Stack": ["React", "Vite", "Material UI", "Recharts", "React Router", "Freelancer.com API", "GitHub Pages", "Data Visualization"],
-      "Business-Dev": ["Freelancer.com API", "Bid Analytics", "Client Management", "Automation", "Recharts"],
-      "all": ["React", "Vite", "Material UI", "Recharts", "Freelancer.com API", "Data Visualization", "Automation"]
+      "Full-Stack": [
+        "React",
+        "Vite",
+        "Material UI",
+        "Recharts",
+        "React Router",
+        "Freelancer.com API",
+        "GitHub Pages",
+        "Data Visualization"
+      ],
+      "Business-Dev": [
+        "Freelancer.com API",
+        "Bid Analytics",
+        "Client Management",
+        "Automation",
+        "Recharts"
+      ],
+      "all": [
+        "React",
+        "Vite",
+        "Material UI",
+        "Recharts",
+        "Freelancer.com API",
+        "Data Visualization",
+        "Automation"
+      ]
     }
   },
   {
@@ -154,8 +233,20 @@
       }
     ],
     "tags": {
-      "Business-Dev": ["Python", "Streamlit", "Outreach Automation", "CSV Automation", "Template Systems"],
-      "all": ["Python", "Streamlit", "pywhatkit", "CSV Automation", "Template Systems"]
+      "Business-Dev": [
+        "Python",
+        "Streamlit",
+        "Outreach Automation",
+        "CSV Automation",
+        "Template Systems"
+      ],
+      "all": [
+        "Python",
+        "Streamlit",
+        "pywhatkit",
+        "CSV Automation",
+        "Template Systems"
+      ]
     }
   },
   {

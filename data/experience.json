@@ -4,7 +4,7 @@
     "title": "IT Technician",
     "org": "Fast & Reliable IT Services",
     "periodStart": "2026-03",
-    "periodEnd": null,
+    "periodEnd": "2026-07",
     "location": "Corpus Christi, TX",
     "mode": "Remote",
     "roles": ["IT", "NOC", "Full-Stack", "Customer-Support"],
@@ -35,6 +35,14 @@
         "roles": ["IT"]
       },
       {
+        "text": "Consolidated a client's calendars scattered across multiple user mailboxes into a single organized shared calendar; engineered the migration by publishing each mailbox calendar as an ICS file and importing them into the unified calendar.",
+        "roles": ["IT"]
+      },
+      {
+        "text": "Identified and fixed the root cause of a recurring Duo MFA issue (blurry/non-functional sign-in screen) that more experienced technicians had only worked around by disabling Duo; traced the issue to the absence of a local account and implemented the permanent fix.",
+        "roles": ["IT"]
+      },
+      {
         "text": "Investigated security alerts including geographic login anomalies, bulk file downloads, and persistence events using Datto EDR, SaaS Alerts, and ThreatLocker.",
         "roles": ["IT", "NOC"]
       },
@@ -53,21 +61,74 @@
     ],
     "tags": {
       "IT": [
-        "MSP Operations", "Microsoft 365", "Exchange Online", "SharePoint",
-        "Active Directory", "Group Policy", "Datto EDR", "SaaS Alerts",
-        "Autotask", "Kaseya", "ThreatLocker", "Duo MFA", "Vonahi",
-        "SpamHero", "Microsoft Defender", "DMARC/DKIM/SPF",
-        "Penetration Testing", "Entra Admin Center", "Azure AD Hybrid Join"
+        "MSP Operations",
+        "Microsoft 365",
+        "Exchange Online",
+        "SharePoint",
+        "Active Directory",
+        "Group Policy",
+        "Datto EDR",
+        "SaaS Alerts",
+        "Autotask",
+        "Kaseya",
+        "ThreatLocker",
+        "Duo MFA",
+        "Vonahi",
+        "SpamHero",
+        "Microsoft Defender",
+        "DMARC/DKIM/SPF",
+        "Penetration Testing",
+        "Entra Admin Center",
+        "Azure AD Hybrid Join"
       ],
-      "NOC": ["MSP Operations", "Active Directory", "Autotask", "Kaseya", "Linux", "SSH", "Firewall"],
-      "Full-Stack": ["Linux", "SSH", "React", "Node.js", "PostgreSQL", "Automation", "Autotask"],
-      "Customer-Support": ["Autotask", "Microsoft 365", "Remote Support", "Client Communication", "Email Support"],
+      "NOC": [
+        "MSP Operations",
+        "Active Directory",
+        "Autotask",
+        "Kaseya",
+        "Linux",
+        "SSH",
+        "Firewall"
+      ],
+      "Full-Stack": [
+        "Linux",
+        "SSH",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Automation",
+        "Autotask"
+      ],
+      "Customer-Support": [
+        "Autotask",
+        "Microsoft 365",
+        "Remote Support",
+        "Client Communication",
+        "Email Support"
+      ],
       "all": [
-        "MSP Operations", "Microsoft 365", "Exchange Online", "SharePoint",
-        "Active Directory", "Group Policy", "Datto EDR", "SaaS Alerts",
-        "Autotask", "Kaseya", "ThreatLocker", "Duo MFA", "SpamHero",
-        "Microsoft Defender", "DMARC/DKIM/SPF", "Penetration Testing",
-        "Entra Admin Center", "Azure AD Hybrid Join", "Linux", "React", "Node.js", "PostgreSQL"
+        "MSP Operations",
+        "Microsoft 365",
+        "Exchange Online",
+        "SharePoint",
+        "Active Directory",
+        "Group Policy",
+        "Datto EDR",
+        "SaaS Alerts",
+        "Autotask",
+        "Kaseya",
+        "ThreatLocker",
+        "Duo MFA",
+        "SpamHero",
+        "Microsoft Defender",
+        "DMARC/DKIM/SPF",
+        "Penetration Testing",
+        "Entra Admin Center",
+        "Azure AD Hybrid Join",
+        "Linux",
+        "React",
+        "Node.js",
+        "PostgreSQL"
       ]
     }
   },
@@ -111,8 +172,14 @@
       }
     ],
     "tags": [
-      "Python", "Streamlit", "OpenAI API", "Ollama",
-      "Faster Whisper", "LLM Integration", "STT/TTS Pipelines", "Modular Architecture"
+      "Python",
+      "Streamlit",
+      "OpenAI API",
+      "Ollama",
+      "Faster Whisper",
+      "LLM Integration",
+      "STT/TTS Pipelines",
+      "Modular Architecture"
     ]
   },
   {
@@ -149,13 +216,33 @@
     ],
     "tags": {
       "Business-Dev": [
-        "Business Development", "Upwork", "Freelancer", "Odoo",
-        "Prompt Engineering", "MySQL", "Excel", "Chrome Extensions", "Client Acquisition"
+        "Business Development",
+        "Upwork",
+        "Freelancer",
+        "Odoo",
+        "Prompt Engineering",
+        "MySQL",
+        "Excel",
+        "Chrome Extensions",
+        "Client Acquisition"
       ],
-      "Customer-Support": ["Client Communication", "Odoo", "NDA/IP Agreements", "Requirements Gathering", "Follow-ups"],
+      "Customer-Support": [
+        "Client Communication",
+        "Odoo",
+        "NDA/IP Agreements",
+        "Requirements Gathering",
+        "Follow-ups"
+      ],
       "all": [
-        "Business Development", "Upwork", "Freelancer", "Odoo",
-        "SQL", "Prompt Engineering", "MySQL", "Excel", "Chrome Extensions"
+        "Business Development",
+        "Upwork",
+        "Freelancer",
+        "Odoo",
+        "SQL",
+        "Prompt Engineering",
+        "MySQL",
+        "Excel",
+        "Chrome Extensions"
       ]
     }
   },
@@ -180,7 +267,15 @@
         "roles": ["Full-Stack"]
       }
     ],
-    "tags": ["WordPress", "WooCommerce", "Elementor", "PHP", "Laravel", "SEO", "Web Development"]
+    "tags": [
+      "WordPress",
+      "WooCommerce",
+      "Elementor",
+      "PHP",
+      "Laravel",
+      "SEO",
+      "Web Development"
+    ]
   },
   {
     "id": "exp-rtechnologies",
@@ -230,6 +325,13 @@
         "roles": ["Customer-Support"]
       }
     ],
-    "tags": ["Customer Service", "Crisp", "Email Marketing", "Slack", "Technical Documentation", "Multilingual Support"]
+    "tags": [
+      "Customer Service",
+      "Crisp",
+      "Email Marketing",
+      "Slack",
+      "Technical Documentation",
+      "Multilingual Support"
+    ]
   }
 ]

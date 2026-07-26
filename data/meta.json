@@ -10,5 +10,9 @@
   "githubDisplay": "github.com/ibrahimahtsham",
   "photo": "images/my face updated.jpg",
   "qr": "images/qr-code.png",
-  "metaBadges": ["Transferable Iqama", "Immediate Availability", "Open to Relocation"]
+  "metaBadges": [
+    "Transferable Iqama",
+    "Immediate Availability",
+    "Open to Relocation"
+  ]
 }
