@@ -4,7 +4,7 @@
     "title": "Mammoth Job Management System",
     "type": "Full-Stack Web App",
     "periodStart": "2026-04",
-    "periodEnd": "2026-05",
+    "periodEnd": "2026-07",
     "roles": ["Full-Stack", "IT"],
 
     "bullets": [
@@ -21,11 +21,19 @@
         "roles": ["Full-Stack"]
       },
       {
-        "text": "Integrated QuickBooks API for invoice sync; migrated all operational data (customers, jobs, documents, expenses) from the legacy system into PostgreSQL.",
+        "text": "Implemented Microsoft SSO (Azure AD) as the sole authentication method, validating ID tokens against Microsoft's JWKS endpoint and restricting sign-in to approved tenant IDs.",
         "roles": ["Full-Stack", "IT"]
       },
       {
-        "text": "Deployed on Linux VPS with SSH, firewall configuration, automated PostgreSQL backups, and production troubleshooting.",
+        "text": "Built a token-based customer portal (UUID-keyed, no login required) for document viewing, approval, and payment, and encrypted sensitive data at rest (AES) for stored property entry codes to reduce breach risk.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Integrated QuickBooks API for invoice sync and built an incoming payment webhook to automatically mark invoices paid once a customer pays through the portal; migrated all operational data (customers, jobs, documents, expenses) from the legacy system into PostgreSQL.",
+        "roles": ["Full-Stack", "IT"]
+      },
+      {
+        "text": "Deployed and maintained production infrastructure on a Linux VPS: Caddy reverse proxy with automatic TLS, systemd-managed Node.js service, firewall configuration, automated daily PostgreSQL backups with 14-day rotation, and production troubleshooting.",
         "roles": ["Full-Stack", "IT"]
       }
     ],
@@ -36,18 +44,25 @@
         "Express.js",
         "PostgreSQL",
         "JWT Auth",
+        "Azure AD SSO",
         "REST APIs",
         "QuickBooks API",
+        "Webhooks",
         "PDF Generation",
+        "AES Encryption",
         "Linux VPS",
-        "SSH"
+        "SSH",
+        "Caddy"
       ],
       "IT": [
         "Linux VPS",
         "SSH",
         "PostgreSQL",
         "Automated Backups",
-        "Database Migration"
+        "Database Migration",
+        "Caddy",
+        "systemd",
+        "Azure AD"
       ],
       "all": [
         "React",
@@ -55,11 +70,16 @@
         "Express.js",
         "PostgreSQL",
         "JWT Auth",
+        "Azure AD SSO",
         "REST APIs",
         "QuickBooks API",
+        "Webhooks",
         "PDF Generation",
+        "AES Encryption",
         "Linux VPS",
         "SSH",
+        "Caddy",
+        "systemd",
         "Database Migration"
       ]
     }
