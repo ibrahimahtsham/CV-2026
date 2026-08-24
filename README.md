@@ -10,14 +10,28 @@ A single-page, static HTML CV that serves **multiple role-specific versions** fr
 
 All your CV content lives in the **`data/`** folder — one JSON file per section. Each experience entry, project, and bullet point is tagged with which roles it's relevant to. The renderer reads the URL (`?role=NOC`, `?role=Full-Stack`, etc.) and shows only the relevant content.
 
+There are two independent views, and they live on two different pages:
+
+| View | Where | What it is |
+|------|-------|------------|
+| Styled | `index.html` | The full visual design: expandable cards, colour, dark mode. |
+| ATS-friendly | `ats.html` | A separate, plain, single-column page: black text, underlined links, no buttons, no state. Matches what an applicant tracking system parses and what you'd print/save as a PDF. |
+
+**Landing on `index.html` with no `?role=` in the URL** shows a two-step picker: first pick a view (Styled or ATS-friendly), then pick a role. It's asked fresh every visit — nothing is remembered.
+
+**A direct `?role=` link always skips the picker** and goes straight to the styled view for that role:
+
 | URL | Shows |
 |-----|-------|
-| `/CV-2026/` | Full master CV — everything |
+| `/CV-2026/` | The view/role picker |
+| `/CV-2026/?role=all` | Full master CV — everything |
 | `/CV-2026/?role=Full-Stack` | Full-Stack-focused view |
 | `/CV-2026/?role=IT` | IT Support view |
 | `/CV-2026/?role=NOC` | NOC/Networking view |
 | `/CV-2026/?role=Customer-Support` | Customer Support view |
 | `/CV-2026/?role=Business-Dev` | Business Development view |
+
+The ATS-friendly page works the same way, on its own URL: `ats.html` (master) or `ats.html?role=IT`, etc. — directly shareable too.
 
 **To add a new role:** edit `data/roles.json` — add the role to `availableRoles`, write its intro, then tag relevant entries and bullets across the other data files. No new files to create.
 
@@ -29,9 +43,11 @@ All your CV content lives in the **`data/`** folder — one JSON file per sectio
 
 ### The button
 
-Click **Print / Save PDF** in the top controls. It opens a new browser window containing a self-contained, pre-styled HTML document and immediately fires the browser print dialog. Choose **Save as PDF** to produce the file.
+Click **Print / Save PDF** on the styled view. It opens `ats.html` for the current role in a new tab with `?print=1`, which triggers the browser's print dialog automatically as soon as the page renders. Choose **Save as PDF** to produce the file.
 
-**The output is always scoped to the currently selected role.** If you're on `?role=IT`, the PDF contains only IT-relevant content. If you're on the master view (no `?role=`), it contains everything.
+**The output is always scoped to the currently selected role.** If you're on `?role=IT`, the PDF contains only IT-relevant content. If you're on the master view, it contains everything.
+
+You can also just visit `ats.html?role=IT` (or any role) directly and print it yourself with Ctrl+P — no button needed.
 
 ### Workflow for job applications
 
@@ -40,7 +56,7 @@ Click **Print / Save PDF** in the top controls. It opens a new browser window co
 3. In the browser print dialog, choose **Save as PDF**
 4. Attach the PDF to your application or email
 
-For digital applications, you can skip the PDF entirely and just share the role URL — recipients see only the relevant content and the role nav is hidden from them.
+For digital applications, you can skip the PDF entirely and just share the role URL (styled or ATS) — recipients see only the relevant content and the role nav is hidden from them.
 
 ### What the PDF looks like
 
@@ -49,11 +65,11 @@ For digital applications, you can skip the PDF entirely and just share the role 
 - All sections fully expanded (no collapsed cards)
 - Tags and badges rendered as thin-bordered chips (ATS-safe — no background colours)
 - Links shown as `text (URL)` — phone and email are not expanded
-- Photo and QR code included at 75 pt × 100 pt and 50 pt × 50 pt respectively
+- No photo or QR code
 
 ### Ctrl+P (browser native)
 
-Pressing **Ctrl+P** directly on the main CV page also works. Before the print dialog opens, the page forces all `<details>` sections fully open; once the dialog closes it restores whatever was expanded before. The resulting print reflects whichever role is active in the URL.
+Pressing **Ctrl+P** directly on the styled CV page also works. Before the print dialog opens, the page forces all `<details>` sections fully open; once the dialog closes it restores whatever was expanded before. The resulting print reflects whichever role is active in the URL. For the plain ATS-safe layout specifically, printing `ats.html` is the more direct route.
 
 ### Marking gap entries
 
@@ -84,7 +100,8 @@ The entry still appears in the CV under whichever roles you tag it with — it j
 
 ```
 CV-2026/
-├── index.html              ← Shell page (never edit this)
+├── index.html              ← Styled view + view/role picker (never edit this)
+├── ats.html                ← ATS-friendly view: separate, plain, stateless page
 ├── data/
 │   ├── meta.json           ← Your name, contact info, photo, badges
 │   ├── roles.json          ← Available roles + per-role subtitles & intros
@@ -95,15 +112,16 @@ CV-2026/
 │   ├── skills.json         ← Core badges + skill categories
 │   └── languages.json      ← Languages
 ├── js/
-│   ├── main.js             ← Routing, render orchestration
-│   ├── builder.js          ← DOM section builders
-│   ├── helpers.js          ← Shared utilities (el, isVisible, etc.)
-│   └── print.js            ← ATS-friendly print HTML generator
+│   ├── main.js             ← Styled view: routing, picker, render orchestration
+│   ├── ats.js               ← ats.html's own script: fetch + render, nothing else
+│   ├── builder.js          ← DOM section builders (styled view)
+│   └── helpers.js          ← Shared utilities (el, isVisible, etc.)
 ├── css/
-│   ├── tokens.css          ← CSS variables + dark mode
-│   ├── layout.css          ← Page, header, wrapper
-│   ├── components.css      ← Cards, tags, nav, badges
-│   └── print.css           ← Print media styles
+│   ├── tokens.css          ← CSS variables + dark mode (styled view only)
+│   ├── layout.css          ← Page, header, wrapper (styled view)
+│   ├── components.css      ← Cards, tags, nav, badges, picker (styled view)
+│   ├── ats.css              ← Stylesheet for ats.html - plain, fixed, no theme
+│   └── print.css           ← Ctrl+P media styles for the styled view
 └── images/                 ← Your photo, QR code, icons, favicon
 ```
 

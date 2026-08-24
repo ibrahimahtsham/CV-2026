@@ -1,0 +1,56 @@
+/* ================================================================
+   ats.css - stylesheet for ats.html, the ATS-friendly view.
+
+   Deliberately not derived from the site's tokens/theme: fixed
+   black-on-white, system fonts, no accent color, no dark mode. This
+   page has no JS state beyond reading ?role= and ?print=1 from its
+   own URL - every load renders fresh.
+   ================================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { background: #ffffff; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.45;
+  color: #000000;
+}
+
+@page { size: A4 portrait; margin: 16mm 15mm; }
+
+@media screen {
+  body { max-width: 800px; margin: 0 auto; padding: 30px 36px 44px; }
+}
+
+h1 { font-size: 17pt; font-weight: bold; margin-bottom: 2pt; }
+.subtitle { font-size: 10pt; color: #333333; margin-bottom: 4pt; }
+.contacts { font-size: 9pt; color: #444444; margin-bottom: 8pt; }
+.cv-header { border-bottom: 1.5pt solid #000; padding-bottom: 8pt; }
+
+h2 {
+  font-size: 8.5pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.8pt;
+  border-bottom: 0.75pt solid #000;
+  padding-bottom: 2pt;
+  margin: 12pt 0 5pt;
+}
+
+.intro p { font-size: 9.5pt; line-height: 1.5; margin-bottom: 5pt; color: #222222; }
+
+.entry { margin-bottom: 7pt; }
+.entry-title { font-weight: bold; font-size: 10pt; }
+.entry-meta { font-size: 8.5pt; color: #555555; margin: 1.5pt 0; }
+
+ul { margin: 3pt 0 2pt 16pt; }
+li { font-size: 9.5pt; line-height: 1.4; margin-bottom: 2pt; }
+
+.tech { font-size: 8.5pt; color: #555555; margin-top: 2pt; }
+.skills-cat { font-size: 9.5pt; margin-bottom: 4pt; }
+.lang-row { font-size: 9.5pt; margin-bottom: 3pt; }
+.lang-desc { font-size: 8.5pt; color: #555555; margin-bottom: 2pt; }
+
+a { color: #000000; text-decoration: underline; }

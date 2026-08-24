@@ -1,9 +1,11 @@
 /* ================================================================
-   layout.css — dark toggle, A4 wrapper, header, cv-body, mobile
+   layout.css - dark toggle, A4 wrapper, header, cv-body, mobile
    ================================================================ */
 
 /* ── Dark mode toggle ──────────────────────────────────────────── */
 #dark-toggle {
+  appearance: none;
+  -webkit-appearance: none;
   position: fixed;
   top: 16px;
   right: 16px;
@@ -69,12 +71,13 @@ body.dark-mode .contact-item img { filter: invert(1); }
 
 .meta-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .meta-badge {
+  font-family: var(--font-mono);
   background: var(--accent-light);
   color: var(--accent);
-  border-radius: 20px;
-  padding: 3px 12px;
-  font-size: 0.78rem;
-  font-weight: 600;
+  border-radius: 6px;
+  padding: 3px 11px;
+  font-size: 0.74rem;
+  font-weight: 500;
 }
 
 .social-links { display: flex; gap: 16px; margin-top: 14px; flex-wrap: wrap; }
@@ -84,9 +87,13 @@ body.dark-mode .social-links a img { filter: invert(1); }
 .social-links a:hover { color: var(--accent); }
 
 .header-right { display: flex; flex-direction: column; align-items: center; gap: 12px; }
-.profile-photo { width: 120px; height: 160px; border-radius: 12px; object-fit: cover; border: 2px solid var(--border); box-shadow: 0 2px 10px rgba(0,0,0,0.12); }
-.qr-code { width: 72px; height: 72px; border-radius: 8px; border: 1.5px solid var(--border); opacity: 0.85; transition: opacity 0.2s; }
+.profile-photo { width: 116px; height: 152px; border-radius: 10px; object-fit: cover; border: 2px solid var(--accent-light); outline: 1px solid var(--border); box-shadow: 0 2px 10px rgba(20,24,30,0.12); }
+.qr-code { width: 68px; height: 68px; border-radius: 6px; border: 1.5px solid var(--border); opacity: 0.85; transition: opacity 0.2s; }
 .qr-code:hover { opacity: 1; }
+
+/* ── Load-in ───────────────────────────────────────────────────── */
+@keyframes header-rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+.cv-header { animation: header-rise 0.4s ease both; }
 
 /* ── CV body ───────────────────────────────────────────────────── */
 .cv-body { padding: 0 44px 36px; }
@@ -109,4 +116,5 @@ body.dark-mode .social-links a img { filter: invert(1); }
   #role-nav { padding: 8px 20px; }
   .header-left h1 { font-size: 1.5rem; }
   #dark-toggle { top: 8px; right: 8px; }
+  .top-controls { justify-content: flex-start; }
 }

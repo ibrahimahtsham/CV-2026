@@ -1,5 +1,5 @@
 /* ================================================================
-   tokens.css — design tokens, dark mode, reset, base body
+   tokens.css - design tokens, dark mode, reset, base body
    ================================================================ */
 
 :root {
@@ -10,13 +10,15 @@
   --accent: #111111;
   --accent-light: #ebebeb;
   --border: #d8d8d8;
-  --shadow: 0 4px 24px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.05);
-  --section-gap: 28px;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.05);
+  --section-gap: 30px;
   --radius: 10px;
   --tag-bg: #f0f0f0;
   --tag-text: #333333;
   --score-bg: #e8e8e8;
   --score-text: #222222;
+  --font-body: 'Inter', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
 }
 
 body.dark-mode {
@@ -27,7 +29,7 @@ body.dark-mode {
   --accent: #dddddd;
   --accent-light: #2a2a2a;
   --border: #333333;
-  --shadow: 0 4px 24px rgba(0,0,0,0.5);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
   --tag-bg: #2a2a2a;
   --tag-text: #cccccc;
   --score-bg: #2a2a2a;
@@ -36,11 +38,27 @@ body.dark-mode {
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* color-scheme needs to resolve on the root element for the outer/viewport
+   scrollbar to theme correctly, but the dark-mode class lives on <body> -
+   :has() lets the root pick it up reactively without a second class toggle.
+   (No explicit background here: body's background already propagates to
+   the viewport per the CSS spec, and --bg is only overridden on body, so
+   an explicit html background here would just be stuck on the light value.) */
+html { color-scheme: light; }
+html:has(body.dark-mode) { color-scheme: dark; }
+body.dark-mode { color-scheme: dark; }
+
 body {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: var(--font-body);
   background: var(--bg);
   color: var(--text);
   font-size: 14px;
   line-height: 1.65;
   transition: background 0.25s, color 0.25s;
+}
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }

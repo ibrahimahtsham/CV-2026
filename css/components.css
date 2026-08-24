@@ -1,5 +1,5 @@
 /* ================================================================
-   components.css — nav, cards, tags, skills, languages, links
+   components.css - nav, cards, tags, skills, languages, links
    ================================================================ */
 
 /* ── Role nav ──────────────────────────────────────────────────── */
@@ -19,8 +19,9 @@
 }
 #role-nav .nav-label {
   color: var(--text-muted);
-  font-weight: 600;
-  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.6px;
   margin-right: 4px;
@@ -29,53 +30,64 @@
   background: none;
   border: 1.5px solid var(--border);
   color: var(--text-muted);
-  border-radius: 20px;
-  padding: 3px 13px;
-  font-size: 0.78rem;
-  font-weight: 600;
+  border-radius: 6px;
+  padding: 3px 12px;
+  font-size: 0.76rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
   cursor: pointer;
-  font-family: inherit;
   transition: all 0.15s;
   text-decoration: none;
 }
-.role-btn:hover { border-color: var(--accent); color: var(--text); }
-.role-btn.active { background: var(--text); border-color: var(--text); color: var(--paper-bg); }
+.role-btn:hover { border-color: var(--accent); color: var(--accent); opacity: 1; }
+.role-btn.active { background: var(--accent); border-color: var(--accent); color: var(--paper-bg); }
 
 /* ── Section headers ───────────────────────────────────────────── */
 .cv-section { margin-top: var(--section-gap); }
-.section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.section-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 14px; }
 .section-header h2 {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  color: var(--text-muted);
+  color: var(--text);
   white-space: nowrap;
 }
-.section-line { flex: 1; height: 1.5px; background: var(--border); border-radius: 2px; }
+.section-header h2::before {
+  content: '// ';
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0;
+}
+.section-line { flex: 1; height: 1px; background: var(--border); background-image: linear-gradient(to right, var(--border) 70%, transparent 0%); background-size: 6px 1px; }
 
 /* ── Control buttons ───────────────────────────────────────────── */
+.top-controls { flex-wrap: wrap; }
 #expand-btn,
 #print-btn {
+  appearance: none;
+  -webkit-appearance: none;
   background: none;
   border: 1.5px solid var(--border);
   color: var(--text-muted);
   border-radius: 6px;
   padding: 4px 12px;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
+  font-family: var(--font-mono);
   font-weight: 500;
   cursor: pointer;
-  font-family: inherit;
-  transition: all 0.15s;
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  transition: all 0.15s;
+  text-decoration: none;
 }
 #expand-btn:hover,
-#print-btn:hover { border-color: var(--accent); color: var(--accent); }
+#print-btn:hover { border-color: var(--accent); color: var(--accent); opacity: 1; }
 
 /* ── Intro text ────────────────────────────────────────────────── */
-.intro-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 10px; }
+.intro-text { font-size: 0.92rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 10px; }
 .intro-text:last-child { margin-bottom: 0; }
 
 /* ── Expandable cards ──────────────────────────────────────────── */
@@ -104,7 +116,7 @@ summary {
   transition: background 0.15s;
 }
 summary::-webkit-details-marker { display: none; }
-summary::after { content: '\25B8'; color: var(--text-muted); font-size: 0.8rem; transition: transform 0.2s; flex-shrink: 0; }
+summary::after { content: '\25B8'; color: var(--accent); font-size: 0.8rem; transition: transform 0.2s; flex-shrink: 0; }
 details[open] summary::after { transform: rotate(90deg); }
 summary:hover { background: var(--accent-light); }
 
@@ -114,25 +126,25 @@ details[open] > .details-body { grid-template-rows: 1fr; }
 .details-body-inner { overflow: hidden; padding: 4px 16px 16px; border-top: 1px solid var(--border); }
 
 /* ── Entry meta row ────────────────────────────────────────────── */
-.entry-meta { font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.entry-meta { font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-muted); margin-top: 8px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .entry-meta .dot { color: var(--border); }
 
 /* ── Lists ─────────────────────────────────────────────────────── */
 ul { padding-left: 18px; margin-top: 8px; }
 li { margin-bottom: 5px; font-size: 0.88rem; color: var(--text); line-height: 1.6; }
+li::marker { color: var(--accent); }
 
 /* ── Tag rows ──────────────────────────────────────────────────── */
-.skills-label { font-size: 0.72rem; font-weight: 700; color: var(--text-muted); margin-top: 12px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+.skills-label { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 500; color: var(--text-muted); margin-top: 12px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
 .tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
-.tag { background: var(--tag-bg); color: var(--tag-text); border-radius: 20px; padding: 3px 11px; font-size: 0.76rem; font-weight: 600; white-space: nowrap; }
+.tag { font-family: var(--font-mono); background: var(--tag-bg); color: var(--tag-text); border: 1px solid var(--border); border-radius: 5px; padding: 2px 9px; font-size: 0.74rem; font-weight: 500; white-space: nowrap; }
 
 /* ── Core badges ───────────────────────────────────────────────── */
 .core-competencies { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
-.core-badge { background: var(--accent); color: #fff; border-radius: 20px; padding: 5px 14px; font-size: 0.8rem; font-weight: 600; }
-body.dark-mode .core-badge { background: #eeeeee; color: #111111; }
+.core-badge { background: var(--accent); color: var(--paper-bg); border-radius: 6px; padding: 5px 13px; font-size: 0.8rem; font-weight: 600; }
 
 /* ── Score badge & cert helpers ────────────────────────────────── */
-.score-badge { display: inline-block; background: var(--score-bg); color: var(--score-text); font-size: 0.76rem; font-weight: 700; border-radius: 12px; padding: 2px 9px; margin-left: 6px; }
+.score-badge { display: inline-block; font-family: var(--font-mono); background: var(--score-bg); color: var(--score-text); font-size: 0.74rem; font-weight: 600; border-radius: 5px; padding: 2px 8px; margin-left: 6px; }
 .cert-score { font-size: 0.85rem; margin-top: 6px; }
 .cert-link  { margin-top: 6px; font-size: 0.82rem; }
 .edu-link   { margin-top: 8px; font-size: 0.82rem; }
@@ -141,7 +153,7 @@ body.dark-mode .core-badge { background: #eeeeee; color: #111111; }
 .lang-entries { display: flex; flex-direction: column; gap: 12px; }
 .lang-entry { display: flex; align-items: center; justify-content: space-between; }
 .lang-name { font-weight: 600; font-size: 0.9rem; }
-.lang-level { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; background: var(--tag-bg); padding: 2px 10px; border-radius: 12px; }
+.lang-level { font-family: var(--font-mono); font-size: 0.74rem; color: var(--accent); font-weight: 500; background: var(--accent-light); padding: 2px 9px; border-radius: 5px; }
 .lang-desc { font-size: 0.82rem; color: var(--text-muted); margin-top: 2px; }
 
 /* ── Repo link & highlights ────────────────────────────────────── */
@@ -149,19 +161,76 @@ body.dark-mode .core-badge { background: #eeeeee; color: #111111; }
 .highlight-list { padding-left: 18px; margin-top: 6px; }
 .highlight-list li { font-size: 0.88rem; color: var(--text); }
 
-/* ── Links ─────────────────────────────────────────────────────── */
-a { text-decoration: none; font-weight: 500; }
-a:hover { text-decoration: underline; }
-.cv-body a,
-.cv-header a { color: var(--accent); }
+/* ── Links: plain ink color, always underlined, never blue ───────── */
+a { color: var(--text); text-decoration: underline; font-weight: 500; }
+a:hover { opacity: 0.7; }
 
 /* ── Unknown role notice ───────────────────────────────────────── */
 .role-unknown-notice {
   background: var(--accent-light);
-  color: var(--text-muted);
-  border: 1.5px solid var(--border);
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
   padding: 8px 12px;
   border-radius: var(--radius);
   font-size: 0.85rem;
   margin-top: 16px;
 }
+
+/* ── Landing picker: full-page view/role screens (not a modal) ──── */
+.picker-screen {
+  max-width: 560px;
+  margin: 64px auto;
+  padding: 0 20px;
+  animation: header-rise 0.35s ease both;
+}
+.picker-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.picker-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 28px;
+  line-height: 1.35;
+}
+.picker-options { display: flex; flex-direction: column; gap: 10px; }
+.mode-option {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  text-align: left;
+  background: var(--paper-bg);
+  color: inherit;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 13px 15px;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--font-body);
+}
+.mode-option:hover { border-color: var(--accent); background: var(--accent-light); }
+.mode-option-title { font-size: 0.92rem; font-weight: 700; color: var(--text); }
+
+/* The ATS option previews its own look: plain system font, square-ish
+   corners, dashed border - a visual hint that this is the unstyled view. */
+.mode-option-plain {
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: dashed;
+  border-radius: 4px;
+}
+.mode-option-plain .mode-option-title,
+.mode-option-plain .mode-option-desc { font-family: Arial, Helvetica, sans-serif; }
+.mode-option-plain .mono-tag { font-family: 'SFMono-Regular', Consolas, monospace; }
+.mode-option-plain:hover { border-style: solid; }
+.mode-option-title .mono-tag { font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent); font-weight: 500; margin-left: 6px; }
+.mode-option-desc { font-size: 0.8rem; color: var(--text-muted); line-height: 1.45; }
