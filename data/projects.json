@@ -1,5 +1,46 @@
 [
   {
+    "id": "proj-namaz-times",
+    "title": "Namaz Times",
+    "type": "Progressive Web App",
+    "periodStart": "2026-08",
+    "periodEnd": "2026-08",
+    "roles": [],
+
+    "repoUrl": "https://ibrahimahtsham.github.io/namaz-times/",
+    "repoDisplay": "ibrahimahtsham.github.io/namaz-times",
+    "bullets": [
+      {
+        "text": "Built a dependency-free, single-file prayer times PWA (vanilla JS/HTML/CSS) with a live countdown to the next azan and jamat; installable to the home screen/desktop and fully functional offline via a custom service worker.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Integrated the Al Adhan API for prayer time calculation (11 selectable methods), Open-Meteo for city search, and the browser Geolocation API with reverse geocoding for automatic location detection.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Designed a configurable 'leave-by' calculator (per-prayer azan-to-jamat gap plus mosque travel time) alongside Web Notifications and Web Audio API azan alerts, with all preferences persisted in localStorage.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Hand-rolled a PNG encoder (manual chunk framing, CRC32, zlib deflate) to generate app icons with zero image-processing library dependencies.",
+        "roles": ["Full-Stack"]
+      }
+    ],
+    "tags": [
+      "JavaScript",
+      "PWA",
+      "Service Worker",
+      "Web Notifications API",
+      "Web Audio API",
+      "Geolocation API",
+      "Al Adhan API",
+      "Open-Meteo API",
+      "localStorage",
+      "GitHub Pages"
+    ]
+  },
+  {
     "id": "proj-mammoth",
     "title": "Mammoth Job Management System",
     "type": "Full-Stack Web App",
