@@ -1,11 +1,49 @@
 [
   {
+    "id": "proj-dalil",
+    "title": "Dalil",
+    "type": "Static Reference Site",
+    "periodStart": "2026-09",
+    "periodEnd": "2026-09",
+    "roles": ["Full-Stack"],
+
+    "repoUrl": "https://ibrahimahtsham.github.io/dalil/",
+    "repoDisplay": "ibrahimahtsham.github.io/dalil",
+    "bullets": [
+      {
+        "text": "Built a dependency-free, zero-build static reference site (vanilla JS/HTML/CSS) covering Islamic history, belief, and practice, with every claim backed by a verifiable Quran or authentic hadith citation rather than folklore or weak narrations.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Designed a single JSON data model as the sole source of truth, driving 15 category-routed views (genealogical prophet tree, dated timeline, family records, non-prophet tales, and ten subject-reference indexes) from one shared schema.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Hand-rolled a pan/zoom implementation for an interactive genealogical tree of the 25 Quranic prophets, and a site-wide fuzzy search (Ctrl/Cmd+K) indexing every field across every entry with cross-view 'Also in' navigation.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Enforced a strict grayscale color system (light and dark themes, no hue anywhere) and an editorial policy that explicitly flags any commonly repeated detail lacking real textual backing instead of presenting it as fact.",
+        "roles": ["Full-Stack"]
+      }
+    ],
+    "tags": [
+      "JavaScript",
+      "Vanilla JS",
+      "JSON-Driven Architecture",
+      "Client-Side Search",
+      "Pan/Zoom",
+      "CSS Theming",
+      "GitHub Pages"
+    ]
+  },
+  {
     "id": "proj-namaz-times",
     "title": "Namaz Times",
     "type": "Progressive Web App",
     "periodStart": "2026-08",
     "periodEnd": "2026-08",
-    "roles": [],
+    "roles": ["Full-Stack"],
 
     "repoUrl": "https://ibrahimahtsham.github.io/namaz-times/",
     "repoDisplay": "ibrahimahtsham.github.io/namaz-times",
