@@ -244,8 +244,8 @@
     "id": "proj-freelancer-manager",
     "title": "Freelancer Bidding Automation",
     "type": "React App",
-    "periodStart": "2024-09",
-    "periodEnd": "2025-08",
+    "periodStart": "2025-05",
+    "periodEnd": "2025-09",
     "roles": ["Full-Stack"],
 
     "repoUrl": "https://github.com/ibrahimahtsham/freelancer-client-info-grabber",
