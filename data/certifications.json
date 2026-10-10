@@ -1,7 +1,7 @@
 [
   {
     "id": "cert-ccna",
-    "title": "CCNA 200-301",
+    "title": "CCNA 200-301 Course",
     "issuer": "Udemy",
     "date": "Jan 2026",
     "url": "https://www.udemy.com/certificate/UC-8e0e830c-c991-44ad-b721-f9378cbdb062/",
@@ -21,7 +21,7 @@
     "date": "May 2023",
     "url": "https://coursera.org/verify/TPTPFW22BRZA",
     "score": "97.84%",
-    "roles": ["Full-Stack"],
+    "roles": [],
     "highlights": [
       "Test design fundamentals: fixtures, test cases, test oracles, and fault identification",
       "White-box and black-box testing with statement and branch coverage analysis",
@@ -36,7 +36,7 @@
     "date": "Jul 2022",
     "url": null,
     "score": null,
-    "roles": ["Full-Stack", "NOC", "IT"],
+    "roles": [],
     "highlights": [
       "Linux OS architecture, distributions, and command-line interface fundamentals",
       "File system navigation, permissions management, and user account administration",
@@ -51,7 +51,7 @@
     "date": "Jun 2022",
     "url": "https://www.coursera.org/verify/P882VCLNATYS",
     "score": "94.66%",
-    "roles": ["Full-Stack", "NOC", "IT"],
+    "roles": [],
     "highlights": [
       "Linux architecture, distributions, software installation, and package management",
       "Essential Bash commands: file operations, navigation, compression, and content filtering",

@@ -58,14 +58,77 @@ You can also just visit `ats.html?role=IT` (or any role) directly and print it y
 
 For digital applications, you can skip the PDF entirely and just share the role URL (styled or ATS) — recipients see only the relevant content and the role nav is hidden from them.
 
+### Tailoring the PDF to a specific job (Claude chat)
+
+For an important application, tailor the role PDF to the exact job posting before sending it:
+
+1. Print the closest role to PDF as above (e.g. `ats.html?role=NOC`).
+2. Open a new [Claude](https://claude.ai) chat and attach that PDF.
+3. Paste the prompt below, then paste the full job description where marked.
+4. Review the **Changes** and **Gaps** lists it gives you, then read the final PDF line by line before sending it. Every claim must be something you can talk about in an interview.
+
+The master CV and the JSON files are never touched — the tailored PDF is a one-off for that application. Save it with the company name (e.g. `CV - Acme NOC.pdf`) so you can reread exactly what you sent before an interview.
+
+<details>
+<summary><strong>Tailoring prompt</strong> (copy everything inside the block)</summary>
+
+```text
+You are tailoring my CV to one specific job. My current CV is attached as a PDF.
+The job description is at the end of this message.
+
+RULES, follow strictly:
+1. Only reword, reorder, or remove content that is already in my CV. Never add a
+   skill, tool, certification, number, employer, responsibility, or achievement
+   that is not in the attached CV. Never inflate a number or a duration.
+2. If the job asks for something I don't have, leave it out of the CV and list
+   it under "Gaps" instead.
+3. Where my real experience matches the job, use the job description's exact
+   wording and keywords (ATS systems match literally). Example: if they say
+   "L1 support" and my CV describes that work, call it "L1 support".
+4. Rewrite the subtitle line under my name to match the job title closely,
+   staying truthful to my experience.
+5. Rewrite the Profile for this job: at most 3 lines, focused on why I fit
+   this role.
+6. Within each job and project, put the most relevant bullets first. Remove
+   bullets, projects, certifications, or skills that don't help for this job.
+   Never remove an employer entry or change any dates, titles, or company names.
+7. Reorder each Skills line so the job's must-haves come first.
+8. Prefer the stronger item when two overlap (e.g. keep "React" and drop
+   "HTML/CSS"; keep production experience over an intro course).
+9. Keep it to 1 page if the content allows; 2 pages maximum.
+
+FORMAT, match my attached CV's layout exactly:
+- A4 portrait, single column, 12 mm top/bottom and 15 mm left/right margins
+- Arial throughout, black text on white, no colours, icons, tables, columns,
+  photos, or graphics (it must stay ATS-friendly)
+- Name 17pt bold; subtitle 10pt; contact line 9pt
+- Section headings 9pt bold UPPERCASE with a thin line underneath, in this
+  order: Profile, Experience, Projects, Education, Certifications, Skills
+- Job/project titles 10.5pt bold as "Title · Company"; dates and location
+  under them in 9pt grey
+- Bullets and body text 10pt
+- Keep my contact details, links, and header badges exactly as they are
+
+OUTPUT, in this order:
+1. The tailored CV as a downloadable PDF file.
+2. "Changes": every edit you made, written as "before → after" (one line each;
+   for removals write "removed: ...").
+3. "Gaps": job requirements I don't meet, so I can prepare for them in an
+   interview. Do not put these in the CV.
+
+JOB DESCRIPTION:
+[paste the full job description here]
+```
+
+</details>
+
 ### What the PDF looks like
 
-- A4 portrait, 16 mm × 15 mm margins
-- Arial font, 10.5 pt body — no colours, black text on white
-- All sections fully expanded (no collapsed cards)
-- Tags and badges rendered as thin-bordered chips (ATS-safe — no background colours)
-- Links shown as `text (URL)` — phone and email are not expanded
+- A4 portrait, 12 mm × 15 mm margins, single column
+- Arial: 10 pt body text, 9 pt dates/locations/contact line, 17 pt name — black text on white, no colours
+- Links shown as underlined text; phone and email are plain text
 - No photo or QR code
+- Archived entries (an empty `"roles": []` array) never print, not even on the master `?role=all` CV; they still appear on the styled site
 
 ### Ctrl+P (browser native)
 
@@ -428,7 +491,7 @@ Array of work experience entries, most recent first.
     "periodEnd": null,                  // null = Present; "YYYY-MM" for ended roles
     "location": "City, State/Country",
     "mode": "Remote",                   // "Remote" | "On-site" | "Hybrid"
-    "roles": ["Full-Stack", "IT"],      // which role views show this entry
+    "roles": ["Full-Stack", "IT"],      // which role views show this entry; [] = archived (styled site only, never printed)
     "isGap": false,                     // optional — true = shown but excluded from {experience} calc
     "bullets": [
       {
@@ -441,7 +504,7 @@ Array of work experience entries, most recent first.
       }
     ],
     "tags": {
-      "Full-Stack": ["React", "Node.js"],   // pills shown under Full-Stack view
+      "Full-Stack": ["React", "Node.js"],   // pills shown under Full-Stack view (styled site only, not in the PDF)
       "IT": ["Active Directory", "M365"],   // pills shown under IT view
       "all": ["React", "Node.js", "Active Directory", "M365"]  // master view
     }

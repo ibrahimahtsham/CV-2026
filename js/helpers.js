@@ -104,6 +104,6 @@ export function formatPeriod(entry) {
   const end = (entry.periodEnd === null || entry.periodEnd === undefined)
     ? 'Present'
     : _fmtYM(entry.periodEnd);
-  const base = start ? `${start} - ${end}` : end;
+  const base = !start ? end : start === end ? start : `${start} - ${end}`;
   return entry.periodNote ? `${base} (${entry.periodNote})` : base;
 }

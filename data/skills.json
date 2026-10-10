@@ -49,50 +49,30 @@
   "categories": [
     {
       "id": "skill-fullstack",
-      "title": "Full-Stack Development",
+      "title": "Development",
       "roles": ["Full-Stack", "all"],
       "tags": [
+        "JavaScript",
         "React",
-        "JavaScript (ES6+)",
-        "HTML5",
-        "CSS3",
-        "Node.js",
-        "Express.js",
+        "Node.js/Express",
         "REST APIs",
-        "Python",
-        "PHP",
-        "Java",
-        "C++",
-        "Vite",
-        "React Router",
-        "Material UI",
-        "Bootstrap",
         "PostgreSQL",
-        "MySQL",
-        "JWT Auth",
-        "API Integration",
-        "Git",
-        "GitHub",
-        "Postman"
+        "Python",
+        "PHP/Laravel",
+        "Android (Java/Kotlin)",
+        "Git"
       ]
     },
     {
       "id": "skill-it-ops",
-      "title": "IT Operations & Technical Support",
+      "title": "IT Operations",
       "roles": ["IT", "NOC", "all"],
       "tags": [
-        "Microsoft 365",
-        "Exchange Online",
-        "SharePoint",
-        "Azure AD",
-        "Entra Admin Center",
-        "Windows Active Directory",
-        "Group Policy",
-        "Azure AD Hybrid Join",
-        "User Onboarding/Offboarding",
-        "Access Management",
+        "Microsoft 365 (Exchange Online, SharePoint, Entra ID)",
+        "Active Directory & Group Policy",
+        "Hybrid Join",
         "Autotask",
-        "Remote Support"
+        "IT Glue"
       ]
     },
     {
@@ -100,101 +80,79 @@
       "title": "Security & MSP Tooling",
       "roles": ["IT", "NOC", "all"],
       "tags": [
-        "Kaseya",
-        "Datto RMM",
-        "Datto EDR",
-        "SaaS Alerts",
+        "Datto RMM/EDR",
         "ThreatLocker",
+        "SaaS Alerts",
         "Duo MFA",
         "Graphus",
         "Inky",
         "Todyl",
-        "Vonahi",
         "SpamHero",
         "Microsoft Defender",
-        "Phishing Investigation",
-        "Email Authentication (DMARC/DKIM/SPF)",
-        "Login Anomaly Analysis",
-        "Penetration Testing",
-        "Endpoint Security",
-        "MFA Enrollment"
+        "DMARC/DKIM/SPF",
+        "Incident Response",
+        "Penetration Testing (Vonahi)"
       ]
     },
     {
       "id": "skill-linux",
-      "title": "Linux, Deployment & Automation",
-      "roles": ["Full-Stack", "IT", "NOC", "all"],
+      "title": "Linux & Deployment",
+      "roles": ["NOC", "all"],
       "tags": [
-        "Linux VPS",
-        "SSH",
-        "Firewall Config",
-        "Automated Backups",
-        "Cron Jobs",
-        "Python Scripts",
-        "CSV Processing",
-        "Tampermonkey",
-        "AutoHotKey"
+        "Linux VPS administration",
+        "Caddy",
+        "systemd",
+        "Firewall",
+        "Bash & cron automation"
       ]
     },
     {
       "id": "skill-ai",
-      "title": "AI & Modern Tooling",
-      "roles": ["Full-Stack", "all"],
+      "title": "AI",
+      "roles": ["all"],
       "tags": [
-        "Streamlit",
-        "OpenAI API",
-        "Ollama",
-        "Faster Whisper",
-        "LLM / STT / TTS",
-        "AI-Assisted Dev"
+        "LLM integration (OpenAI API, Ollama)",
+        "Speech pipelines (Faster Whisper, TTS)",
+        "Streamlit"
       ]
     },
     {
       "id": "skill-networking",
-      "title": "Networking & NOC",
+      "title": "Networking",
       "roles": ["NOC", "IT", "all"],
       "tags": [
-        "TCP/IP",
-        "Subnetting",
+        "TCP/IP & subnetting",
         "VLANs",
-        "Routing (OSPF, EIGRP, RIP)",
-        "SNMP",
-        "Syslog",
+        "OSPF/EIGRP",
+        "NAT & ACLs",
         "VPN",
-        "MPLS",
-        "Cisco IOS",
-        "Network Automation (Ansible, SDN)"
+        "SNMP/Syslog monitoring",
+        "Cisco IOS"
       ]
     },
     {
       "id": "skill-bizdev",
-      "title": "Business Development & Sales",
+      "title": "Business Development",
       "roles": ["Business-Dev", "all"],
       "tags": [
-        "Upwork",
-        "Freelancer",
-        "Odoo",
-        "Client Acquisition",
-        "Proposal Writing",
-        "Prompt Engineering",
-        "Excel Reporting",
-        "MySQL",
-        "Chrome Extensions",
-        "Bidding Automation",
-        "NDA/IP Agreements"
+        "Upwork & Freelancer bidding",
+        "Proposal writing",
+        "Odoo CRM",
+        "Prompt engineering",
+        "Excel reporting",
+        "NDA/IP agreements"
       ]
     },
     {
       "id": "skill-tools",
-      "title": "Tools & Productivity",
+      "title": "Tools",
       "roles": ["Customer-Support", "all"],
       "tags": [
-        "Slack",
         "Crisp",
+        "Autotask",
+        "Slack",
         "Trello",
-        "Microsoft Excel",
-        "Adobe Illustrator",
-        "DaVinci Resolve"
+        "Microsoft Excel"
       ]
     }
   ]

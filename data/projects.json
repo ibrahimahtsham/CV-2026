@@ -5,7 +5,7 @@
     "type": "Static Reference Site",
     "periodStart": "2026-09",
     "periodEnd": "2026-09",
-    "roles": ["Full-Stack"],
+    "roles": [],
 
     "repoUrl": "https://ibrahimahtsham.github.io/dalil/",
     "repoDisplay": "ibrahimahtsham.github.io/dalil",
@@ -43,25 +43,13 @@
     "type": "Progressive Web App",
     "periodStart": "2026-08",
     "periodEnd": "2026-08",
-    "roles": ["Full-Stack"],
+    "roles": [],
 
     "repoUrl": "https://ibrahimahtsham.github.io/namaz-times/",
     "repoDisplay": "ibrahimahtsham.github.io/namaz-times",
     "bullets": [
       {
-        "text": "Built a dependency-free, single-file prayer times PWA (vanilla JS/HTML/CSS) with a live countdown to the next azan and jamat; installable to the home screen/desktop and fully functional offline via a custom service worker.",
-        "roles": ["Full-Stack"]
-      },
-      {
-        "text": "Integrated the Al Adhan API for prayer time calculation (11 selectable methods), Open-Meteo for city search, and the browser Geolocation API with reverse geocoding for automatic location detection.",
-        "roles": ["Full-Stack"]
-      },
-      {
-        "text": "Designed a configurable 'leave-by' calculator (per-prayer azan-to-jamat gap plus mosque travel time) alongside Web Notifications and Web Audio API azan alerts, with all preferences persisted in localStorage.",
-        "roles": ["Full-Stack"]
-      },
-      {
-        "text": "Hand-rolled a PNG encoder (manual chunk framing, CRC32, zlib deflate) to generate app icons with zero image-processing library dependencies.",
+        "text": "Installable prayer times PWA in vanilla JS with live countdowns and azan alerts, powered by the Al Adhan API.",
         "roles": ["Full-Stack"]
       }
     ],
@@ -84,36 +72,28 @@
     "type": "Full-Stack Web App",
     "periodStart": "2026-04",
     "periodEnd": "2026-07",
-    "roles": ["Full-Stack", "IT"],
+    "roles": ["Full-Stack", "IT", "NOC"],
 
     "bullets": [
       {
-        "text": "Built and deployed a full construction job management platform (React, Node.js/Express, PostgreSQL) for a managed client to replace their JobTread subscription, delivered end-to-end as part of MSP work.",
-        "roles": ["Full-Stack", "IT"]
+        "text": "Independently built a construction job management platform (React, Node.js/Express, PostgreSQL) that replaced a client's JobTread subscription, from requirements meetings through deployment.",
+        "roles": ["Full-Stack", "IT", "NOC"]
       },
       {
-        "text": "Managed full project lifecycle: client requirements meetings, frontend/backend development, Linux VPS deployment, and ongoing feature iteration.",
+        "text": "Delivered budgeting and KPI dashboards, e-signature workflows, PDF generation for invoices, proposals, and contracts, and a token-based customer portal for viewing, approving, and paying documents.",
         "roles": ["Full-Stack"]
       },
       {
-        "text": "Built budgeting, KPI dashboards, drag-and-drop budget groups, e-signature workflows, and a customer document portal with PDF generation for invoices, proposals, contracts, and change orders.",
+        "text": "Secured it with Microsoft SSO (Azure AD ID tokens validated against JWKS, restricted to approved tenants) and AES encryption at rest for sensitive data.",
         "roles": ["Full-Stack"]
       },
       {
-        "text": "Implemented Microsoft SSO (Azure AD) as the sole authentication method, validating ID tokens against Microsoft's JWKS endpoint and restricting sign-in to approved tenant IDs.",
-        "roles": ["Full-Stack", "IT"]
-      },
-      {
-        "text": "Built a token-based customer portal (UUID-keyed, no login required) for document viewing, approval, and payment, and encrypted sensitive data at rest (AES) for stored property entry codes to reduce breach risk.",
+        "text": "Integrated the QuickBooks API with a payment webhook that marks invoices paid automatically; migrated all legacy data into PostgreSQL.",
         "roles": ["Full-Stack"]
       },
       {
-        "text": "Integrated QuickBooks API for invoice sync and built an incoming payment webhook to automatically mark invoices paid once a customer pays through the portal; migrated all operational data (customers, jobs, documents, expenses) from the legacy system into PostgreSQL.",
-        "roles": ["Full-Stack", "IT"]
-      },
-      {
-        "text": "Deployed and maintained production infrastructure on a Linux VPS: Caddy reverse proxy with automatic TLS, systemd-managed Node.js service, firewall configuration, automated daily PostgreSQL backups with 14-day rotation, and production troubleshooting.",
-        "roles": ["Full-Stack", "IT"]
+        "text": "Run it on a Linux VPS: Caddy reverse proxy with automatic TLS, systemd service, firewall rules, and automated daily PostgreSQL backups with 14-day rotation.",
+        "roles": ["Full-Stack", "IT", "NOC"]
       }
     ],
     "tags": {
@@ -169,7 +149,7 @@
     "type": "Computer Vision Pipeline",
     "periodStart": "2026-03",
     "periodEnd": "2026-04",
-    "roles": ["Full-Stack", "IT"],
+    "roles": [],
 
     "bullets": [
       {
@@ -206,7 +186,7 @@
     "type": "Streamlit App",
     "periodStart": "2025-09",
     "periodEnd": "2025-10",
-    "roles": ["Full-Stack"],
+    "roles": [],
 
     "repoUrl": "https://github.com/ibrahimahtsham/ai-interviewer-online",
     "repoDisplay": "github.com/ibrahimahtsham/ai-interviewer-online",
@@ -237,7 +217,7 @@
     "type": "Streamlit App",
     "periodStart": "2025-09",
     "periodEnd": "2025-09",
-    "roles": ["Full-Stack"],
+    "roles": [],
 
     "repoUrl": "https://github.com/ibrahimahtsham/ai-interviewer-offline",
     "repoDisplay": "github.com/ibrahimahtsham/ai-interviewer-offline",
@@ -262,25 +242,21 @@
   },
   {
     "id": "proj-freelancer-manager",
-    "title": "Freelancer Client & Project Manager",
-    "type": "React Dashboard",
-    "periodStart": "2025-05",
+    "title": "Freelancer Bidding Automation",
+    "type": "React App",
+    "periodStart": "2024-09",
     "periodEnd": "2025-08",
-    "roles": ["Full-Stack", "Business-Dev"],
+    "roles": ["Full-Stack"],
 
     "repoUrl": "https://github.com/ibrahimahtsham/freelancer-client-info-grabber",
     "repoDisplay": "github.com/ibrahimahtsham/freelancer-client-info-grabber",
     "bullets": [
       {
-        "text": "Built a React/Vite dashboard at PanaceaLogics to automate Freelancer.com client data extraction, track bid success rates, and calculate team commissions.",
+        "text": "Built a React/Vite bidding platform on the Freelancer.com API with rule-based auto-bidding (skill, country, language, and currency filters), weighted proposal templates, and an exportable API request log.",
         "roles": ["Full-Stack", "Business-Dev"]
       },
       {
-        "text": "Chained project ID to owner ID to client profile API lookups to surface contact details normally hidden until a client responds to a bid.",
-        "roles": ["Full-Stack", "Business-Dev"]
-      },
-      {
-        "text": "Deployed to GitHub Pages with shift-aware commission tracking and personalized outreach template generation.",
+        "text": "Added a dashboard tracking bid success rates and team commissions, plus a Tampermonkey script automating NDA/IP agreement steps.",
         "roles": ["Full-Stack", "Business-Dev"]
       }
     ],
@@ -292,6 +268,7 @@
         "Recharts",
         "React Router",
         "Freelancer.com API",
+        "Tampermonkey",
         "GitHub Pages",
         "Data Visualization"
       ],
@@ -319,7 +296,7 @@
     "type": "Streamlit App",
     "periodStart": "2025-10",
     "periodEnd": "2025-10",
-    "roles": ["Business-Dev"],
+    "roles": [],
 
     "bullets": [
       {

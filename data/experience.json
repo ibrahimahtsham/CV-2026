@@ -11,52 +11,36 @@
 
     "bullets": [
       {
-        "text": "Resolved 480+ support tickets across 10+ managed clients in a high-volume MSP environment covering Microsoft 365, Windows, networking, and endpoint security.",
+        "text": "Resolved 480+ tickets across 10+ managed clients (Microsoft 365, Windows, networking, endpoint security).",
         "roles": ["IT", "NOC", "Customer-Support"]
       },
       {
-        "text": "Handled inbound and outbound client calls and email support via Autotask, managing real-time troubleshooting requests and maintaining clear communication throughout each resolution.",
+        "text": "Handled inbound and outbound client calls and email support via Autotask, troubleshooting in real time and keeping clients updated through resolution.",
         "roles": ["Customer-Support"]
       },
       {
-        "text": "Led incident response for two security events: a phishing campaign (traced Amazon SES spoofing via SPF alignment failure, blocked via SpamHero) and a live account compromise (session revocation, password reset); documented response procedures in IT Glue for team reuse.",
-        "roles": ["IT"]
-      },
-      {
-        "text": "Executed a network penetration test on a 60+ device network (Vonahi vPenTest) with no prior handoff, surfacing 7 Critical findings.",
+        "text": "Triaged security alerts (login anomalies, bulk downloads, persistence events) and led incident response for a phishing campaign (traced Amazon SES spoofing via SPF alignment failure, blocked via SpamHero) and a live account compromise; documented both in IT Glue.",
         "roles": ["IT", "NOC"]
       },
       {
-        "text": "Administered Microsoft 365, Active Directory, and the full Kaseya ecosystem (Datto RMM/EDR, ThreatLocker, SaaS Alerts, Graphus, Inky, SpamHero, Duo) across 10+ client environments.",
+        "text": "Ran a penetration test on a 60+ device network (Vonahi vPenTest) with no prior handoff, surfacing 7 Critical findings.",
         "roles": ["IT", "NOC"]
       },
       {
-        "text": "Delivered full-lifecycle onboarding and offboarding for 8+ users across 6+ clients: onboarding covered M365 provisioning, AD/OU setup, MFA/Duo, and security stack; offboarding covered session revocation, MFA removal, distribution group cleanup, and Entra auth wipe.",
-        "roles": ["IT"]
-      },
-      {
-        "text": "Consolidated a client's calendars scattered across multiple user mailboxes into a single organized shared calendar; engineered the migration by publishing each mailbox calendar as an ICS file and importing them into the unified calendar.",
-        "roles": ["IT"]
-      },
-      {
-        "text": "Identified and fixed the root cause of a recurring Duo MFA issue (blurry/non-functional sign-in screen) that more experienced technicians had only worked around by disabling Duo; traced the issue to the absence of a local account and implemented the permanent fix.",
-        "roles": ["IT"]
-      },
-      {
-        "text": "Investigated security alerts including geographic login anomalies, bulk file downloads, and persistence events using Datto EDR, SaaS Alerts, and ThreatLocker.",
+        "text": "Administered Microsoft 365, Active Directory, and the MSP security stack (Datto RMM/EDR, ThreatLocker, SaaS Alerts, Duo) across 10+ client environments; ran onboarding/offboarding for 8+ users across 6+ clients.",
         "roles": ["IT", "NOC"]
       },
       {
-        "text": "Built internal tooling including a FuelMaster IFTA report converter, a camera and access point installation quote calculator, and SharePoint/OneDrive anomaly utilities used directly in live client investigations.",
+        "text": "Permanently fixed a recurring Duo MFA failure that senior techs had bypassed by disabling Duo, tracing it to a missing local account.",
+        "roles": ["IT"]
+      },
+      {
+        "text": "Built internal tools: IFTA fuel report converter, camera/access point quote calculator, SharePoint/OneDrive anomaly utilities, CCTV footage analysis (Azure Video Indexer), and a Python/Flask time-tracking app.",
         "roles": ["IT", "Full-Stack"]
       },
       {
         "text": "Saved $2,870/year by reassigning a dormant Autodesk AEC Collection license.",
         "roles": ["IT"]
-      },
-      {
-        "text": "Contributed to internal dev projects: construction job management platform (React, Node.js, PostgreSQL), CCTV investigation tooling, and a Python/Flask time-tracking app - stood up a Hyper-V dev environment to work around ThreatLocker restrictions.",
-        "roles": ["Full-Stack"]
       }
     ],
     "tags": {
@@ -161,13 +145,11 @@
     "mode": "On-site",
     "roles": ["Full-Stack"],
 
+    "repoUrl": "https://github.com/ibrahimahtsham/ai-interviewer-online",
+    "repoDisplay": "github.com/ibrahimahtsham/ai-interviewer-online",
     "bullets": [
       {
-        "text": "Built cloud and offline AI Interviewer platforms using Streamlit: cloud version uses OpenAI (LLM, STT, TTS); offline variant uses Ollama and Faster Whisper.",
-        "roles": ["Full-Stack"]
-      },
-      {
-        "text": "Designed a modular service layer (llm_service, stt_service, tts_service) with pluggable provider architecture and cross-platform one-command startup scripts.",
+        "text": "Built an AI interviewer (LLM + speech-to-text + text-to-speech) in Python/Streamlit with a cloud variant (OpenAI) and a fully offline variant (Ollama, Faster Whisper) sharing one pluggable provider layer.",
         "roles": ["Full-Stack"]
       }
     ],
@@ -194,23 +176,19 @@
 
     "bullets": [
       {
-        "text": "Promoted from Trainee to Specialist within 2 months based on performance in client acquisition and bidding workflow optimization on Upwork and Freelancer.",
+        "text": "Promoted from Trainee to Specialist within 2 months for client acquisition results on Upwork and Freelancer.",
         "roles": ["Business-Dev"]
       },
       {
-        "text": "Managed client pipeline in Odoo: scheduled calls, conducted requirements meetings, and handled project follow-ups.",
+        "text": "Managed the client pipeline in Odoo: scheduled calls, ran requirements meetings, and handled project follow-ups.",
         "roles": ["Business-Dev", "Customer-Support"]
       },
       {
-        "text": "Built a React dashboard automating Freelancer.com client data extraction, tracking bid success rates, and calculating team commissions.",
+        "text": "Built the team's bidding tooling: a React auto-bidder and bid/commission dashboard on the Freelancer.com API, a Tampermonkey script for NDA/IP agreement steps, Chrome extensions, and WhatsApp bulk outreach.",
         "roles": ["Business-Dev"]
       },
       {
-        "text": "Applied prompt engineering to train AI models for automated proposal writing and technical job description classification.",
-        "roles": ["Business-Dev"]
-      },
-      {
-        "text": "Developed bidding automation tools including Chrome extensions and WhatsApp bulk outreach, reducing manual effort in the BD pipeline.",
+        "text": "Used prompt engineering for AI proposal drafting and job description classification.",
         "roles": ["Business-Dev"]
       }
     ],
@@ -259,11 +237,7 @@
 
     "bullets": [
       {
-        "text": "Developed and customized WordPress themes and plugins (WooCommerce) using Elementor, optimizing for performance, security, and SEO.",
-        "roles": ["Full-Stack"]
-      },
-      {
-        "text": "Worked with PHP and Laravel on the backend alongside client-facing WordPress delivery.",
+        "text": "Built and customized WordPress/WooCommerce themes and plugins, with PHP/Laravel backend work.",
         "roles": ["Full-Stack"]
       }
     ],
@@ -290,11 +264,7 @@
 
     "bullets": [
       {
-        "text": "Developed and delivered Android applications in Java/Kotlin with design and product teams, following sprint workflows in Trello.",
-        "roles": ["Full-Stack"]
-      },
-      {
-        "text": "Conducted code reviews and ensured smooth UX across delivered app features.",
+        "text": "Built and shipped Android app features in Java/Kotlin with design and product teams in sprint workflows.",
         "roles": ["Full-Stack"]
       }
     ],
@@ -313,15 +283,11 @@
 
     "bullets": [
       {
-        "text": "Handled 30-50 customer requests per day via Crisp, assisting users with popup/banner setup and automated email campaign integration.",
+        "text": "Handled 30-50 customer requests per day via Crisp (popup/banner setup, email campaign integration), including non-English-speaking clients.",
         "roles": ["Customer-Support"]
       },
       {
-        "text": "Produced annotated screenshots and screen recordings as step-by-step guides; supported non-English-speaking clients.",
-        "roles": ["Customer-Support"]
-      },
-      {
-        "text": "Coordinated with the development team via Slack for feature requests and product feedback.",
+        "text": "Wrote step-by-step guides with annotated screenshots and screen recordings; relayed feature requests and product feedback to developers via Slack.",
         "roles": ["Customer-Support"]
       }
     ],

@@ -6,12 +6,12 @@
   },
   {
     "name": "English",
-    "level": "Fluent / Professional",
+    "level": "Fluent",
     "description": "Full professional proficiency, used daily for work, study, and communication."
   },
   {
     "name": "Arabic",
-    "level": "Basic / Conversational",
+    "level": "Conversational",
     "description": "Can understand spoken Arabic and hold basic conversations; limited reading/writing. Used in social and travel contexts."
   }
 ]
