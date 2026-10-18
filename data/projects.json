@@ -74,6 +74,8 @@
     "periodEnd": "2026-07",
     "roles": ["Full-Stack", "IT", "NOC"],
 
+    "repoUrl": "https://ibrahimahtsham.github.io/construction-job-manager/",
+    "repoDisplay": "ibrahimahtsham.github.io/construction-job-manager",
     "bullets": [
       {
         "text": "Independently built a construction job management platform (React, Node.js/Express, PostgreSQL) that replaced a client's JobTread subscription, from requirements meetings through deployment.",
