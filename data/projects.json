@@ -1,72 +1,5 @@
 [
   {
-    "id": "proj-dalil",
-    "title": "Dalil",
-    "type": "Static Reference Site",
-    "periodStart": "2026-09",
-    "periodEnd": "2026-09",
-    "roles": [],
-
-    "repoUrl": "https://ibrahimahtsham.github.io/dalil/",
-    "repoDisplay": "ibrahimahtsham.github.io/dalil",
-    "bullets": [
-      {
-        "text": "Built a dependency-free, zero-build static reference site (vanilla JS/HTML/CSS) covering Islamic history, belief, and practice, with every claim backed by a verifiable Quran or authentic hadith citation rather than folklore or weak narrations.",
-        "roles": ["Full-Stack"]
-      },
-      {
-        "text": "Designed a single JSON data model as the sole source of truth, driving 15 category-routed views (genealogical prophet tree, dated timeline, family records, non-prophet tales, and ten subject-reference indexes) from one shared schema.",
-        "roles": ["Full-Stack"]
-      },
-      {
-        "text": "Hand-rolled a pan/zoom implementation for an interactive genealogical tree of the 25 Quranic prophets, and a site-wide fuzzy search (Ctrl/Cmd+K) indexing every field across every entry with cross-view 'Also in' navigation.",
-        "roles": ["Full-Stack"]
-      },
-      {
-        "text": "Enforced a strict grayscale color system (light and dark themes, no hue anywhere) and an editorial policy that explicitly flags any commonly repeated detail lacking real textual backing instead of presenting it as fact.",
-        "roles": ["Full-Stack"]
-      }
-    ],
-    "tags": [
-      "JavaScript",
-      "Vanilla JS",
-      "JSON-Driven Architecture",
-      "Client-Side Search",
-      "Pan/Zoom",
-      "CSS Theming",
-      "GitHub Pages"
-    ]
-  },
-  {
-    "id": "proj-namaz-times",
-    "title": "Namaz Times",
-    "type": "Progressive Web App",
-    "periodStart": "2026-08",
-    "periodEnd": "2026-08",
-    "roles": [],
-
-    "repoUrl": "https://ibrahimahtsham.github.io/namaz-times/",
-    "repoDisplay": "ibrahimahtsham.github.io/namaz-times",
-    "bullets": [
-      {
-        "text": "Installable prayer times PWA in vanilla JS with live countdowns and azan alerts, powered by the Al Adhan API.",
-        "roles": ["Full-Stack"]
-      }
-    ],
-    "tags": [
-      "JavaScript",
-      "PWA",
-      "Service Worker",
-      "Web Notifications API",
-      "Web Audio API",
-      "Geolocation API",
-      "Al Adhan API",
-      "Open-Meteo API",
-      "localStorage",
-      "GitHub Pages"
-    ]
-  },
-  {
     "id": "proj-mammoth",
     "title": "Mammoth Job Management System",
     "type": "Full-Stack Web App",
@@ -146,49 +79,12 @@
     }
   },
   {
-    "id": "proj-cctv",
-    "title": "CCTV Footage Analysis & Investigation Tooling",
-    "type": "Computer Vision Pipeline",
-    "periodStart": "2026-03",
-    "periodEnd": "2026-04",
-    "roles": [],
-
-    "bullets": [
-      {
-        "text": "Built Azure Video Indexing-based tooling for automated scene classification and searchable analysis across large surveillance footage datasets.",
-        "roles": ["Full-Stack", "IT"]
-      }
-    ],
-    "tags": {
-      "Full-Stack": [
-        "Azure Video Indexing",
-        "Computer Vision",
-        "Python",
-        "Automation"
-      ],
-      "IT": [
-        "Azure Video Indexing",
-        "Computer Vision",
-        "Python",
-        "Video Processing",
-        "Automation"
-      ],
-      "all": [
-        "Azure Video Indexing",
-        "Computer Vision",
-        "Python",
-        "Video Processing",
-        "Automation"
-      ]
-    }
-  },
-  {
     "id": "proj-ai-interviewer-online",
-    "title": "AI Interviewer (Online)",
+    "title": "AI Interviewer",
     "type": "Streamlit App",
     "periodStart": "2025-09",
     "periodEnd": "2025-10",
-    "roles": [],
+    "roles": ["Full-Stack"],
 
     "repoUrl": "https://github.com/ibrahimahtsham/ai-interviewer-online",
     "repoDisplay": "github.com/ibrahimahtsham/ai-interviewer-online",
@@ -211,35 +107,6 @@
       "TTS",
       "Modular Architecture",
       "Cross-Platform"
-    ]
-  },
-  {
-    "id": "proj-ai-interviewer-offline",
-    "title": "AI Interviewer (Offline)",
-    "type": "Streamlit App",
-    "periodStart": "2025-09",
-    "periodEnd": "2025-09",
-    "roles": [],
-
-    "repoUrl": "https://github.com/ibrahimahtsham/ai-interviewer-offline",
-    "repoDisplay": "github.com/ibrahimahtsham/ai-interviewer-offline",
-    "bullets": [
-      {
-        "text": "Privacy-focused offline variant using Ollama (on-device LLM) and Faster Whisper (local STT) for full data control.",
-        "roles": ["Full-Stack"]
-      },
-      {
-        "text": "Drop-in compatible with the online variant; lazy resource initialization reduces startup latency and memory footprint.",
-        "roles": ["Full-Stack"]
-      }
-    ],
-    "tags": [
-      "Python",
-      "Streamlit",
-      "Ollama",
-      "Faster Whisper",
-      "Offline AI",
-      "Performance Optimization"
     ]
   },
   {
@@ -291,76 +158,5 @@
         "Automation"
       ]
     }
-  },
-  {
-    "id": "proj-whatsapp",
-    "title": "WhatsApp Bulk Message Sender",
-    "type": "Streamlit App",
-    "periodStart": "2025-10",
-    "periodEnd": "2025-10",
-    "roles": [],
-
-    "bullets": [
-      {
-        "text": "Built a Streamlit app for bulk WhatsApp outreach via CSV upload with per-minute scheduling, rate-limit handling, and personalized {name} templates.",
-        "roles": ["Business-Dev"]
-      },
-      {
-        "text": "Used internally for internship candidate shortlisting and business outreach automation.",
-        "roles": ["Business-Dev"]
-      }
-    ],
-    "tags": {
-      "Business-Dev": [
-        "Python",
-        "Streamlit",
-        "Outreach Automation",
-        "CSV Automation",
-        "Template Systems"
-      ],
-      "all": [
-        "Python",
-        "Streamlit",
-        "pywhatkit",
-        "CSV Automation",
-        "Template Systems"
-      ]
-    }
-  },
-  {
-    "id": "proj-meezan",
-    "title": "Meezan Statement Parser & Expense Tracker",
-    "type": "Web App",
-    "periodStart": "2025-06",
-    "periodEnd": "2025-06",
-    "roles": [],
-
-    "repoUrl": "https://github.com/ibrahimahtsham/meezan-statement-parser-and-expense-tracker",
-    "repoDisplay": "github.com/ibrahimahtsham/meezan-statement-parser-and-expense-tracker",
-    "bullets": [
-      {
-        "text": "Client-side web app to parse Meezan Bank CSVs, categorize expenses, and visualize spending trends with interactive charts.",
-        "roles": ["Full-Stack"]
-      }
-    ],
-    "tags": ["React", "Vite", "Recharts", "Chart.js", "CSV Processing"]
-  },
-  {
-    "id": "proj-ascii-viewer",
-    "title": "ASCII File Structure Viewer",
-    "type": "React Web App",
-    "periodStart": "2025-05",
-    "periodEnd": "2025-05",
-    "roles": [],
-
-    "repoUrl": "https://github.com/ibrahimahtsham/ascii-file-structure-viewer-web",
-    "repoDisplay": "github.com/ibrahimahtsham/ascii-file-structure-viewer-web",
-    "bullets": [
-      {
-        "text": "Visualizes project file structures with ASCII art, code statistics, GitHub repo integration, and interactive tree controls.",
-        "roles": ["Full-Stack"]
-      }
-    ],
-    "tags": ["React 18", "Vite", "Material-UI", "GitHub API"]
   }
 ]

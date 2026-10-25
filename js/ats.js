@@ -19,7 +19,7 @@ function inCv(entry, role) {
 function buildContentHTML(data, role) {
   const roleData = data.roles[role] || data.roles['all'];
   const meta = data.meta;
-  const expStr = calcExperience(data.experience, role);
+  const expStr = calcExperience(data.experience, roleData.experienceFrom || role);
 
   const parts = [];
   const line = s => parts.push(s);

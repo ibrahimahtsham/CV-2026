@@ -97,7 +97,7 @@
     {
       "id": "skill-linux",
       "title": "Linux & Deployment",
-      "roles": ["NOC", "all"],
+      "roles": ["NOC", "Full-Stack", "all"],
       "tags": [
         "Linux VPS administration",
         "Caddy",
@@ -109,8 +109,9 @@
     {
       "id": "skill-ai",
       "title": "AI",
-      "roles": ["all"],
+      "roles": ["Full-Stack", "all"],
       "tags": [
+        "AI-assisted development (Claude Code)",
         "LLM integration (OpenAI API, Ollama)",
         "Speech pipelines (Faster Whisper, TTS)",
         "Streamlit"

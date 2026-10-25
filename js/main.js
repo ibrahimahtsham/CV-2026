@@ -10,8 +10,11 @@ const SUN_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" st
 function buildRoleNav(availableRoles, currentRole) {
   const nav = document.getElementById('role-nav');
   nav.innerHTML = '';
-  // Hide nav on shared role links - recipients shouldn't see other roles
-  if (currentRole !== 'all') { nav.style.display = 'none'; return; }
+  // Hide nav on shared role links - recipients shouldn't see other roles.
+  // In-app navigation (picker or a nav click) tags its history entry with
+  // inApp, so the nav stays visible there, including after a refresh.
+  const inApp = window.history.state && window.history.state.inApp;
+  if (currentRole !== 'all' && !inApp) { nav.style.display = 'none'; return; }
   nav.style.display = '';
   nav.appendChild(el('span', { class: 'nav-label' }, 'Role:'));
 
@@ -24,7 +27,7 @@ function buildRoleNav(availableRoles, currentRole) {
     }, label);
     btn.addEventListener('click', e => {
       e.preventDefault();
-      window.history.pushState({}, '', url.toString());
+      window.history.pushState({ inApp: true }, '', url.toString());
       init();
     });
     return btn;
@@ -79,12 +82,15 @@ function showRoleScreen(data, mode) {
   const options = el('div', { class: 'picker-options' });
   const roleOption = (label, roleKey) => {
     const subtitle = (data.roles[roleKey] || {}).subtitle || '';
-    const expStr = calcExperience(data.experience, roleKey);
+    const expStr = calcExperience(data.experience, (data.roles[roleKey] || {}).experienceFrom || roleKey);
     options.appendChild(pickerOption(label, expStr, subtitle, mode === 'ats', () => chooseRole(data, mode, roleKey)));
   };
   roleOption('All', 'all');
   data.availableRoles.forEach(r => roleOption(r, r));
   screen.appendChild(options);
+  const back = el('button', { class: 'picker-back', type: 'button' }, '← Back');
+  back.addEventListener('click', () => showModeScreen(data));
+  screen.appendChild(back);
   document.getElementById('cv-body').appendChild(screen);
   attachInteractivity();
 }
@@ -98,7 +104,7 @@ function chooseRole(data, mode, role) {
   }
   const url = new URL(window.location.href);
   url.searchParams.set('role', role);
-  window.history.pushState({}, '', url.toString());
+  window.history.pushState({ inApp: true }, '', url.toString());
   render(data, role);
 }
 
@@ -163,7 +169,7 @@ function render(data, role) {
   }, 'Print / Save PDF'));
   body.appendChild(controls);
 
-  const expStr = calcExperience(data.experience, activeRole);
+  const expStr = calcExperience(data.experience, roleData.experienceFrom || activeRole);
   [
     buildIntro(roleData, expStr),
     buildExperience(data.experience, activeRole),

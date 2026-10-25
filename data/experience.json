@@ -279,16 +279,16 @@
     "periodNote": "BSc final year",
     "location": "Islamabad, Pakistan",
     "mode": "Remote",
-    "roles": ["Customer-Support"],
+    "roles": ["Customer-Support", "IT"],
 
     "bullets": [
       {
         "text": "Handled 30-50 customer requests per day via Crisp (popup/banner setup, email campaign integration), including non-English-speaking clients.",
-        "roles": ["Customer-Support"]
+        "roles": ["Customer-Support", "IT"]
       },
       {
         "text": "Wrote step-by-step guides with annotated screenshots and screen recordings; relayed feature requests and product feedback to developers via Slack.",
-        "roles": ["Customer-Support"]
+        "roles": ["Customer-Support", "IT"]
       }
     ],
     "tags": [

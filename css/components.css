@@ -201,6 +201,20 @@ a:hover { opacity: 0.7; }
   line-height: 1.35;
 }
 .picker-options { display: flex; flex-direction: column; gap: 10px; }
+.picker-back {
+  appearance: none;
+  -webkit-appearance: none;
+  display: block;
+  margin: 18px auto 0;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 6px 10px;
+}
+.picker-back:hover { color: var(--accent); }
 .mode-option {
   appearance: none;
   -webkit-appearance: none;
