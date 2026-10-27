@@ -1,5 +1,56 @@
 [
   {
+    "id": "proj-bid-radar",
+    "title": "BidRadar",
+    "type": "Web App",
+    "periodStart": "2026-10",
+    "periodEnd": "2026-10",
+    "roles": ["Full-Stack", "Business-Dev"],
+
+    "repoUrl": "https://github.com/ibrahimahtsham/bid-radar",
+    "repoDisplay": "github.com/ibrahimahtsham/bid-radar",
+    "bullets": [
+      {
+        "text": "Built a browser-only project finder on the Freelancer.com API (vanilla JS, no backend) that scores live projects against the user's profile, ranks competing bidders, and shows Freelancer's fee before bidding.",
+        "roles": ["Full-Stack", "Business-Dev"]
+      },
+      {
+        "text": "Analyzes recently awarded projects in the same skills (winning price, how fast the winner bid, winning proposals) and turns them into a ready-to-paste AI prompt for drafting proposals.",
+        "roles": ["Full-Stack", "Business-Dev"]
+      },
+      {
+        "text": "Auto-syncs the user's bids into a tracker (replies, offers, wins) and raises configurable hot-project alerts with Web Audio sounds and desktop notifications.",
+        "roles": ["Full-Stack"]
+      }
+    ],
+    "tags": {
+      "Full-Stack": [
+        "JavaScript",
+        "Freelancer.com API",
+        "REST APIs",
+        "Web Audio API",
+        "Notifications API",
+        "localStorage",
+        "GitHub Pages"
+      ],
+      "Business-Dev": [
+        "Freelancer.com API",
+        "Bid Analytics",
+        "Competitor Research",
+        "AI Prompting",
+        "Automation"
+      ],
+      "all": [
+        "JavaScript",
+        "Freelancer.com API",
+        "REST APIs",
+        "Web Audio API",
+        "Bid Analytics",
+        "GitHub Pages"
+      ]
+    }
+  },
+  {
     "id": "proj-mammoth",
     "title": "Mammoth Job Management System",
     "type": "Full-Stack Web App",
@@ -108,55 +159,5 @@
       "Modular Architecture",
       "Cross-Platform"
     ]
-  },
-  {
-    "id": "proj-freelancer-manager",
-    "title": "Freelancer Bidding Automation",
-    "type": "React App",
-    "periodStart": "2025-05",
-    "periodEnd": "2025-09",
-    "roles": ["Full-Stack"],
-
-    "repoUrl": "https://github.com/ibrahimahtsham/freelancer-client-info-grabber",
-    "repoDisplay": "github.com/ibrahimahtsham/freelancer-client-info-grabber",
-    "bullets": [
-      {
-        "text": "Built a React/Vite bidding platform on the Freelancer.com API with rule-based auto-bidding (skill, country, language, and currency filters), weighted proposal templates, and an exportable API request log.",
-        "roles": ["Full-Stack", "Business-Dev"]
-      },
-      {
-        "text": "Added a dashboard tracking bid success rates and team commissions, plus a Tampermonkey script automating NDA/IP agreement steps.",
-        "roles": ["Full-Stack", "Business-Dev"]
-      }
-    ],
-    "tags": {
-      "Full-Stack": [
-        "React",
-        "Vite",
-        "Material UI",
-        "Recharts",
-        "React Router",
-        "Freelancer.com API",
-        "Tampermonkey",
-        "GitHub Pages",
-        "Data Visualization"
-      ],
-      "Business-Dev": [
-        "Freelancer.com API",
-        "Bid Analytics",
-        "Client Management",
-        "Automation",
-        "Recharts"
-      ],
-      "all": [
-        "React",
-        "Vite",
-        "Material UI",
-        "Recharts",
-        "Freelancer.com API",
-        "Data Visualization",
-        "Automation"
-      ]
-    }
   }
 ]
