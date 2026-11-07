@@ -1,8 +1,36 @@
-# CV-2026 — Role-Based CV Template
+# CV-2026
 
-A single-page, static HTML CV that serves **multiple role-specific versions** from one set of JSON files. No build tools, no server, no npm. Works on GitHub Pages out of the box.
+My CV, built so each job type gets its own version from one set of data. It also works as a free template: fork it, fill in your details, and host it on GitHub Pages.
 
-**Live demo:** [ibrahimahtsham.github.io/CV-2026](https://ibrahimahtsham.github.io/CV-2026/)
+**[Open the CV](https://ibrahimahtsham.github.io/CV-2026/)**
+
+| Version | Styled | Plain (ATS and PDF) |
+|---|---|---|
+| Everything | [Open](https://ibrahimahtsham.github.io/CV-2026/?role=all) | [Open](https://ibrahimahtsham.github.io/CV-2026/ats.html?role=all) |
+| Full-Stack Developer | [Open](https://ibrahimahtsham.github.io/CV-2026/?role=Full-Stack) | [Open](https://ibrahimahtsham.github.io/CV-2026/ats.html?role=Full-Stack) |
+| IT Support | [Open](https://ibrahimahtsham.github.io/CV-2026/?role=IT) | [Open](https://ibrahimahtsham.github.io/CV-2026/ats.html?role=IT) |
+| NOC / Networking | [Open](https://ibrahimahtsham.github.io/CV-2026/?role=NOC) | [Open](https://ibrahimahtsham.github.io/CV-2026/ats.html?role=NOC) |
+| Customer Support | [Open](https://ibrahimahtsham.github.io/CV-2026/?role=Customer-Support) | [Open](https://ibrahimahtsham.github.io/CV-2026/ats.html?role=Customer-Support) |
+| Business Development | [Open](https://ibrahimahtsham.github.io/CV-2026/?role=Business-Dev) | [Open](https://ibrahimahtsham.github.io/CV-2026/ats.html?role=Business-Dev) |
+
+## What it does
+
+- **One source, many CVs:** every job, project, and bullet is tagged with the roles it suits, and each link shows only what fits that role.
+- **Two views:** a styled page with dark mode, and a plain page that applicant tracking systems can read and that prints cleanly to PDF.
+- **Nothing to install:** plain HTML, CSS, and JavaScript with JSON files. No build step, no npm, no server.
+- **Experience adds itself up:** `{experience}` in your intro turns into your total time worked, worked out from your job dates.
+- **Tailor it to one job:** a ready-made prompt rewrites the PDF for a specific job posting without inventing anything.
+
+## Contents
+
+- [How it works](#how-it-works)
+- [Print / PDF export](#print--pdf-export)
+- [File structure](#file-structure)
+- [Using this as your own CV template](#using-this-as-your-own-cv-template)
+- [Adding a new role](#adding-a-new-role)
+- [JSON structure reference](#json-structure-reference)
+- [Local development](#local-development)
+- [Customising the design](#customising-the-design)
 
 ---
 
@@ -21,17 +49,7 @@ There are two independent views, and they live on two different pages:
 
 **A direct `?role=` link always skips the picker** and goes straight to the styled view for that role:
 
-| URL | Shows |
-|-----|-------|
-| `/CV-2026/` | The view/role picker |
-| `/CV-2026/?role=all` | Full master CV — everything |
-| `/CV-2026/?role=Full-Stack` | Full-Stack-focused view |
-| `/CV-2026/?role=IT` | IT Support view |
-| `/CV-2026/?role=NOC` | NOC/Networking view |
-| `/CV-2026/?role=Customer-Support` | Customer Support view |
-| `/CV-2026/?role=Business-Dev` | Business Development view |
-
-The ATS-friendly page works the same way, on its own URL: `ats.html` (master) or `ats.html?role=IT`, etc. — directly shareable too.
+`/CV-2026/` shows the picker, and `/CV-2026/?role=all` shows the full master CV. The ATS-friendly page works the same way on its own URL: `ats.html` (master) or `ats.html?role=IT`, and those links can be shared too.
 
 **To add a new role:** edit `data/roles.json` — add the role to `availableRoles`, write its intro, then tag relevant entries and bullets across the other data files. No new files to create.
 
@@ -518,7 +536,7 @@ Array of work experience entries, most recent first.
 
 ### `data/projects.json`
 
-Same shape as `experience.json` entries, with two extra fields:
+Same shape as `experience.json` entries, with a few extra fields. Projects show in the order they appear in this file, so keep them newest first:
 
 ```jsonc
 [

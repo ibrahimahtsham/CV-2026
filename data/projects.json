@@ -1,5 +1,39 @@
 [
   {
+    "id": "proj-financial-freedom",
+    "title": "Financial Freedom",
+    "type": "Web App",
+    "periodStart": "2026-11",
+    "periodEnd": "2026-11",
+    "roles": ["Full-Stack"],
+
+    "repoUrl": "https://github.com/ibrahimahtsham/financial-freedom",
+    "repoDisplay": "github.com/ibrahimahtsham/financial-freedom",
+    "bullets": [
+      {
+        "text": "Built and shipped a browser-only money tracker and retirement planner (vanilla JS, no backend or build step) that handles income and spending in any currency, using live exchange rates and per-currency inflation data.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Wrote a unit-tested planning engine that links pay, saving, spending, and years to retirement, so changing one recalculates the rest, and shows the result on hand-built SVG charts.",
+        "roles": ["Full-Stack"]
+      },
+      {
+        "text": "Kept all data in the browser with JSON backup and restore, and added a responsive dark and light design and a 16-step interactive tutorial.",
+        "roles": ["Full-Stack"]
+      }
+    ],
+    "tags": [
+      "JavaScript",
+      "SVG Charts",
+      "REST APIs",
+      "Unit Testing",
+      "localStorage",
+      "Responsive Design",
+      "GitHub Pages"
+    ]
+  },
+  {
     "id": "proj-bid-radar",
     "title": "BidRadar",
     "type": "Web App",
@@ -128,36 +162,5 @@
         "Database Migration"
       ]
     }
-  },
-  {
-    "id": "proj-ai-interviewer-online",
-    "title": "AI Interviewer",
-    "type": "Streamlit App",
-    "periodStart": "2025-09",
-    "periodEnd": "2025-10",
-    "roles": ["Full-Stack"],
-
-    "repoUrl": "https://github.com/ibrahimahtsham/ai-interviewer-online",
-    "repoDisplay": "github.com/ibrahimahtsham/ai-interviewer-online",
-    "bullets": [
-      {
-        "text": "Cloud AI interviewer (LLM + STT + TTS) built with Streamlit and OpenAI; delegates compute to cloud for low-spec deployment.",
-        "roles": ["Full-Stack"]
-      },
-      {
-        "text": "Modular service layer (llm_service, stt_service, tts_service) with pluggable provider architecture and one-command cross-platform startup scripts.",
-        "roles": ["Full-Stack"]
-      }
-    ],
-    "tags": [
-      "Python",
-      "Streamlit",
-      "OpenAI API",
-      "LLM",
-      "STT",
-      "TTS",
-      "Modular Architecture",
-      "Cross-Platform"
-    ]
   }
 ]
